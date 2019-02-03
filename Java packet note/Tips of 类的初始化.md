@@ -1,1 +1,2 @@
-# Tips of 类的
+# Tips of 类的初始化
+-
