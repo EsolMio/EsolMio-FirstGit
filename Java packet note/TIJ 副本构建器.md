@@ -13,7 +13,7 @@ class FruitQualities {
         //design by self...
     }
     //Copy constructor
-    //In fact, just send a same handle into copy constructor to get the orignal object message
+    //In fact, just send a same handle into copy constructor to send the orignal object message to dupliacte 
     FruitQualities(FruitQualities f)
 }
 ```
