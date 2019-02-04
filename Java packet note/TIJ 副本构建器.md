@@ -18,7 +18,9 @@ class FruitQualities {
     FruitQualities(FruitQualities f){
     weight=f.weight;
     color=f.color;
-      
+    firmness=f.firmness;
+    ripeness=f.ripeness;
+    smell=f.smell;    
 }
 }
 ```
