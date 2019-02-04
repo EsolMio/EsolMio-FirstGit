@@ -12,7 +12,8 @@ class FruitQualities {
     FruitQualities(){
         //design by self...
     }
-    ///Copy constructor
-    FruitQualities
+    //Copy constructor
+    //In fact, just s
+    FruitQualities(FruitQualities f)
 }
 ```
