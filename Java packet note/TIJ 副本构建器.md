@@ -8,6 +8,9 @@ class FruitQualities {
     private int ripeness;
     private int smell;
     //etc...
-    
+    //default constructor
+    FruitQualities(){
+        //design by 
+    }
 }
 ```
