@@ -3,7 +3,7 @@
 ***
 **!!!ATTENTION!!!**
 **这个方法并不是十分使用于Java，故在Java中不要使用**
-因为在有继承时，使用上溯造型的方法传递句柄至copy constructor时，会有类型信息丢失的情况(.ge)
+因为在有继承时，使用上溯造型的方法传递句柄至copy constructor时，会有类型信息丢失的情况(.getClass().getName(),返回父类类型信息)，详见"Think in java"
 ***
 ```
 class FruitQualities {
