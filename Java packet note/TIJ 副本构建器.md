@@ -1,5 +1,9 @@
 # 副本构建器 Duplicate constructorx
 ## Example Code in TIJ_12_3_1
+***
+**!!!ATTENTION!!!**
+**这个**
+***
 ```
 class FruitQualities {
     private int weight;
