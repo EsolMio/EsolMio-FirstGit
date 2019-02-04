@@ -16,11 +16,11 @@ class FruitQualities {
     //In fact, just send a same handle into copy constructor 
     //to send the orignal object message to the dupliacte object
     FruitQualities(FruitQualities f){
-    weight=f.weight;
-    color=f.color;
-    firmness=f.firmness;
-    ripeness=f.ripeness;
-    smell=f.smell;    
-}
+        weight=f.weight;
+        color=f.color;
+        firmness=f.firmness;
+        ripeness=f.ripeness;
+        smell=f.smell;    
+    }
 }
 ```
