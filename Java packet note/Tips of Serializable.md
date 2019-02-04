@@ -5,4 +5,4 @@
 `ObjectOutputStream ob = new ObjectOutputStream(OutputStream out);`
 若需要输出到文件，可将out指代为FileOutputStream
 - 若需要自定义序列化方式，有两种选择：
-   - 实现
+   - 实现Externalizable接口，并具体化`writeExternal(Object)`
