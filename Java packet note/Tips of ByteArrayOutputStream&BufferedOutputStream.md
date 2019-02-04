@@ -1,1 +1,3 @@
-# The differents on ByteArrayOutputStream&BufferedOutputstream
+# The differents of ByteArrayOutputStream & BufferedOutputstream
+## Same:
+ByteArrayOutputStream & BufferedOutputStream
