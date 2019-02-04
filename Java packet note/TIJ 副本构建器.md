@@ -10,7 +10,9 @@ class FruitQualities {
     //etc...
     //default constructor
     FruitQualities(){
-        //design by 
+        //design by self...
     }
+    ///Copy constructor
+    FruitQualities
 }
 ```
