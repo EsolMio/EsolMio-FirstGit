@@ -4,6 +4,10 @@
 class FruitQualities {
     private int weight;
     private int color;
-
+    private int firmness;
+    private int ripeness;
+    private int smell;
+    //etc...
+    
 }
 ```
