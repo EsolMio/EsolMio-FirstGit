@@ -4,3 +4,4 @@
 - 在创建ObjectOutputStream时：
 `ObjectOutputStream ob = new ObjectOutputStream(OutputStream out);`
 若需要输出到文件，可将out指代为FileOutputStream
+- 若需要自定义
