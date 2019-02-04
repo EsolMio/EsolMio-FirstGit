@@ -1,0 +1,3 @@
+# protected和public在继承中的转化
+若父类的一个方法使用了protected修饰，其子类在覆盖父类的此方法时可以修改此方法的修饰符，将protected更改成public（范围域增大）。
+可使用此方法将父类的protected方法公开化（public），在子类public方法中调用super.父类实例方法()即可实现。
