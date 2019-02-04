@@ -3,6 +3,7 @@
 ***
 **!!!ATTENTION!!!**
 **这个方法并不是十分使用于Java，故在Java中不要使用**
+因为在有继承时，使用上溯造型的方法传递句柄至
 ***
 ```
 class FruitQualities {
