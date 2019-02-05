@@ -44,6 +44,11 @@ class TurnOffClone extends Ordinary{
 Code:
 ```
 class BackOn extends TurnOffClone {
-    private Ba
+    private BackOn duplicate(BackOn b){
+        return new BackOn();
+    }
+    public Object clone(){
+        return
+    }
 }
 ```
