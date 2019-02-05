@@ -7,5 +7,7 @@ tips:
 
 Code：
 ```
-class WrongClone extends Ordinary{}
+class WrongClone extends Ordinary{
+    public Object clone() throws CloneNotSupportedException{}
+}
 ```
