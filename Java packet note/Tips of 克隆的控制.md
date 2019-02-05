@@ -37,4 +37,4 @@ class TurnOffClone extends Ordinary{
     }
 }
 ```
-## 4. 通过返回一个
+## 4. 通过父类返回一个无关的对象
