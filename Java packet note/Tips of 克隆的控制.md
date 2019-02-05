@@ -39,4 +39,11 @@ class TurnOffClone extends Ordinary{
 }
 ```
 ## 4. 调用private方法返回一个新的对象
-解释：在父类中创建一private方法，返回值为新创建的父类实例，虽然获得了同类型的值，但新值
+解释：在父类中创建一private方法，返回值为新创建的父类实例，虽然获得了同类型的值，但并不是克隆了原对象。
+
+Code:
+```
+class BackOn extends TurnOffClone {
+    private Ba
+}
+```
