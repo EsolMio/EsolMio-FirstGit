@@ -5,7 +5,7 @@ tips:
 ## 1. 有条件克隆，不实现Cloneable接口
 解释：将clone()的权限范围从protected改为public，让其子类继承此方法，且任何类都可以调用此方法。返回值为super.clone();注意不实现Cloneable接口。只有继承且实现Cloneable接口的对象才可正常克隆
 
-Thinking：个人认为
+Thinking：个人认为原本提供的实现克隆规则即可，不必大费周章使用此方法
 
 Code：
 ```
@@ -37,3 +37,4 @@ class TurnOffClone extends Ordinary{
     }
 }
 ```
+## 4. 通过返回一个
