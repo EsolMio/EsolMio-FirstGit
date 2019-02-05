@@ -1,5 +1,5 @@
 # 副本构建器 Duplicate constructorx
-## Example Code in TIJ_12_3_1
+## Example Code in TIJ_C12_3_1
 ***
 **!!!ATTENTION!!!**
 **这个方法并不是十分使用于Java，故在Java中不要使用**
