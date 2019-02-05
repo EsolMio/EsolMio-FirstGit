@@ -25,4 +25,9 @@ class IsCloneable extends Ordinary implements Cloneable{
 }
 ```
 ## 通过抛出错误"关闭"克隆方法
-解释：改写clone()为public，但在方法中直接加入掷出错误
+解释：改写clone()为public，但在方法中直接加入掷出错误CloneNotSupoortedException。
+
+Code:
+```
+class TurnOffClone
+```
