@@ -29,5 +29,9 @@ class IsCloneable extends Ordinary implements Cloneable{
 
 Code:
 ```
-class TurnOffClone
+class TurnOffClone extends Ordinary{
+    public Object clone(){
+        throws
+    }
+}
 ```
