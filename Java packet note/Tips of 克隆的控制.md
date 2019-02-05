@@ -31,7 +31,7 @@ Code:
 ```
 class TurnOffClone extends Ordinary{
     public Object clone(){
-        throws
+        throw new CloneNotSupportesException();
     }
 }
 ```
