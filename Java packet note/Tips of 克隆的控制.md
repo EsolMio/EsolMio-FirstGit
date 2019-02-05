@@ -7,5 +7,5 @@ tips:
 
 Code：
 ```
-class 
+class WrongClone extends Ordinary{}
 ```
