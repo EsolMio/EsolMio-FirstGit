@@ -41,6 +41,8 @@ class TurnOffClone extends Ordinary{
 ## 4. 调用private方法返回一个新的对象
 解释：在父类中创建一private方法，返回值为新创建的父类实例，虽然获得了同类型的值，但并不是克隆了原对象。
 
+Tips:实例方法只有对应的对象才可调用
+
 Code:
 ```
 class BackOn extends TurnOffClone {
@@ -48,7 +50,7 @@ class BackOn extends TurnOffClone {
         return new BackOn();
     }
     public Object clone(){
-        return
+        return duplicate(this);
     }
 }
 ```
