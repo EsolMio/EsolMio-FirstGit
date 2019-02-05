@@ -13,4 +13,7 @@ class WrongClone extends Ordinary{
     }
 }
 ```
-## 2. 
+## 2. 完全支持克隆，实现Cloneable接口
+重写clone()，实现Cloneable接口。
+
+Code:
