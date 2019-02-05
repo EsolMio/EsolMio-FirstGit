@@ -25,7 +25,7 @@ class IsCloneable extends Ordinary implements Cloneable{
 }
 ```
 ## 通过抛出错误"关闭"克隆方法
-解释：改写clone()为public，但在方法中直接加入掷出错误CloneNotSupoortedException。在没有添加自定义catch错误处理方法时JVM会自动调用printStackTrace()并退出程序。阻止克隆，若
+解释：改写clone()为public，但在方法中直接加入掷出错误CloneNotSupoortedException。在没有添加自定义catch错误处理方法时JVM会自动调用printStackTrace()并退出程序，阻止克隆。倘若捕捉了也无法克隆。
 
 Code:
 ```
