@@ -19,8 +19,9 @@ class WrongClone extends Ordinary{
 Code:
 ```
 class IsCloneable extends Ordinary implements Cloneable{
-    public Object clone() throws CloneNotSu{
+    public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
 }
 ```
+## 通过抛出错误关闭克隆
