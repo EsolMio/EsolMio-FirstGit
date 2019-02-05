@@ -17,3 +17,8 @@ class WrongClone extends Ordinary{
 重写clone()，实现Cloneable接口。
 
 Code:
+```
+class IsCloneable extends Ordinary implements Cloneable{
+    
+}
+```
