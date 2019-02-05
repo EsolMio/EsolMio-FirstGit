@@ -38,5 +38,5 @@ class TurnOffClone extends Ordinary{
     }
 }
 ```
-## 4. 通过父类返回一个无关的对象造成克隆失败
+## 4. 调用private方法
 解释：在父类中创建一private方法，返回值为新创建的父类实例
