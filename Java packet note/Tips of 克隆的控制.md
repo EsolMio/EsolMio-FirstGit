@@ -14,11 +14,13 @@ class WrongClone extends Ordinary{
 }
 ```
 ## 2. 完全支持克隆，实现Cloneable接口
-重写clone()，实现Cloneable接口。
+重写clone()为public，实现Cloneable接口。
 
 Code:
 ```
 class IsCloneable extends Ordinary implements Cloneable{
-    
+    public Object clone() throws CloneNotSu{
+        return super.clone();
+    }
 }
 ```
