@@ -4,6 +4,7 @@
 ├──Beer-v1
 │  ├──WEB_INF
 │  │  ├──classes
-│  │  │  
+│  │  │  └──class packet...
+│  │  ├──lib
 │  └──form.html
 ```
