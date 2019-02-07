@@ -3,5 +3,6 @@
 /tomcat/webapps/
 ├──Beer-v1
 │  ├──WEB_INF
+│  │  ├──
 │  └──form.html
 ```
