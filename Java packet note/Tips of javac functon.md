@@ -9,4 +9,5 @@
    - 指定输出.class文件位置，缺省值为与.java文件相同的根目录下
 - 在windows下使用多个路径使，用";"分隔，在linux下使用":"分隔。
 
-### pic of  
+### Pic of test RESULT
+![SharedScreenshot.jpg](0) 
