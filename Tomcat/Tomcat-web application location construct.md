@@ -7,6 +7,7 @@
 │  │  │  └──self class packet...
 │  │  ├──lib
 │  │  │  └──第三方.jar
-│  │  └──
-│  └──form.html
+│  │  └──web.xml
+│  ├──form.html
+│  └──result.jsp
 ```
