@@ -12,6 +12,6 @@ p.s.字节流&字符流的区别：
 在使用Reader/Writer处理输入流时，均需要用到InputStream/OutputStream，先使用InputStreamReader/OutputStreamWriter接收InputStream/OutputStream，再在需要使用的Reader子类的构造器中将前者产生的对象封装进去
 e.g.
 ```
-InputS
+InputStreamReader in=new InputStreamReader(new FileInputStream());
 BufferedReader buffer=new BufferedReader()
 ```
