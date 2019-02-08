@@ -9,4 +9,4 @@ p.s.字节流&字符流的区别：
 3. 字符流由Reader/Wirter处理，字节流由InputStream/OutputStream处理
 ***
 ## 使用Reader/Writer时...
-在使用Reader/Writer处理输入流时，均需要用到InputStream/OutputStream，先使用InputStreamReader/OutputStreamWriter接收
+在使用Reader/Writer处理输入流时，均需要用到InputStream/OutputStream，先使用InputStreamReader/OutputStreamWriter接收InputStream/OutputStream，再在需要使用的Reader子类的构造其中将
