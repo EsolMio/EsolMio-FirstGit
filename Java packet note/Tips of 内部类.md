@@ -9,6 +9,8 @@ e.g.
 ```
 class Test{
     private class InsideClass extends Cloneable{}
-    public Cl returnInsideClass()
+    public Cloneable returnInsideClass(){
+        
+    }
 }
 ```
