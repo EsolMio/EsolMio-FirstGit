@@ -8,6 +8,7 @@ tips: 内部类依赖封装类的**对象**，有**封装类**对象才可以使
 e.g.
 ```
 class Test{
-    private class InsideClass
+    private class InsideClass extends Cloneable{}
+    public Cl returnInsideClass()
 }
 ```
