@@ -1,4 +1,4 @@
-# Tips of Reader
+# Tips of Reader/Writer
 ## java.io.Reader
 Reader类位于java.io包中，其实现了Closeable和Readable接口。直接子类有**InputStreamReader**, BufferedReader,  StringReader, CharArrayReader, FilterReader, PipedReader.
 ****
@@ -8,5 +8,5 @@ p.s.字节流&字符流的区别：
 2. 字节流即基本单元为单个字节，可应用于任何类型的对象，包括二进制对象，以及音频，图片等等。但不适用于Unicode对象。
 3. 字符流由Reader/Wirter处理，字节流由InputStream/OutputStream处理
 ***
-## 使用Reader时...
-在使用Reader
+## 使用Reader/Writer时...
+在使用Reader/Writer处理输入流时，均需要用到InputStream/OutputStream，
