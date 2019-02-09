@@ -6,6 +6,8 @@
 如java.io.FileDescriptor.standarStream()
    ```
    private static FileDescriptor standarStream(int fd){
-       FileDescriptor desc=new FileDes
+       FileDescriptor desc=new FileDescptior();
+       desc.handle=set(fd);
+       return desc;
    }
    ```
