@@ -3,4 +3,4 @@
 ## 类方法（static修饰的方法）
 使用类方法的**目的**：
 1. 为对应的类生成特定的对象
-如
+如java.io.FileDescriptor.standarStream()
