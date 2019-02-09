@@ -15,4 +15,5 @@
    ```
    public static final FileDescriptor out=standarStream(1);
    ```
+   在FileDecsriptor中的
 2. 待补充...
