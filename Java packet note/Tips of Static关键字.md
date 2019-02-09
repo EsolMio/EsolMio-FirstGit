@@ -13,5 +13,6 @@
    ```
    实际用于FileDecsriptor.out/in/err
    ```
-   public static final FileDescriptor out=new 
+   public static final FileDescriptor out=standarStream(1);
    ```
+2. 待补充...
