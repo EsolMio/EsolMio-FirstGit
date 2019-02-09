@@ -5,5 +5,7 @@
 1. 为对应的类生成特定的对象
 如java.io.FileDescriptor.standarStream()
    ```
-   private static FileDescriptor standar
+   private static FileDescriptor standarStream(int fd){
+       FileDescriptor desc=new FileDes
+   }
    ```
