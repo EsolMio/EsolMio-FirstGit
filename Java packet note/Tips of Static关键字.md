@@ -11,3 +11,6 @@
        return desc;
    }
    ```
+   实际用于FileDecsptior.out/in/err
+   ```
+   ```
