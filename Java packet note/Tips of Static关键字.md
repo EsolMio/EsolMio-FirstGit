@@ -15,5 +15,5 @@
    ```
    public static final FileDescriptor out=standarStream(1);
    ```
-   在FileDecsriptor中的`public static final FileDescript `
+   在FileDecsriptor中的`public static final FileDescriptor in `; `public static final FileDescriptor out`; `public static final`
 2. 待补充...
