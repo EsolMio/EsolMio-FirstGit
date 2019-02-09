@@ -19,5 +19,5 @@
    `public static final FileDescriptor in ;`
    `public static final FileDescriptor out ;` 
    `public static final FileDescriptor err ;`
-   均是
+   三个static变量通过调用static standarStream()的返回值
 2. 待补充...
