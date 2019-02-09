@@ -15,9 +15,10 @@
    ```
    public static final FileDescriptor out=standarStream(1);
    ```
-   在FileDecsriptor中的
+   一种应用方式：在FileDecsriptor中的
    `public static final FileDescriptor in ;`
    `public static final FileDescriptor out ;` 
    `public static final FileDescriptor err ;`
    三个static变量通过调用static standarStream()获得了对应的值
+   static只能
 2. 待补充...
