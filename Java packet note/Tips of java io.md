@@ -5,3 +5,5 @@
 在Java中，最基本的IO流即字节流，这是一切流的**基本**，以**字节Byte**为单位。
 字节流承载着任意一个对象，无论是文字，图片，音频。其对应的类为`InputStream`和`OutputStream`。
 但对于多国语言，字节流无法满足要求以适配Unicode，故产生了`Reader`和`Writer`以处理字符流。但`Reader`和`Writer`依托于最基本的字节流，故需要先封装/引用`InputStream`和`OutputStream`才可使用
+使用方法：
+`Reader r=new BufferedReader(new InputStreamReader())`
