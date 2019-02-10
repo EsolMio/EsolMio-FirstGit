@@ -10,4 +10,4 @@
 `Writer w=new BufferedWriter(new OutputStreamWriter(OutputStream));`
 ## 常见的底层输入流
 FileInputStream/FileOutputStream
-ByteArrayInput
+ByteArrayInputStream/ByteArrayOutputStream
