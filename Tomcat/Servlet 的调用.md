@@ -1,2 +1,2 @@
 # Servlet的调用
-1. User
+1. User->`click URL`->point to a Servlet
