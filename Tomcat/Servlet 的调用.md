@@ -1,3 +1,3 @@
 # Servlet的调用
 1. User->`click URL`指向Servlet->容器获得客户发送的POST/GET请求
-2. 
+2. 容器创建
