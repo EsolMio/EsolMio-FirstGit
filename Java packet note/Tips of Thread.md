@@ -12,7 +12,9 @@
 《Thing in java》C14_1_3_Counter3.java code 给出了解决方法：
 ```
 public class Counter3 extends Applet implements Runnable{
-    
-    private
+    ...
+    private Thread selfThread = null
+    ...
+    class OnOffL implements Actio
 }
 ```
