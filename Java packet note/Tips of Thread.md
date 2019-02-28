@@ -15,6 +15,10 @@ public class Counter3 extends Applet implements Runnable{
     ...
     private Thread selfThread = null
     ...
-    class OnOffL implements Actio
+    class StartL implements ActionListener{
+        public void actionPerformed(ActionEvent e){
+            
+        }
+    }
 }
 ```
