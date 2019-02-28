@@ -26,4 +26,4 @@ public class Counter3 extends Applet implements Runnable{
 }
 ```
 **可以看出，定义一`Thread`成员变量`selfThread`初始值为`null`,意义上为“按钮并未按下”。在监听器中，使用了`if`判断`selfThread`是否为空以检测是否按下过按钮。若按下，则跳过**
-****
+**亮点：将`selfThread`初始值定位`null`,表示并未使用过按钮**
