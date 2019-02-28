@@ -11,5 +11,8 @@
 对于一个按钮button，若需要在按下button后生成一个非幂等线程并执行，需要考虑到不能使用户多次按下button而产生多个线程导致结果错误
 《Thing in java》C14_1_3_Counter3.java code 给出了解决方法：
 ```
-public class Counter3 extends Applet implements Runnable
+public class Counter3 extends Applet implements Runnable{
+    
+    private
+}
 ```
