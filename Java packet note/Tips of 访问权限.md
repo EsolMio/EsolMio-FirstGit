@@ -4,4 +4,5 @@
 2. `private`无法继承，则无法修改
 3. `public`在子类中也依旧使`public`，无法缩小
 
-## 关于
+## 关于protected
+`protected`为一比较特殊的权限修饰符，通俗而言其功能为：
