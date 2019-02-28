@@ -8,4 +8,4 @@
 在特定的地方（如`main（）`）构建Thread对象，意味着调用此方法会有一个主线程（相对于`Thread`创建的线程），而Thread会生成一子进程。创建的Thread对象越多，生成的子线程就越多
 
 ### Interesting Code
-对于一个按钮button，若需要在按下button后生成一个非幂等线程并执行，需要考虑到不能使用户多次按下button而
+对于一个按钮button，若需要在按下button后生成一个非幂等线程并执行，需要考虑到不能使用户多次按下button而产生多个线程导致结果错误，《Thing in java》C14_1_3
