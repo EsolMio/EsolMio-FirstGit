@@ -6,3 +6,6 @@
 
 ### 调用Thread的方法与Thread的关系
 在特定的地方（如`main（）`）构建Thread对象，意味着调用此方法会有一个主线程（相对于`Thread`创建的线程），而Thread会生成一子进程。创建的Thread对象越多，生成的子线程就越多
+
+### Interesting Code
+对于一个按钮but
