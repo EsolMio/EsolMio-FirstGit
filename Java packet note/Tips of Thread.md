@@ -19,9 +19,10 @@ public class Counter3 extends Applet implements Runnable{
         public void actionPerformed(ActionEvent e){
             if(selfThread == null){
                 selfThread=new Thread(Counter3.this);
-                selfThread.start 
+                selfThread.start(); 
             }
         }
     }
 }
 ```
+**可以看出，定义一成员变量**
