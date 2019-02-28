@@ -25,4 +25,4 @@ public class Counter3 extends Applet implements Runnable{
     }
 }
 ```
-**可以看出，定义一成员变量**
+**可以看出，定义一`Thread`成员变量初始值为`null`,意义上为按钮并未按下**
