@@ -25,4 +25,4 @@ public class Counter3 extends Applet implements Runnable{
     }
 }
 ```
-**可以看出，定义一`Thread`成员变量初始值为`null`,意义上为按钮并未按下**
+**可以看出，定义一`Thread`成员变量``初始值为`null`,意义上为“按钮并未按下”。在监听器中，使用了`if`判断**
