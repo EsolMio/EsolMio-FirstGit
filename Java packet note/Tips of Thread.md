@@ -17,7 +17,10 @@ public class Counter3 extends Applet implements Runnable{
     ...
     class StartL implements ActionListener{
         public void actionPerformed(ActionEvent e){
-            
+            if(selfThread == null){
+                selfThread=new Thread(Counter3.this);
+                selfThread.start 
+            }
         }
     }
 }
