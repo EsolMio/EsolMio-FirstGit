@@ -35,4 +35,4 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 Thread。sleep()为Thread的类方法（static），无需Thread对象，可适用于任何进程对象中
 
 ### 关于`main()`和JVM启动时的线程状况
-`main()`方法在运行时会生成一个针对此方法的线程。而在启动时会同时生成`main()`线程和
+`main()`方法在运行时会生成一个针对此方法的线程。而在启动时会同时生成`main()`线程和自定义（Thread）线程，执行顺序由哪个线程先获得CPU决定。
