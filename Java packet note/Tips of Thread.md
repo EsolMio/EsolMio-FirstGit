@@ -65,7 +65,9 @@ void f(){
 ```
 same as
 ```
-
+void sycnhronized f(){
+    
+}
 ```
 
 
