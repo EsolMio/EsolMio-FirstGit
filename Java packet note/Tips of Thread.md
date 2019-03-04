@@ -39,3 +39,5 @@ Thread。sleep()为Thread的类方法（static），无需Thread对象，可适�
 
 ### Java环境下进程运行示意图
 ![thread running pic.png](0)
+![thread running pic_cn.jpg](1)
+
