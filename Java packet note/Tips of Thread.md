@@ -42,6 +42,7 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 #### 运行优先级(priority)
 在Thread中有三个常量(static final)表示优先级：
 1. **`MIN_PRIORITY`** = 1，最小优先级值。
-2. **
+2. **`MAX_PRIORITY`** = 10,最大优先级值。
+3. **`NORM_PRIORITY`** = 5，
 
 
