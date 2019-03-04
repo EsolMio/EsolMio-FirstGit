@@ -34,4 +34,5 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 ### Thread.sleep()
 Thread。sleep()为Thread的类方法（static），无需Thread对象，可适用于任何进程对象中
 
-### 关于`main()`
+### 关于`main()`和JVM启动时的线程状况
+`main()`方法在运行时会生成一个针对此方法的线程
