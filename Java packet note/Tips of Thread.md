@@ -41,7 +41,7 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根据优先级和获得CPU的speeeeeed
 但进入阻塞blocked的均需要返回至Runnable方有机会
 
-### 5. 线程进入阻塞(Blocked)状态的实现方法
+### 5. 线程进入阻塞(Blocked)状态的实现方法 (待补充 )
 #### 运行优先级(priority)
 在Thread中有三个常量(static final)表示优先级：
 1. **`MIN_PRIORITY`** = 1，最小优先级值。
