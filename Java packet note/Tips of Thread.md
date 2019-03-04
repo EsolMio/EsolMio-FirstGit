@@ -55,5 +55,9 @@ tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根�
 4. Thread对象的join()方法，在当前对象中调用其他线程对象的`join()`方法，当前线程对象会进入等待直到被调用的对象结束运行，随后进入就绪(Runnable)状态。
 
 ### synchronized
+code:
+```
+sy
+```
 
 
