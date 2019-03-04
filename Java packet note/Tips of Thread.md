@@ -32,4 +32,4 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 **亮点：将`selfThread`初始值定位`null`,表示并未使用过按钮**
 
 ### Thread.sleep()
-Thread。sleep()为Thread的类方法（static），
+Thread。sleep()为Thread的类方法（static），无需Thread对象，可适用于任何进程对象中
