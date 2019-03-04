@@ -47,5 +47,6 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 
 进入阻塞的方法有三个：（同步锁：每个Thread对象均有）
 1.Thread.sleep(long millis)，Thread类方法，在任何Thread对象中均可调用。调用后**本线程**进入阻塞，**且原本持有的同步锁（对方的）不释放（如果有）**
-2. Object.wait()，继承自Object，调用后**本线程**进入**等待池**等待，**会释放原本持有的**。
+2. Object.wait()，继承自Object，调用后**本线程**进入**等待池**等待，**会释放原本持有的同步锁**。
+3. Thread.yield()，暂停
 
