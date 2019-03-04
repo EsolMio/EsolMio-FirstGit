@@ -41,7 +41,7 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根据优先级和获得CPU的speeeeeed
 但进入阻塞blocked的均需要返回至Runnable方有机会
 
-### 5. 线程进入阻塞(Blocked)状态的实现方法 (待补充 )
+### 5. 线程进入阻塞(Blocked)状态的实现方法 (待补充 unfinished)
 #### 运行优先级(priority)
 在Thread中有三个常量(static final)表示优先级：
 1. **`MIN_PRIORITY`** = 1，最小优先级值。
@@ -54,5 +54,6 @@ tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根�
 3. Thread.yield()，暂停**当前执行**的线程，转让给相同或更高优先级的线程，运行中的对象会返回至Runnable状态，实际上可理解为：检查是否有高优先级/同优先级的等待状态线程，若有则自己返回Runnable运行权给与前者，若无则继续运行。
 4. Thread对象的join()方法，在当前对象中调用其他线程对象的`join()`方法，当前线程对象会进入等待直到被调用的对象结束运行，随后进入就绪(Runnable)状态。
 
+### synchronized
 
 
