@@ -82,7 +82,9 @@ Tips from 《TIJ》:
 #### 对于类而言：
 ```
 public static void f(){
-    synch
+    synchronized(Test.class){
+        //code
+    }
 }
 ```
-
+实际效果与上相同，锁对象的作用
