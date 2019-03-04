@@ -38,6 +38,8 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 ![thread running pic.png](0)
 ![thread running pic_cn.jpg](1)
 
+tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根据优先级和
+
 ### 5. 线程进入阻塞(Blocked)状态的实现方法
 #### 运行优先级(priority)
 在Thread中有三个常量(static final)表示优先级：
