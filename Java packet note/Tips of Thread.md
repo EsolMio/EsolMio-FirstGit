@@ -57,17 +57,20 @@ tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根�
 ### synchronized
 code:
 ```
+code 1
 void f(){
     synchronized(Object handle){
         //do code
     }
 }
 ```
-same as
+same as:
 ```
+code 2
 void sycnhronized f(){
-    
+    //code...
 }
 ```
+代码一中
 
 
