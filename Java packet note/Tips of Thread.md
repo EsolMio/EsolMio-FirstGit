@@ -46,5 +46,5 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 3. **`NORM_PRIORITY`** = 5，优先级默认值。
 
 进入阻塞的方法有三个：
-1.Thread.sleep()，Thread类方法，在任何Thread
+1.Thread.sleep(long millis)，Thread类方法，在任何Thread对象中均可调用。调用后进入阻塞，****
 
