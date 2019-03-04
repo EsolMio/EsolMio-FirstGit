@@ -57,7 +57,9 @@ tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根�
 ### synchronized
 code:
 ```
-sy
+void f(){
+    synchronized()
+}
 ```
 
 
