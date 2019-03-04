@@ -26,7 +26,7 @@ public class Counter3 extends Applet implements Runnable{
 }
 ```
 tips:成员方法使用之前在JVM中已完整生成调用成员方法的对象，无需顾虑对象初始化问题。
-tipss：Thread和Runnable不为同一类型
+tipss：Thread和Runnable不为同一类型（很傻的提示...）
 
 **可以看出，定义一`Thread`成员变量`selfThread`初始值为`null`,意义上为“按钮并未按下”。在监听器中，使用了`if`判断`selfThread`是否为空以检测是否按下过按钮。若按下，则跳过**
 **亮点：将`selfThread`初始值定位`null`,表示并未使用过按钮**
