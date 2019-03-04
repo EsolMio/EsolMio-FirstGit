@@ -36,3 +36,6 @@ Thread。sleep()为Thread的类方法（static），无需Thread对象，可适�
 
 ### 关于`main()`和JVM启动时的线程状况
 `main()`方法在运行时会生成一个针对此方法的线程。而在启动时会同时生成`main()`线程和自定义（Thread）线程，执行顺序由哪个线程先获得CPU决定。
+
+### Java环境下进程运行示意图
+
