@@ -71,6 +71,6 @@ void sycnhronized f(){
     //code...
 }
 ```
-code 1 中使用了`synchronized(object handle)`，括号中使用对象的句柄，，不需要加类型修饰符，表示锁住的对象——即只针对相同的对象，一进程中的对应
+code 1 中使用了`synchronized(object handle)`，括号中使用对象的句柄，本人简称为锁对象，不需要加类型修饰符，表示锁住的对象——即只针对相同的对象，一进程中的对应锁对象成功调用此synchronized修饰的代码块后，
 
 
