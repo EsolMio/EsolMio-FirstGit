@@ -39,6 +39,7 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 ![thread running pic_cn.jpg](1)
 
 ### 5. 线程进入阻塞(Blocked)状态的实现方法
-
+#### 运行优先级(priority)
+在Thread中有
 
 
