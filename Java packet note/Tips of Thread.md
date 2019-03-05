@@ -93,16 +93,16 @@ public static void f(){
 See code first:
 ```
 //class define ignore
-...
+//...
 public void doGet(HttpServletRequest request,
  HttpServletResponse response) throws IOException, ServletException{
     response.setContentType("text/html");
     PrintWriter out = =response.getWrite();
     out.println("text...<br>");
 
-    synchronized(getServletContext()){
+    synchronized(getServletContext()){//Attention! Big Tips!!!
         getServletContext().setAttribute("foo","22");
-        ...
+        //...
     }
 }
 ```
