@@ -110,4 +110,4 @@ public void doGet(HttpServletRequest request,
 根据本文上面的介绍，"使用synchronized(this){}" / "方法中直接使用synchronized修饰符的方法/代码块" 均是对同一定义本方法的对象采取同步限制。
 但synchronized(object)亦可使用其他对象的句柄(handle)，不局限于this。
 故可使用其他句柄当作锁变量，因限制于java语言规范，括号内调用何种句柄需代码中已申明（如定义，参数传入等等）或使用其他方法返回一个对象。
-本代码的精髓在于使用了对象成员方法返回一个对象的方式申明了synchronized对哪个对象锁定同步
+本代码的精髓在于使用了对象成员方法返回一个对象的方式申明了synchronized对哪个对象同步锁定。
