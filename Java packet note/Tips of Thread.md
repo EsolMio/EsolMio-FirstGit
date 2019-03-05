@@ -35,7 +35,7 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 `main()`方法在运行时会生成一个针对此方法的线程。而在启动时会同时生成`main()`线程和自定义（Thread）线程，执行顺序由哪个线程先获得CPU决定。
 
 ### 4. Java环境下进程运行示意图
-![thread running pic.png](0)
+![pic 1](https://raw.githubusercontent.com/EsolMio/EsolMio-FirstGit/master/Note_pic%20store/thread%20running%20pic.png?token=AhIdeIymJ5ZDwvOv2Og3cxEScQRiWgCxks5cfnPKwA%3D%3D)
 ![thread running pic_cn.jpg](1)
 
 tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根据优先级和获得CPU的speeeeeed
