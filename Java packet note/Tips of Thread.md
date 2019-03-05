@@ -99,8 +99,9 @@ public void doGet(HttpServletRequest request,
     response.setContentType("text/html");
     PrintWriter out = =response.getWrite();
     out.println("text...<br>");
-
-    synchronized(getServletContext()){//Attention! Big Tips!!!
+    
+    //Attention! Big Tips!!!
+    synchronized(getServletContext()){
         getServletContext().setAttribute("foo","22");
         //...
     }
