@@ -95,5 +95,8 @@ See code first:
 //class define ignore
 ...
 public void doGet(HttpServletRequest request,
- HttpServletResponse response) throws IOException, Servlet
+ HttpServletResponse response) throws IOException, ServletException{
+    response.setContentType("text/html");
+    PrintWritert
+}
 ```
