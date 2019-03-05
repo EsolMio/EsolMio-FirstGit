@@ -107,4 +107,5 @@ public void doGet(HttpServletRequest request,
     }
 }
 ```
-根据本文上面的介绍，"使用synchronized(this){}" / "方法中直接使用synchronized修饰符的方法/代码块"均是对同一定义本方法的对象采取同步限制。
+根据本文上面的介绍，"使用synchronized(this){}" / "方法中直接使用synchronized修饰符的方法/代码块" 均是对同一定义本方法的对象采取同步限制。
+但synchronized()
