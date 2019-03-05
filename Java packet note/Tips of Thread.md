@@ -94,5 +94,6 @@ See code first:
 ```
 //class define ignore
 ...
-public void doGet(Http)
+public void doGet(HttpServletRequest request,
+ HttpServletResponse response) throws IOException, Servlet
 ```
