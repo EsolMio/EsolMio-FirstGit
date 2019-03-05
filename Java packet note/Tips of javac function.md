@@ -9,5 +9,10 @@
    - 指定输出.class文件位置，缺省值为与.java文件相同的根目录下
 - 在windows下使用多个路径使，用";"分隔，在linux下使用":"分隔。
 
+# Java的用法
+- 使用`java`时，需注意调用的class文件的名称应为：`full package name.class name` -> example: `com.test.ThreadTest`.
+  attention: 无文件后缀.class，且运行时直接在package的相对根目录运行。如上"Javac"解释。
+  example `javac com.test.ThreadTest`
+
 ### Pic of test RESULT
-![SharedScreenshot.jpg](0) 
+
