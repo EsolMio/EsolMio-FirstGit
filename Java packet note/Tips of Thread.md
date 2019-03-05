@@ -107,3 +107,4 @@ public void doGet(HttpServletRequest request,
     }
 }
 ```
+根据本文上面的介绍，使用synchronized(this){}/方法中直接使用synchronized
