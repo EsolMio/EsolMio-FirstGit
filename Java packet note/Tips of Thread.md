@@ -36,7 +36,7 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 
 ### 4. Java环境下进程运行示意图
 ![pic 1](https://raw.githubusercontent.com/EsolMio/EsolMio-FirstGit/master/Note_pic%20store/thread%20running%20pic.png?token=AhIdeIymJ5ZDwvOv2Og3cxEScQRiWgCxks5cfnPKwA%3D%3D)
-![thread running pic_cn.jpg](1)
+![pic 2](https://raw.githubusercontent.com/EsolMio/EsolMio-FirstGit/master/Note_pic%20store/thread%20running%20pic_cn.jpg?token=AhIdeG3qXoyYSEFMKPYvmFDTi_pcbKDaks5cfnRSwA%3D%3D)
 
 tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根据优先级和获得CPU的speeeeeed
 但进入阻塞blocked的均需要返回至Runnable方有机会
@@ -88,3 +88,5 @@ public static void f(){
 }
 ```
 实际效果与上相同，锁对象的作用效果为类的对象（.class），针对类型起作用（同类型使用则上锁）。
+
+### Big Tips From "Head First Servlet"
