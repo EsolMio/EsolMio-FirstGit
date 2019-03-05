@@ -97,6 +97,9 @@ See code first:
 public void doGet(HttpServletRequest request,
  HttpServletResponse response) throws IOException, ServletException{
     response.setContentType("text/html");
-    PrintWritert
+    PrintWriter out = =response.getWrite();
+    out.println("text...<br>");
+
+    synchronized
 }
 ```
