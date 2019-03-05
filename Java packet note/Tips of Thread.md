@@ -100,6 +100,9 @@ public void doGet(HttpServletRequest request,
     PrintWriter out = =response.getWrite();
     out.println("text...<br>");
 
-    synchronized
+    synchronized(getServletContext()){
+        getServletContext().setAttribute("foo","22");
+        ...
+    }
 }
 ```
