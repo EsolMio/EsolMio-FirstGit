@@ -89,7 +89,7 @@ public static void f(){
 ```
 实际效果与上相同，锁对象的作用效果为类的对象（.class），针对类型起作用（同类型使用则上锁）。
 
-### Big Tips From "Head First Servlet & JSP"
+### 7. Big Tips From "Head First Servlet & JSP"
 See code first:
 ```
 //class define ignore
