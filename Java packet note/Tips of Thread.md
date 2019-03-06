@@ -134,4 +134,4 @@ From "Thing in Java"
 
   获得对象监视器的方法：
   - 线程执行指定对象的同步方法（synchronized修饰的成员方法）
-  - 线程
+  - 线程执行指定对象的synchronized代码块，且锁对象为指定对象
