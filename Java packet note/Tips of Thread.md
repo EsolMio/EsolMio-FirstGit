@@ -130,7 +130,7 @@ public void doGet(HttpServletRequest request,
   >wait()和 notify()比较特别的一个地方是这两个方法都属于基础类 Object 的一部分，不象sleep()，
 suspend()以及resume()那样属于Thread 的一部分。尽管这表面看有点儿奇怪——居然让专门进行线程处理的东西成为通用基础类的一部分——但仔细想想又会释然，因为它们操纵的对象锁也属于每个对象的一部分。
 From "Thing in Java"
-- 在指定对象上使用`wait()`, `notify()`, `notifyAll()`时，使用此方法时当前线程需拥有此对象的监视器(Monitor)。
+- 在指定对象上使用`wait()`, `notify()`, `notifyAll()`时，使用此方法时当前线程需拥有此对象的监视器(Monitor)。Tips：此时无论synchronized()中的锁对象句柄的名称为何，只要
 
   获得对象监视器的方法：
   - 线程执行指定对象的同步方法（synchronized修饰的成员方法）
