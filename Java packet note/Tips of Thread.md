@@ -117,3 +117,4 @@ public void doGet(HttpServletRequest request,
 
 ### 8. 关于`main()`线程与其他线程的关系, `sleep()`
 - 在JVM Running 时，`main()`拥有的优先级最高，JVM最先执行`main()`，倘若此时建立了其他线程，线程也会停留于Runnable状态。
+- 若在
