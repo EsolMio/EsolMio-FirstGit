@@ -124,5 +124,6 @@ public void doGet(HttpServletRequest request,
 - Tips of `sleep(long millies)`：当`sleep(long millies)`中的秒数跑完后，阻塞的线程不一定会立刻运行，会先进入Runnable，通过优先级判断是否继续（如`main()`阻塞结束后会立刻运行）。
 - Tips of `run()`：Thread创建的线程对象在运行时均是执行`run()`语句，`run()`结束表示线程终结。
 
-### 9. `wait()`, `wait()(`
-
+### 9. `wait()`, `notify()`, `notifyAll()`
+- `wait()`, `notify()`, `notifyAll()`三个方法均位于Object对象中，使用于全部的对象。
+>
