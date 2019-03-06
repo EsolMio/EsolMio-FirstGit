@@ -132,5 +132,6 @@ suspend()以及resume()那样属于Thread 的一部分。尽管这表面看有�
 From "Thing in Java"
 - 在指定对象上使用`wait()`, `notify()`, `notifyAll()`时，使用此方法时当前线程需拥有此对象的监视器(Monitor)。
 
-  获得监视器的方法：
-  - 
+  获得对象监视器的方法：
+  - 线程执行指定对象的同步方法（synchronized修饰的成员方法）
+  - 线程
