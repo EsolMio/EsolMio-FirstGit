@@ -60,7 +60,7 @@ code:
 ```
 //code 1
 void f(){
-    synchronized(object handle){
+    synchronized(this){
         //do code
     }
 }
