@@ -136,4 +136,5 @@ From "Thing in Java"
   - 线程执行指定对象的同步方法（synchronized修饰的成员方法）
   - 线程执行指定对象的synchronized代码块，且锁对象为指定对象
   - 对于`Class`类对象，可执行synchronized修饰的类方法。
-- 正式调用以上三个方法时也需要在
+- 正式调用以上三个方法时也需要在synchronized修饰的方法/代码块中使用
+- 
