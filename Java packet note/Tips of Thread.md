@@ -115,7 +115,7 @@ public void doGet(HttpServletRequest request,
 
 **Total**： 上述代码意图于，进程对象通过某种方式（如上述的`getServletContext()`）获得一对象，若此对象对应synchronized()中定义的同步锁对象，将会触发同步锁对象的"监视器",若有其他线程使用了此synchronized语句块，则后者线程阻塞，等待前者运行完成。
 
-### 8. 关于`main()`线程与其他线程的关系, `sleep()`
+### 8. 关于`main()`线程与其他线程的关系, `sleep()`，`run()`
 - 在JVM Running 时，`main()`拥有的优先级最高，JVM最先执行`main()`，倘若此时建立了其他线程，线程也会停留于Runnable状态。
 - 若在mian()运行期间使用了`Thread.sleep(long millies)`，会将运行中的线程（只有main()一个，于JVM中）进入sleep阻塞。随后运行位于Runnable的线程（根据优先级/speeeeeed）
-- Tips of `sleep(long )`：当`sleep(long millies)`
+- Tips of `sleep(long millies)`：当`sleep(long millies)`中的秒数跑完后，阻塞的线程不一定会立刻运行，会先进入Runnable，通过优先级判断是否继续（如`main()`阻塞结束后会立刻运行）。
