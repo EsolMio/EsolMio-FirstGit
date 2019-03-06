@@ -119,4 +119,4 @@ public void doGet(HttpServletRequest request,
 - 在JVM Running 时，`main()`拥有的优先级最高，JVM最先执行`main()`，倘若此时建立了其他线程，线程也会停留于Runnable状态。
 - 若在mian()运行期间使用了`Thread.sleep(long millies)`，会将运行中的线程（只有main()一个，于JVM中）进入sleep阻塞。随后运行位于Runnable的线程（根据优先级/speeeeeed）
 - Tips of `sleep(long millies)`：当`sleep(long millies)`中的秒数跑完后，阻塞的线程不一定会立刻运行，会先进入Runnable，通过优先级判断是否继续（如`main()`阻塞结束后会立刻运行）。
-- Tips of `run()`：Thread创建的对象都是在
+- Tips of `run()`：Thread创建的线程对象在运行时均是执行`run()`语句，`run()`结束表示线程终结。
