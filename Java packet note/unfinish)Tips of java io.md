@@ -11,3 +11,6 @@
 ## 常见的底层输入流
 FileInputStream/FileOutputStream
 ByteArrayInputStream/ByteArrayOutputStream
+
+## `OutputStream` 中的 `flush()`
+- 使用`flush`
