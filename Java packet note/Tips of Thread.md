@@ -137,4 +137,5 @@ From "Thing in Java"
   - 线程执行指定对象的synchronized代码块，且锁对象为指定对象
   - 对于`Class`类对象，可执行synchronized修饰的类方法。
 - 正式调用以上三个方法时也需要在synchronized修饰的方法/代码块中使用
-- 对于调用
+- 对于指定对象调用`wait()`时，**拥有此对象**的线程都会受到`wait()`影响。
+- 
