@@ -10,5 +10,9 @@
      //'?'之后均为参数（Parameter），使用'&'分隔多个参数
 
      //POST
-     POST /
+     POST /advisor/selectBeer.do HTTP1.1
+     //Header...
+     
+     color=dark&taste=malty
+     //
      ```
