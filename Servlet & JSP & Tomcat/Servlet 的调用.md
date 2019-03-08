@@ -10,4 +10,6 @@
 - 容器创建了：`HttpServletRequest`对象，`HttpServletResponse`对象。
 - 容器通过调用了servlet的`service(request，response)`方法将请求对象和响应对象传递至servlet
 
+详情参考"Head First servlet" p95-96
+
 

@@ -5,3 +5,4 @@
 - web容器调用servlet继承的`service()`方法，servlet的一生都在这个方法中度过，此方法会调用servlet中的`doGet()` / `doPost()`方法。用于处理用户的请求
 - 调用servlet的`destory()`方法，回收servlet。**只调用一次** 
 
+参考"Head First servlet" p97
