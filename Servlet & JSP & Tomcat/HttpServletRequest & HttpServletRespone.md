@@ -17,4 +17,5 @@
      //信息体，或称为负载
      ```
      - Tips：GET和POST之间的区别
-       GET和POST都能发送参数（Parameter），但POST将参数
+       GET和POST都能发送参数（Parameter），但POST将参数放置在
+       信息体中，
