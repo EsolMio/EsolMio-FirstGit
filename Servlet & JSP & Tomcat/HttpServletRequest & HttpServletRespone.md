@@ -4,4 +4,7 @@
   -  `getParameter() return String `, `getParameterValues() return String[] `, `getParameterNames() return Enumeration `
      这些方法都是返回从HTTP方法GET/POST中获得的参数
      example：
-     
+     ```
+     GET:
+     GET /select/selcetBeer.jsp?
+     ```
