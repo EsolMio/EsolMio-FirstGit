@@ -7,5 +7,8 @@
      ```
      //GET:
      GET /select/selcetBeer.jsp?color=dark&taste=malty HTTP/1.1
-     //'?'之后
+     //'?'之后均为参数（Parameter），使用'&'分隔多个参数
+
+     //POST
+     POST /
      ```
