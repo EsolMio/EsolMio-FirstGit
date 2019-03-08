@@ -2,8 +2,8 @@
 ### HttpServletRequest
 - 包含的几个主要使用的方法（**Remember**）：
   -  `getParameter() return String `, `getParameterValues() return String[] `, `getParameterNames() return Enumeration `
-     这些方法都是返回从HTTP方法GET/POST中获得的参数
-     example：
+     这些方法都是返回从HTTP方法**GET/POST**中获得的参数
+     - example：
      ```
      //GET:
      GET /select/selcetBeer.jsp?color=dark&taste=malty HTTP/1.1
@@ -14,5 +14,6 @@
      //Header...
      
      color=dark&taste=malty
-     //
+     //信息体，或称为负载
      ```
+     - 
