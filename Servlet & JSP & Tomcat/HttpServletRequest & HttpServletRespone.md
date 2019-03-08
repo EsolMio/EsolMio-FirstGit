@@ -5,6 +5,7 @@
      这些方法都是返回从HTTP方法GET/POST中获得的参数
      example：
      ```
-     GET:
-     GET /select/selcetBeer.jsp?
+     //GET:
+     GET /select/selcetBeer.jsp?color=dark&taste=malty HTTP/1.1
+     //'?'之后
      ```
