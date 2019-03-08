@@ -5,3 +5,4 @@
 4. `service()`根据User的HTTP方法(GET/POST) -> 调用相应的Servlet方法(doGET/doPOST)
 5. Servlet -> `HttpServletReponse` -> User
 6. `service()`结束，对象回收
+
