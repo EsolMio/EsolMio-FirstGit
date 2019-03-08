@@ -42,7 +42,7 @@
   - `sendRedirect(String path)`, 重定向一个URL，将此URL返回至客户。
   - 待补充...
 
-### 
+### 为何会有一个GenericServlet，ServletRequest，ServletResponse三个类/接口，不是
 
 
 
