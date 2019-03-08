@@ -27,4 +27,5 @@
   - `removeAttribute(String name)`, 移除request中的对应属性
    （对应String name）。
   - `getRequestDispatcher(String path)`, path对应需要接收
-    request请求的文件（如JSP，other servlet等）。
+    request请求的文件（如JSP，other servlet等），返回一个
+    RequestDispatcher对象。
