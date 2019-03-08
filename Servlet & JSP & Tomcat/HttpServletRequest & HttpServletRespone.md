@@ -34,7 +34,7 @@
   - 待补充...
 - 待补充...
 
-### HttpServletReponse
+### HttpServletResponse
 - 包含的几个重要方法（Remember）：
   - 
 
