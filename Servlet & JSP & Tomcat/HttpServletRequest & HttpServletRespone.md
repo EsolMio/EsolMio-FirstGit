@@ -40,9 +40,9 @@
   - `getWriter()`, 获得一个字符输出流，专门用于处理Unicode系字符，返回一个`PrintWriter`对象。
   - `getOutputStream()`, 获得一个输出流，返回一个`ServletOutputStream`对象。
   - `sendRedirect(String path)`, 重定向一个URL，将此URL返回至客户。
-  - 待补充...
 
-### 为何会有一个GenericServlet，ServletRequest，ServletResponse三个类/接口，不是
+### 为什么会有GenericServlet，ServletRequest，ServletResponse
+
 
 
 
