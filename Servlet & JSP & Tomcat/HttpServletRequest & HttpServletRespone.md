@@ -42,7 +42,7 @@
   - `sendRedirect(String path)`, 重定向一个URL，将此URL返回至客户。
 
 ### 为什么会有GenericServlet，ServletRequest，ServletResponse类/接口？不是只有Http系的类/接口就可以了吗？
-提供了灵活性，以适应需要
+提供了灵活性，以适应需要使用其他协议的servlet。
 
 
 
