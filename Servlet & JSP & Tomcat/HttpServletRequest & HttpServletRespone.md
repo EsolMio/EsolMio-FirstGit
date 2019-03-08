@@ -19,6 +19,8 @@
      - Tips：GET和POST之间的区别
        GET和POST都能发送参数（Parameter），但POST将参数放置在
        信息体中，并不直接显示在URL地址栏中。
-  - `getAttribute(String name)`， 用于获得request属性，返回为
-    `Object`对象
-  - `setAttribute(String name, Object object)`, **Attention:** 方法内参数有两个，对应Attribute
+  - `getAttribute(String name)`， 用于获得request属性，返回
+  为`Object`对象
+  - `setAttribute(String name, Object value)`, 
+  **Attention:** 方法内参数有两个，对应Attribute的**名称**和
+  **值**。
