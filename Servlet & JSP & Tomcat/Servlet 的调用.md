@@ -7,6 +7,7 @@
 6. `service()`结束，对象回收
 
 # 调用servlet时容器创建了什么
-容器创建了：`HttpServletRequest`对象，`HttpServletResponse`对象。
+- 容器创建了：`HttpServletRequest`对象，`HttpServletResponse`对象。
+- 容器通过调用了servlet的``
 
 
