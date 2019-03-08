@@ -41,7 +41,8 @@
   - `getOutputStream()`, 获得一个输出流，返回一个`ServletOutputStream`对象。
   - `sendRedirect(String path)`, 重定向一个URL，将此URL返回至客户。
 
-### 为什么会有GenericServlet，ServletRequest，ServletResponse
+### 为什么会有GenericServlet，ServletRequest，ServletResponse类/接口？不是只有Http系的类/接口就可以了吗？
+提供了灵活性，以适应需要
 
 
 
