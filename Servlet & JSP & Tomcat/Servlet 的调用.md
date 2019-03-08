@@ -6,3 +6,7 @@
 5. Servlet -> `HttpServletReponse` -> User
 6. `service()`结束，对象回收
 
+# 调用容器创建了什么
+
+
+
