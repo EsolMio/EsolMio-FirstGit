@@ -21,4 +21,4 @@
        信息体中，并不直接显示在URL地址栏中。
   - `getAttribute(String)`， 用于获得request属性，返回为
     `Object`对象
-  - `setAttribute`
+  - `setAttribute(String name, Object object)`
