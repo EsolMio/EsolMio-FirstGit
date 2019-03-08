@@ -24,4 +24,4 @@
   - `setAttribute(String name, Object value)`, 
   **Attention:** 方法内参数有两个，对应Attribute的**名称**和
   **值**。
-  - 
+  - `removeAttribute(String name)`, 移除request中的属性
