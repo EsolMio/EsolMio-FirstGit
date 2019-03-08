@@ -36,7 +36,7 @@ tipss：Thread和Runnable不为同一类型（很傻的提示...）
 
 ### 4. Java环境下进程运行示意图
 ![pic 1](https://raw.githubusercontent.com/EsolMio/EsolMio-FirstGit/master/Note_pic%20store/thread%20running%20pic.png?token=AhIdeIymJ5ZDwvOv2Og3cxEScQRiWgCxks5cfnPKwA%3D%3D)
-![pic 2](https://raw.githubusercontent.com/EsolMio/EsolMio-FirstGit/master/Note_pic%20store/thread%20running%20pic_cn.jpg?token=AhIdeG3qXoyYSEFMKPYvmFDTi_pcbKDaks5cfnRSwA%3D%3D)
+![pic 2](https://raw.githubusercontent.com/EsolMio/EsolMio-FirstGit/master/Note_p![thread running pic.png](0)ic%20store/thread%20running%20pic_cn.jpg?token=AhIdeG3qXoyYSEFMKPYvmFDTi_pcbKDaks5cfnRSwA%3D%3D)
 
 tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根据优先级和获得CPU的speeeeeed
 但进入阻塞blocked的均需要返回至Runnable方有机会
