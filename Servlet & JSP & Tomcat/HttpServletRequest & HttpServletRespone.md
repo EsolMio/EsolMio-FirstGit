@@ -28,15 +28,14 @@
    （对应String name）。
   - `getRequestDispatcher(String path)`, path对应需要接收
     request请求的文件（如JSP，other servlet等），返回一个
-    RequestDispatcher对象。
+    `RequestDispatcher`对象。
   - `getInputStream()`, 获得一个IO输入流，返回
-    ServletInputStream对象。
+    `ServletInputStream`对象。
   - 待补充...
 - 待补充...
 
 ### HttpServletResponse
 - 包含的几个重要方法（Remember）：
-  - `getWriter()`, 获得一个字符输出流，专门用于处理Unicode系
-    字符，返回一个
+  - `getWriter()`, 获得一个字符输出流，专门用于处理Unicode系字符，返回一个`PrintWriter`对象。
 
 
