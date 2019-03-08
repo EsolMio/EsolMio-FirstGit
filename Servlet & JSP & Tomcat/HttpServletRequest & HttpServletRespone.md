@@ -37,5 +37,6 @@
 ### HttpServletResponse
 - 包含的几个重要方法（Remember）：
   - `getWriter()`, 获得一个字符输出流，专门用于处理Unicode系字符，返回一个`PrintWriter`对象。
+  - get
 
 
