@@ -31,12 +31,14 @@
     `RequestDispatcher`对象。
   - `getInputStream()`, 获得一个IO输入流，返回
     `ServletInputStream`对象。
+  - ``
   - 待补充...
 - 待补充...
 
 ### HttpServletResponse
 - 包含的几个重要方法（Remember）：
   - `getWriter()`, 获得一个字符输出流，专门用于处理Unicode系字符，返回一个`PrintWriter`对象。
-  - `getOutputStream()`, 获得一个输出流，返回一个`Servle`
+  - `getOutputStream()`, 获得一个输出流，返回一个`ServletOutputStream`对象。
+  - 
 
 
