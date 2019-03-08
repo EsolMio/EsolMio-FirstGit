@@ -26,3 +26,4 @@
   **值**。
   - `removeAttribute(String name)`, 移除request中的对应属性
    （对应String name）。
+  - `getRequestDispatcher(String path)`, path对应需要接收
