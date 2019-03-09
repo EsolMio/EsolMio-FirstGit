@@ -8,6 +8,9 @@
 ### ServletContext
 - `ServletContext`作用于全部web应用（servlet & JSP）。在DD中配置Context，**不嵌套在`<servlet></servlet>`中**，使用`<context-param></context-param>`包裹，`<param-name></param-name>`确定参数名称,`<param-value></param-value>`确定参数值。
 
+### ServletContextListener
+
+
 
 ### 图示ServletConfig和ServletContext的差距
 
