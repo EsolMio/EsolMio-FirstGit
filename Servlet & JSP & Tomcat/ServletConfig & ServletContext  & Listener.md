@@ -10,7 +10,9 @@
 
 ****
 ### ServletContext ServletConfig 的可见性，作用域（生存周期）
-| |可见性|||||
+|  | 可见性 | 作用域 | 适用于 |
+| :--:|
+
 
 ******
 ### ServletContextListener
