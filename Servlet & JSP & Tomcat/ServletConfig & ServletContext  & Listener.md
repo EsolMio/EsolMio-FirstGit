@@ -10,10 +10,9 @@
 
 ****
 ### ServletContext ServletConfig 的可见性，作用域（生存周期）
-| |可访问性|作用域|适用于...|
-|-|-|-|-|
-|context|Web应用的所有部分，|content3|
-|context|servlet，jsp，监听器|
+- `Context`：
+    - 可访问性：对所有的web应用，如：servlet，jsp，
+
 
 
 
