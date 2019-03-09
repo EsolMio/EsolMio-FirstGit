@@ -14,7 +14,7 @@
     - 可访问性：对所有的web应用，如：servlet，jsp，`ServletContextListener`, `ServletContextAttributeListener`。
     - 作用时间：其生命周期意味着所部署应用的生命周期，即调用此Context的应用。若服务器/应用关闭，则Context销毁。
     - 适用于：设置email，连接数据库等。
-
+- `HttpSession
 
 
 
