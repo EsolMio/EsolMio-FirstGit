@@ -10,6 +10,6 @@
 
 
 ### 图示ServletConfig和ServletContext的差距
-![config context.jpg](0)
+
 
 
