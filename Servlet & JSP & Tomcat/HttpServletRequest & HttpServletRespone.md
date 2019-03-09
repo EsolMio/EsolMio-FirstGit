@@ -1,6 +1,6 @@
 # HttpServletRequest & HttpServletRespone
 ### HttpServletRequest
-- 包含的几个主要使用的方法（**Remember**）：
+- 包含的几个主要使用的方法，包括继承下来的（**Remember**）：
   -  `getParameter(String name) return String `, `getParameterValues(String name) return String[] ` **Tips**:此方法用于返回**一个参数**带有**多个值**的情况, `getParameterNames() return Enumeration `
      这些方法都是返回从HTTP方法**GET/POST**中获得的参数
      - example：
@@ -32,6 +32,7 @@
   - `getInputStream()`, 获得一个IO输入流，返回
     `ServletInputStream`对象。
   - `getReader()`, 获得一个字符输入流，返回一个`BufferReader`对象。
+  - `getServerPort()`
   - 与HTTP有关的方法，详见"Head First servlet" p122
   - 待补充...
 - 待补充...
