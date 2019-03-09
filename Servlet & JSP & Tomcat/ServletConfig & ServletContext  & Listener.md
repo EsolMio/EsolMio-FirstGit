@@ -10,8 +10,11 @@
 
 ****
 ### ServletContext ServletConfig 的可见性，作用域（生存周期）
-|  | 可见性 | 作用域 | 适用于 |
-| :--:|
+|column1|column2|column3|
+|-|-|-|
+|content1|content2|content3|
+|-|-
+
 
 
 ******
