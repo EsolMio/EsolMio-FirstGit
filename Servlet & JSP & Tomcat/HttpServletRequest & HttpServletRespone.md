@@ -34,7 +34,7 @@
   - `getReader()`, 获得一个字符输入流，返回一个`BufferReader`对象。
   - `getServerPort()`, `getLocalPort()`, `getRemotePort()`的区别：
      - `getRemotePort()`, 获得远程的端口，"远程"是相对容器而言的远程端，即客户，转言即远程=客户。
-     - `getLocalPort()`, `getServerPort()`, 前者指"请求最后送到哪个端口"，后者指"请求原本发送到哪个端口"。二者之所以有区别在于对于服务器而言，每个请求都发送大
+     - `getLocalPort()`, `getServerPort()`, 前者指"请求最后送到哪个端口"，后者指"请求原本发送到哪个端口"。二者之所以有区别在于对于服务器而言，每个请求都发送到**同一个**端口（即服务器监听的端口），但为了满足多请求处理（多线程），
 
   - 与HTTP有关的方法，详见"Head First servlet" p122
   - 待补充...
