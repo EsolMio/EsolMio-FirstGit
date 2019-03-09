@@ -46,7 +46,7 @@
   - `getOutputStream()`, 获得一个输出流，返回一个`ServletOutputStream`对象。
   - `sendRedirect(String path)`, 重定向一个URL，将此URL返回至客户。
   - `setContentType(String type)`, 设置返回客户响应的文件类型，type使用MIME类型，常见的MIME类型有：text/html, application.pdf, image/jpeg...
-  - `setHeader(String name, String value)`, `addHeader(String name,String value)`, `setIntHeader(String name, int num)`, set方法用于往HTTP头部对应的参数名设置参数，**若无对应则添加新值**；add方法用于往HTTP
+  - `setHeader(String name, String value)`, `addHeader(String name,String value)`, `setIntHeader(String name, int num)`, set方法用于往HTTP头部对应的参数名设置参数，**若无对应则添加新参数**；add方法用于往HTTP头部对应的参数值**添加**属性，**若无则添加新参数**。
   - 待补充...
 
 ### 为什么会有GenericServlet，ServletRequest，ServletResponse类/接口？不是只有Http系的类/接口就可以了吗？
