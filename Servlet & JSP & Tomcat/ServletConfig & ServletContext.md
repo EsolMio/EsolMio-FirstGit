@@ -13,7 +13,7 @@
 - 使用Listener需要三步：
     1. 创建一个监听类，实现 ( implements ) ServletContextListener接口，其中要实现`contextInitialized(ServletContextEvent)` 和 `contextDestroyed(ServletContextEvent)`。
     2. 将监听类放置于WEB-INF/classes下。
-    3. 在DD（部署描述文件）中放置
+    3. 在DD（部署描述文件）中放置`<listener></listener>`，其中包括了`<listener-class></listener-class>`标签，用于申明使用了哪个
 
 
 
