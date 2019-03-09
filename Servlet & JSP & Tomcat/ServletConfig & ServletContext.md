@@ -11,8 +11,8 @@
 ### ServletContextListener
 - 用于监听ServletContext的生命周期，即在**创建新的**ServletContext对象后会调用此监听
 - 使用Listener需要三步：
-    1. 创建一个监听类，实现 ( implements ) ServletContextListener接口。
-    2. 将监听类放置于
+    1. 创建一个监听类，实现 ( implements ) ServletContextListener接口，其中要实现`contextInitialized(Servlet)`。
+    2. 将监听类放置于WEB-INF/classes下
 
 
 
