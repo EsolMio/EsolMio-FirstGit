@@ -33,7 +33,7 @@
     `ServletInputStream`对象。
   - `getReader()`, 获得一个字符输入流，返回一个`BufferReader`对象。
   - `getServerPort()`, `getLocalPort()`, `getRemotePort()`的区别：
-     - `getRemotePort()`, 获得远程
+     - `getRemotePort()`, 获得远程的端口，"远程"是相对容器而言的远程端，即客户，
 
   - 与HTTP有关的方法，详见"Head First servlet" p122
   - 待补充...
