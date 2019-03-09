@@ -32,7 +32,8 @@
   - `getInputStream()`, 获得一个IO输入流，返回
     `ServletInputStream`对象。
   - `getReader()`, 获得一个字符输入流，返回一个`BufferReader`对象。
-  - `getServerPort()`, `getLocalPort()`, `getRemotePort()`
+  - `getServerPort()`, `getLocalPort()`, `getRemotePort()`的区别：
+  - 
   - 与HTTP有关的方法，详见"Head First servlet" p122
   - 待补充...
 - 待补充...
