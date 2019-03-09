@@ -9,12 +9,14 @@
 - `ServletContext`作用于全部web应用（servlet & JSP）。在DD中配置Context，**不嵌套在`<servlet></servlet>`中**，使用`<context-param></context-param>`包裹，`<param-name></param-name>`确定参数名称,`<param-value></param-value>`确定参数值。
 
 ****
-### ServletContext ServletConfig 的可见性，作用域（生存周期）
+### 的可见性，作用域（生存周期）
 - `Context`：
     - 可访问性：对所有的web应用，如：servlet，jsp，`ServletContextListener`, `ServletContextAttributeListener`。
     - 作用时间：其生命周期意味着所部署应用的生命周期，即调用此Context的应用。若服务器/应用关闭，则Context销毁。
     - 适用于：设置email，连接数据库等。
-- `HttpSession
+- `HttpSession`：
+    - 可访问性：对特定会话的所有servlet和jsp，即拥有同个HttpSession对象
+
 
 
 
