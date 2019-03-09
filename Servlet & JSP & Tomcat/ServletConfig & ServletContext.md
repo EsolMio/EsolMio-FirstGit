@@ -10,6 +10,7 @@
 
 ### ServletContextListener
 - 用于监听ServletContext的生命周期，即在**创建新的**ServletContext对象后会调用此监听
+- 使用listenner
 
 
 
