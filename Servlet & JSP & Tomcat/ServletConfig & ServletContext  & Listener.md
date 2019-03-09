@@ -1,4 +1,4 @@
-# ServletConfig & ServletContext
+# ServletConfig & ServletContext & Listener
 ### ServletConfig
 - `ServletConfig`作用于单独的一个servlet，对servlet的配置参数的申明与配置需在DD（web.xml）中`<servlet></servlet>`中使用`<init-param></init-param>`标签包裹，使用`<param-name></param-name>`确定参数名称，使用`<param-value></param-value>`确定参数值。
 - 在ServletConfig中参数名和参数值均是以String对象存储的。
@@ -15,6 +15,11 @@
     2. 将监听类放置于WEB-INF/classes下。
     3. 在DD（部署描述文件）中放置`<listener></listener>`，其中包括了`<listener-class></listener-class>`标签，用于申明使用了哪个监听类，如：`<listener-class> com.example.MyListener </listener-class>`
 - 监听类中的方法可使用自变量参数获得相应的监听对象，如`contextInitialized(ServletContextEvent event)`中获得了`ServletContextEvent` event对象，通过`event.getServletContext()`获得一个ServletContext对象。
+
+### Other Listener
+- 属性监听者：
+    - 
+
 
 
 
