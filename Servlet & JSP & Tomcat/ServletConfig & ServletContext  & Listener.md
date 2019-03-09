@@ -13,7 +13,7 @@
 | |可访问性|作用域|适用于...|
 |-|-|-|-|
 |context|Web应用的所有部分，|content3|
-|
+|context|servlet，jsp，监听器|
 
 
 
