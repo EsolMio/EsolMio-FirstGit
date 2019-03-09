@@ -11,7 +11,8 @@
 ****
 ### ServletContext ServletConfig 的可见性，作用域（生存周期）
 - `Context`：
-    - 可访问性：对所有的web应用，如：servlet，jsp，
+    - 可访问性：对所有的web应用，如：servlet，jsp，`ServletContextListener`, `ServletContextAttributeListener`
+    - 作用时间：其生命周期
 
 
 
