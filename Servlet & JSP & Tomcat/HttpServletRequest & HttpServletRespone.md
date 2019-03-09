@@ -1,7 +1,7 @@
 # HttpServletRequest & HttpServletRespone
 ### HttpServletRequest
 - 包含的几个主要使用的方法（**Remember**）：
-  -  `getParameter(String name) return String `, `getParameterValues(String name) return String[] ` **Tips**:此方法用于返回**一个参数**带有**多个值**, `getParameterNames() return Enumeration `
+  -  `getParameter(String name) return String `, `getParameterValues(String name) return String[] ` **Tips**:此方法用于返回**一个参数**带有**多个值**的情况, `getParameterNames() return Enumeration `
      这些方法都是返回从HTTP方法**GET/POST**中获得的参数
      - example：
      ```
