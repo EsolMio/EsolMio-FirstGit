@@ -45,6 +45,7 @@
   - `getWriter()`, 获得一个字符输出流，专门用于处理Unicode系字符，返回一个`PrintWriter`对象。
   - `getOutputStream()`, 获得一个输出流，返回一个`ServletOutputStream`对象。
   - `sendRedirect(String path)`, 重定向一个URL，将此URL返回至客户。
+  - `setContentType(String type)`
 
 ### 为什么会有GenericServlet，ServletRequest，ServletResponse类/接口？不是只有Http系的类/接口就可以了吗？
 提供了灵活性，以适应需要使用其他协议的servlet。
