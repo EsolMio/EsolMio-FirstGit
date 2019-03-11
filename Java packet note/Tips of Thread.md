@@ -148,7 +148,8 @@ From "Thing in Java"
 - 每个`Thread`对象中均有获得对应/包含于的`ThreadGroup`对象方法：`getThreadGroup()`
 - 通过`getParent()`获得上一级（父）的线程组
 
-**`ThreadGroup`中一些方法的解释**
+**`ThreadGroup`中一些方法的解释**：
+- 在构建子类线程组时，子类
 
 
 ### 11. IO堵塞
