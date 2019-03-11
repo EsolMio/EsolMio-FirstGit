@@ -16,5 +16,5 @@ ByteArrayInputStream/ByteArrayOutputStream
 - 使用`flush()`后，原本存储于Byte的字节数据会**被直接强制输出至目的地**，需注意！
 
 ## `PipedWriter`, `PipedReader`进程间的管道流
-
+- 构建
 
