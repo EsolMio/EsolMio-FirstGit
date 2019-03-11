@@ -153,4 +153,8 @@ From "Thing in Java"
     1. 底层文件无字符时，此时拥有`Reader`的线程调用此文件( `read()` )，会堵塞。
     2. 多个拥有`Reader` / `Writer`的线程同时涌向一个底层文件读取/输出时，会根据优先级和速度评判堵塞状况。
 
+## `interrupt()`, Thread对象中断
+若发生
+
+
 

@@ -18,3 +18,6 @@ ByteArrayInputStream/ByteArrayOutputStream
 ## `PipedWriter`, `PipedReader`进程间的管道流
 - 构建`PipedWriter`, `PipedReader`十分简单，只需要前者直接使用`PipedWriter out = new PipedWriter();`, 而**只有**后者需要用到前者的对象作为参数以实现管道通信`PipedReader in = new PipedReader(out)；`
 
+
+
+
