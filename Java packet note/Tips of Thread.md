@@ -148,6 +148,9 @@ From "Thing in Java"
 - 每个`Thread`对象中均有获得对应/包含于的`ThreadGroup`对象方法：`getThreadGroup()`
 - 通过`getParent()`获得上一级（父）的线程组
 
+**`ThreadGroup`中一些方法的解释**
+
+
 ### 11. IO堵塞
 - 在对同一底层文件调用输入流和输出流时（如`Reader`, `Writer`）(均在不同线程中)，一下情况会造成拥堵
     1. 底层文件无字符时，此时拥有`Reader`的线程调用此文件( `read()` )，会堵塞。
