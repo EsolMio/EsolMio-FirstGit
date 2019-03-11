@@ -141,9 +141,13 @@ From "Thing in Java"
 - `notifyAll()`为唤醒当前在此对象的监视器上执行等待的全部线程。
 - **Attention**: 使用`notify()` / `notifyAll()`激活的线程均会重新回到Runnable，等到执行时会**重新运行** `run()` 。
 
-### 10.`ThreadGroup`
+### 10. `ThreadGroup`
 **ATTENTION**, 留意`com.TIJ_C14_Multithread.TIJCode_TestAccess_ThreadGroup`文件中的代码，里面有遗留下来的继承的致命性问题
 - **Attention:** `ThreadGroup`允许线程访问有关其自己的线程组的信息，但不允许访问有关其线程组的父线程组或任何其他线程组的信息。即不可向上或跳出访问
 - 使用`ThreadGroup(String groupName)` / `ThreadGroup(ThreadGroup parentGroup, String groupName)`创建`ThreadGroup`对象。
 - 每个`Thread`对象中均有获得对应/包含于的`ThreadGroup`对象方法：`getThreadGroup()`
 - 通过`getParent()`获得上一级（父）的线程组
+
+### 11. IO堵塞
+
+
