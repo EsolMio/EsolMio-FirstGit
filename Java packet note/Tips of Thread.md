@@ -149,5 +149,5 @@ From "Thing in Java"
 - 通过`getParent()`获得上一级（父）的线程组
 
 ### 11. IO堵塞
-
+在对同一底层文件调用输入流和输出流时（如`Reader`, `Writer`），
 
