@@ -1,1 +1,2 @@
 # Http Session
+会话中会经常使用到cookie，对cookie的处理均由容器统一处理
