@@ -13,4 +13,4 @@
 - `getLastAccessedTime()`：返回容器最后一次收到此会话用户请求后过去的时间，`return long`，以毫秒为单位。
 - `setMaxInactiveTime(int interval)`：设置此会话客户请求的最长间隔时间（即session的生存时间），以秒为单位。
 - `getMaxInactiveInterval()`：获得此会话客户请求的最大间隔时间，`return int`，以秒为单位。
-- invalidate()：
+- `invalidate()`：结束会话，将原本的会话ID无效化。
