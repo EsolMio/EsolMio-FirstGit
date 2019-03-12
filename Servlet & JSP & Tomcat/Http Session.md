@@ -11,4 +11,6 @@
 ### HttpSession对象的方法（常用）
 - `getCreationTime()`：返回创建此会话对象的时间，`return long`类型，自GMT1970/1/1开始以毫秒为单位。
 - `getLastAccessedTime()`：返回容器最后一次收到此会话用户请求后过去的时间，`return long`，以毫秒为单位。
-- `setMaxInactiveTime()`：设置此会话客户请求的最长间隔时间
+- `setMaxInactiveTime()`：设置此会话客户请求的最长间隔时间（即session的生存时间）。
+- `getMaxInactiveInterval()`:
+- 
