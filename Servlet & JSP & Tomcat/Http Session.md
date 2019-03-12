@@ -14,7 +14,7 @@
 - `setMaxInactiveTime(int interval)`：设置此会话客户请求的最长间隔时间（即session的生存时间），以秒为单位。
 - `getMaxInactiveInterval()`：获得此会话客户请求的最大间隔时间，`return int`，以秒为单位。
 - `invalidate()`：结束会话，将原本的会话ID无效化。
-- **CAUTION!!!**：在"Head First servlet & jsp"p249中称使用`session.setMaxInactiveInterval(0)`时会话对象会立刻超时，而在servlet doc中的说明与其相反：
+- **CAUTION!!!**：在"Head First servlet & jsp"p249中**有误**，其称使用`session.setMaxInactiveInterval(0)`时会话对象会立刻超时，而在servlet doc中的说明与其相反：
   > A zero or negative time indicates that the session should never timeout.
 0/负数表示会话永不超时
 
