@@ -14,4 +14,5 @@
 - `setMaxInactiveTime(int interval)`：设置此会话客户请求的最长间隔时间（即session的生存时间），以秒为单位。
 - `getMaxInactiveInterval()`：获得此会话客户请求的最大间隔时间，`return int`，以秒为单位。
 - `invalidate()`：结束会话，将原本的会话ID无效化。
-- 
+### 设置会话Session的配置
+设置配置需要在DD中配置
