@@ -5,3 +5,4 @@
   - 若有匹配上的cookieID则直接返回匹配上的Session对象。
 - 通过使用HttpSession对象的`.isNew()`判断会话是刚刚创建还是已存在，返回`boolean`。
 - 使用`request.getSession(boolean create)`来判断是否需要在无匹配cookie对话时创建一个新的HttpSession对象，`true`为创建并返回一新HttpSession对象，`false`为返回null。
+- 当容器发现servlet对请求创建一个新的
