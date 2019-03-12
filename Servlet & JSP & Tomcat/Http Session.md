@@ -14,7 +14,7 @@
 - `setMaxInactiveTime(int interval)`：设置此会话客户请求的最长间隔时间（即session的生存时间），以秒为单位。
 - `getMaxInactiveInterval()`：获得此会话客户请求的最大间隔时间，`return int`，以秒为单位。
 - `invalidate()`：结束会话，将原本的会话ID无效化。
-- **CAUTION!!!**
+- **CAUTION!!!**：在"Head First servlet & jsp"p249中称使用`session.setMaxInactiveInter`
 ### 设置会话Session的配置
 设置会话配置需要在DD中配置，在主标签`<web-app></web-app>`下使用`<session-config></session-config>`中配置申明
 - 配置Session超时值：`<session-timeout>timeout</session-timeout>`
