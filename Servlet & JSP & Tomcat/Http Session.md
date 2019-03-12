@@ -8,5 +8,5 @@
 - `request.getSession(boolean create)`：来判断是否需要在无匹配cookie对话时创建一个新的HttpSession对象，`true`为创建并返回一新HttpSession对象，`false`为返回null。
 - 当容器发现servlet对请求创建一个新的会话对象（同过调用`request.getSession()`），则会创建一个新cookieID，对响应设置"Set-Cookie"的同时，向页面中存在的URL添加会话ID（cookieID的本质），双重保险。（切记前提为调用了`response.encodeURL()`）。
 - `response.encodeRedirectURL(String URL)`：对URL编码的同时将请求重定向到另外一个URL。
-### HttpSession对象的方法
-- `getSessio`
+### HttpSession对象的方法（常用）
+- `getCreationTime()`：返回创建此会话对象的时间
