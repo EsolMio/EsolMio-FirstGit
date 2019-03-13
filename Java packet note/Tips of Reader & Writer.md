@@ -21,4 +21,5 @@ InputStreamReader in=new InputStreamReader(
         new File("D:\testDir\testdir\test.txt")));
 BufferedReader buffer=new BufferedReader(in);
 ```
-## 不用手动调用`flush()`的类
+## `PrintWriter`不用手动调用`flush()`的类
+在输出流中，无论是`OutputStream`亦或者`Writer`
