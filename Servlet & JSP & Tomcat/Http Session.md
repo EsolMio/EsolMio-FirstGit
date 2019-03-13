@@ -1,8 +1,8 @@
 # Http Session
 ### Session的使用
 - 若使用了`request.getSeesion()`：
-  - 若没有请求中没有匹配的cookie/压根就没有cookie，容器会自动创建一个新的`Cookie`对象。
-  - 若有匹配上的cookieID则使用原本的Cookie对象
+  - 若没有请求中没有匹配的cookie/压根就没有cookie，容器会自动创建一个新的`Cookie`对象，同时创建一个新的`HttpSession`对象，两者之间有匹配关系。
+  - 若有匹配上的cookie则使用原本的`Cookie`对象，并。
   - 第一次调用`request.getSession()`时容器会自动在response中发送回一个Cookie。
 - `session.isNew()`：判断会话是刚刚创建还是已存在，返回`boolean`。
 - `request.getSession(boolean create)`：来判断是否需要在无匹配cookie对话时创建一个新的HttpSession对象，`true`为创建并返回一新HttpSession对象，`false`为返回null。
