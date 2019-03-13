@@ -5,7 +5,8 @@
 3. 关于`run()`的overwrite，线程的执行主体即`run()`本身，故需要用到线程的具体功能均在`run()`中实现。
 #### 1.1 `Thread`的几个static方法
 - `currentThread()`，获得当前运行的方法，`return Thread`
-- `interrupted()`
+- `interrupted()`，检测当前运行的方法是否中断，`return boolean`
+- `sleep(long millis)` / `sleep(long millis, int nanos)`
 ### 2. 调用Thread的方法与Thread的关系
 在特定的地方（如`main（）`，`main()`本身成一线程，名为"main"，属于System线程组）构建Thread对象，会生成新的线程，但两者直接不构成父子关系（父线程，子线程）
 
