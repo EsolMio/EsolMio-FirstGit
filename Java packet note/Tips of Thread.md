@@ -4,7 +4,8 @@
 2. 在需要的地方（方法）中构造子类的实例，并调用其start()方法
 3. 关于`run()`的overwrite，线程的执行主体即`run()`本身，故需要用到线程的具体功能均在`run()`中实现。
 #### 1.1 `Thread`的几个static方法
-- 
+- `currentThread()`，获得当前运行的方法，`return Thread`
+- `interrupted()`
 ### 2. 调用Thread的方法与Thread的关系
 在特定的地方（如`main（）`，`main()`本身成一线程，名为"main"，属于System线程组）构建Thread对象，会生成新的线程，但两者直接不构成父子关系（父线程，子线程）
 
