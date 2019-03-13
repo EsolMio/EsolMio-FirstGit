@@ -48,6 +48,6 @@ BufferedReader buffer=new BufferedReader(in);
 除了`PrintWriter`，其在调用`print()`/`println()`后会自动flush。
 
 ## `BufferedReader`可以直接读取一行字符
-因Buffered本身
+因Buffered本身拥有缓冲区
 
 
