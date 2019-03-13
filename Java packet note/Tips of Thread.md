@@ -7,7 +7,7 @@
 - `currentThread()`，获得当前运行的方法，`return Thread`
 - `interrupted()`，检测当前运行的方法是否中断，`return boolean`
 - `sleep(long millis)` / `sleep(long millis, int nanos)`，指定当前运行的线程睡眠阻塞，不放弃对象锁。
-- `yield()`，将当前对象置入`Runnable`就绪状态，前提是`Runnable`中有
+- `yield()`，将当前对象置入`Runnable`就绪状态，前提是`Runnable`中有同等级或高等级的线程，否则继续运行。
 ### 2. 调用Thread的方法与Thread的关系
 在特定的地方（如`main（）`，`main()`本身成一线程，名为"main"，属于System线程组）构建Thread对象，会生成新的线程，但两者直接不构成父子关系（父线程，子线程）
 
