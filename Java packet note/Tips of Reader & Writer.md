@@ -22,4 +22,5 @@ InputStreamReader in=new InputStreamReader(
 BufferedReader buffer=new BufferedReader(in);
 ```
 ## `PrintWriter`不用手动调用`flush()`的类
-在输出流中，无论是`OutputStream`亦或者`Writer`
+在输出流中，无论是`OutputStream`亦或者`Writer`，都需要自行调用`flush()`将输出流输出出去。
+除了`PrintWriter`，其在
