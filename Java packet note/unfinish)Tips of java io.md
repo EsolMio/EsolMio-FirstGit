@@ -48,9 +48,9 @@ Writer类详见JDK
 
 ## 其实`Writer`/`Reader`的类,`InputStream`/`OutPutStream`都可以使用缓冲区...
 
-- Reader/Writer的`read()`/`write()`中均有提供`char[] buf`参数的方法，可自行创建已缓冲组，而不需使用`BufferedReader/BufferedWriter`。（在数据较少的时候）
+- Reader/Writer的`read()`/`write()`中均有提供`char[] buf`参数的方法，可自行创建已缓冲组，而不需使用`BufferedReader`/`BufferedWriter`。（在数据较少的时候）
 
-- `InputStream`/`OutPutStream`的`read()`/`write()`中均有提供`byte[] buf`参数的方法，而不需使用BufferedReader/BufferedWriter。（在数据较少的时候）
+- `InputStream`/`OutPutStream`的`read()`/`write()`中均有提供`byte[] buf`参数的方法，而不需使用`BufferedInput Stream`/`BufferedOutputStream`。（在数据较少的时候）
 
 
 ## `PrintWriter`不用手动调用`flush()`的类
