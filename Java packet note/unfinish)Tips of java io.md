@@ -44,7 +44,7 @@ Writer类详见JDK
           new File("D:\testDir\testdir\test.txt")));
   BufferedReader buffer=new BufferedReader(in);
   ```
-- Reader/Writer的`read()`/`write()`
+- Reader/Writer的`read()`/`write()`中均有提供`char[] buf`参数的方法，可自行创建已
 
 ## `PrintWriter`不用手动调用`flush()`的类
 在输出流中，无论是`OutputStream`亦或者`Writer`，都需要自行调用`flush()`将输出流输出出去。
