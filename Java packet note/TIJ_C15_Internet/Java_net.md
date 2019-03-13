@@ -5,5 +5,5 @@
   - `getByName(String host)`
   - `getAllByName(String host)`，`return InetAddress[]`
   - `getLocalHost()`
-  **CAUTION**：这几个方法
+  **CAUTION**：这几个方法均会`throws`错误，注意在方法中
 
