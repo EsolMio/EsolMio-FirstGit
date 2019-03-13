@@ -28,7 +28,7 @@
    （对应String name）。
   - `getRequestDispatcher(String path)`, path对应需要接收
     request请求的文件（如JSP，other servlet等），返回一个
-    `RequestDispatcher`对象，此对象可用于传递本servlet接收到的请求和准备发送的响应
+    `RequestDispatcher`对象，此对象可用于传递本servlet接收到的请求和准备发送的响应，具体实现需调用RequestDispatcher `view.forward(request,response);`
   - `getInputStream()`, 获得一个IO输入流，返回
     `ServletInputStream`对象。
   - `getReader()`, 获得一个字符输入流，返回一个`BufferReader`对象。
