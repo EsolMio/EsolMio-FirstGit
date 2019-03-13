@@ -5,7 +5,7 @@
 3. 关于`run()`的overwrite，可在`run()`内部实现自己需要的功能，任意均可，JVM只根据`start()`创建线程并执行`run()`中的语句
 
 ### 2. 调用Thread的方法与Thread的关系
-在特定的地方（如`main（）`，`main()`本身成一线程，名为"main"，属于System线程组）构建Thread对象，会生成新的线程，但
+在特定的地方（如`main（）`，`main()`本身成一线程，名为"main"，属于System线程组）构建Thread对象，会生成新的线程，但两者直接不构成父子关系（父线程，子线程）
 
 #### 2.1 Interesting Code
 对于一个按钮button，若需要在按下button后生成一个非幂等线程并执行，需要考虑到不能使用户多次按下button而产生多个线程导致结果错误
