@@ -47,5 +47,7 @@ BufferedReader buffer=new BufferedReader(in);
 在输出流中，无论是`OutputStream`亦或者`Writer`，都需要自行调用`flush()`将输出流输出出去。
 除了`PrintWriter`，其在调用`print()`/`println()`后会自动flush。
 
+## `BufferedReader`可以直接读取一行字符
+因Buffered本身
 
 
