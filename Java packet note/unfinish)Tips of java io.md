@@ -37,13 +37,14 @@ Writer类详见JDK
 ## 使用Reader/Writer时...
 - 在使用`Reader/Writer`处理输入流时，均需要用到`InputStream/OutputStream`，先使用`InputStreamReader/OutputStreamWriter`接收`InputStream/OutputStream`，再在需要使用的Reader子类的构造器中将前者产生的对象封装进去.
 
-e.g.
-```
-InputStreamReader in=new InputStreamReader(
-    new FileInputStream(
-        new File("D:\testDir\testdir\test.txt")));
-BufferedReader buffer=new BufferedReader(in);
-```
+  e.g.
+  ```
+  InputStreamReader in=new InputStreamReader(
+      new FileInputStream(
+          new File("D:\testDir\testdir\test.txt")));
+  BufferedReader buffer=new BufferedReader(in);
+  ```
+- Reader/Writer的`read()`/`write()`
 
 ## `PrintWriter`不用手动调用`flush()`的类
 在输出流中，无论是`OutputStream`亦或者`Writer`，都需要自行调用`flush()`将输出流输出出去。
