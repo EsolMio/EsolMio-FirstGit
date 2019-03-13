@@ -111,7 +111,8 @@ public void doGet(HttpServletRequest request,
 - 但synchronized(object)亦可使用其他对象的句柄(handle)，不局限于this。
 - 故可使用其他句柄当作锁变量，因限制于java语言规范，括号内调用何种句柄需代码中已申明（如定义，参数传入等等）或使用其他方法返回一个对象。
 - 本代码的精髓在于使用了对象成员方法返回一个对象的方式申明了synchronized对哪个对象同步锁定。
-- 线程运行（即执行`run()`）到synchronized代码块时，会调用到synchronized()中参数/句柄指明的对象的监视器，若监视器发现有其他线程使用本对象运行对应synchronized代码块，则本线程阻塞。
+- `synchronized()`
+- 线程运行（即执行`run()`）到synchronized代码块时，会调用到synchronized()中参数/句柄指明的对象的监视器，若监视器发现有其他线程使用本对象运行对应synchronized代码块，则本线程阻塞，否则本线程正常运行代码块。
 
 **Total**： 上述代码意图于，进程对象通过某种方式（如上述的`getServletContext()`）获得一对象，若此对象对应synchronized()中定义的同步锁对象，将会触发同步锁对象的"监视器",若有其他线程使用了此synchronized语句块，则后者线程阻塞，等待前者运行完成。
 
