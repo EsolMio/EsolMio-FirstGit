@@ -32,8 +32,10 @@ ByteArrayInputStream/ByteArrayOutputStream
 Reader类位于java.io包中，其实现了Closeable和Readable接口。直接子类有**InputStreamReader**, BufferedReader,  StringReader, CharArrayReader, FilterReader, PipedReader.
 Writer类详见JDK
 
+
+
 ## 使用Reader/Writer时...
-在使用`Reader/Writer`处理输入流时，均需要用到`InputStream/OutputStream`，先使用`InputStreamReader/OutputStreamWriter`接收`InputStream/OutputStream`，再在需要使用的Reader子类的构造器中将前者产生的对象封装进去.
+- 在使用`Reader/Writer`处理输入流时，均需要用到`InputStream/OutputStream`，先使用`InputStreamReader/OutputStreamWriter`接收`InputStream/OutputStream`，再在需要使用的Reader子类的构造器中将前者产生的对象封装进去.
 
 e.g.
 ```
