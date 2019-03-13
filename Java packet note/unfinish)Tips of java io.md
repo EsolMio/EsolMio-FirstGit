@@ -53,7 +53,7 @@ Reader/Writer的`read()`/`write()`中均有提供`char[] buf`参数的方法，�
 
 ## `PrintWriter`不用手动调用`flush()`的类
 在输出流中，无论是`OutputStream`亦或者`Writer`，都需要自行调用`flush()`将输出流输出出去。
-除了`PrintWriter`，其在调用`print()`/`println()`后会自动flush。
+但`PrintWriter`除外，它在调用`print()`/`println()`后会自动flush。
 
 ## `BufferedReader`可以直接读取一行字符
 因Buffered本身拥有缓冲区，可使用`new BufferedReader(Reader in ,int size)`更改缓冲区大，则可以一次性容纳更多的字符。
