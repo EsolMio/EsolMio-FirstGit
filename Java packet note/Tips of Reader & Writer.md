@@ -12,7 +12,7 @@ p.s.字节流&字符流的区别：
 3. 字符流由Reader/Wirter处理，字节流由InputStream/OutputStream处理
 ***
 ## 使用Reader/Writer时...
-在使用`Reader/Writer`处理输入流时，均需要用到`InputStream/OutputStream`，先使用`InputStreamReader/OutputStreamWriter`接收`InputStream/OutputStream`，再在需要使用的Reader子类的构造器中将前者产生的对象封装进去
+在使用`Reader/Writer`处理输入流时，均需要用到`InputStream/OutputStream`，先使用`InputStreamReader/OutputStreamWriter`接收`InputStream/OutputStream`，再在需要使用的Reader子类的构造器中将前者产生的对象封装进去.
 
 e.g.
 ```
@@ -21,3 +21,4 @@ InputStreamReader in=new InputStreamReader(
         new File("D:\testDir\testdir\test.txt")));
 BufferedReader buffer=new BufferedReader(in);
 ```
+## 不用手动调用`flush()`的类
