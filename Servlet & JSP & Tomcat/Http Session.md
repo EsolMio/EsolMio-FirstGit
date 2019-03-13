@@ -1,5 +1,6 @@
 # Http Session
 ### Session的使用
+
 - 若使用了`request.getSeesion()`：
   - 若没有请求中没有匹配的cookie/压根就没有cookie，容器会自动创建一个新的`Cookie`对象，同时创建一个新的`HttpSession`对象，两者之间有匹配关系。
   - 若有匹配上的cookie则使用原本的`Cookie`对象，并返回一个匹配上的`HttpSession`对象。
@@ -8,7 +9,10 @@
 - `request.getSession(boolean create)`：来判断是否需要在无匹配cookie对话时创建一个新的HttpSession对象，`true`为创建并返回一新HttpSession对象，`false`为返回null。
 - 当容器发现servlet对请求创建一个新的会话对象（同过调用`request.getSession()`），则会创建一个新cookieID，对响应设置"Set-Cookie"的同时，向页面中存在的URL添加会话ID（cookieID的本质），双重保险。（切记前提为调用了`response.encodeURL()`）。
 - `response.encodeRedirectURL(String URL)`：对URL编码的同时将请求重定向到另外一个URL。
+
+
 ### HttpSession对象的方法（常用）
+
 - `getCreationTime()`：返回创建此会话对象的时间，`return long`类型，自GMT1970/1/1开始以毫秒为单位。
 - `getLastAccessedTime()`：返回容器最后一次收到此会话用户请求后过去的时间，`return long`，以毫秒为单位。
 - `setMaxInactiveTime(int interval)`：设置此会话客户请求的最长间隔时间（即session的生存时间），以秒为单位。
@@ -19,5 +23,6 @@
 0/负数表示会话永不超时
 
 ### 设置会话Session的配置
+
 设置会话配置需要在DD中配置，在主标签`<web-app></web-app>`下使用`<session-config></session-config>`中配置申明
 - 配置Session超时值：`<session-timeout>timeout</session-timeout>`
