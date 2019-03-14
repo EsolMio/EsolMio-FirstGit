@@ -12,4 +12,4 @@
 
 ## `ServerSocket`
 
-- 
+`ServerSocket`对象创建后JVM并不会自动清除网络qian'tao'z
