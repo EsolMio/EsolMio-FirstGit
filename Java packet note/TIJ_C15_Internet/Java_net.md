@@ -23,3 +23,7 @@ finally{
 }
 ```
 `Socket`对象也是同理，需要在`finally`块中执行关闭`.close()`
+
+
+## `Socket`
+`Sco`
