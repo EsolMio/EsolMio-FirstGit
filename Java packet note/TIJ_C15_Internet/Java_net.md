@@ -26,4 +26,7 @@ finally{
 
 
 ## `Socket`
-`Sco`
+
+`Scoket`的几个常用方法：
+
+- `getInputStream()`，获得一个`InputStream`
