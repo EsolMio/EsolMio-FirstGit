@@ -12,4 +12,4 @@
 
 ## `ServerSocket`
 
-`ServerSocket`对象创建后JVM并不会自动清除网络qian'tao'z
+`ServerSocket`对象创建后JVM并不会自动清除网络套接字，为了吧保证正确清楚同时防止调用`accept()`
