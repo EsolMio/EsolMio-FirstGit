@@ -12,4 +12,8 @@
 
 ## `ServerSocket`
 
-`ServerSocket`对象创建后JVM并不会自动清除网络套接字，为了保证正确清除的同时防止调用`accept()`后无法获得一个正确的`Socket`对象而导致中断退出，需要在将正式使用`ServerSocket`对象代码置于`try{}finally{}`
+`ServerSocket`对象创建后JVM并不会自动清除网络套接字，为了保证：
+- 正确清除`serverSocket`对象
+- 防止调用`accept()`后无法获得一个正确的`Socket`对象而导致中断退出
+
+需要在将正式使用`ServerSocket`对象代码置于`try{}finally{}`代码块中。在``
