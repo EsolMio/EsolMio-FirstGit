@@ -23,7 +23,7 @@
   为`Object`对象。
   - `setAttribute(String name, Object value)`, 
   **Attention:** 方法内参数有两个，对应Attribute的**名称**和
-  **值**。
+  **值**。没有`addA`
   - `removeAttribute(String name)`, 移除request中的对应属性
    （对应String name）。
   - `getRequestDispatcher(String path)`, path对应需要接收
