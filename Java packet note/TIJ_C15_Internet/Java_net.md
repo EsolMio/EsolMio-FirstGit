@@ -29,4 +29,5 @@ finally{
 
 `Scoket`的几个常用方法：
 
-- `getInputStream()`，获得一个`InputStream`
+- `getInputStream()`，获得一个`InputStream`对象。
+- `getOutputStream()`，获得一个`OutputStream`对象。
