@@ -27,3 +27,6 @@
 
 设置会话配置需要在DD中配置，在主标签`<web-app></web-app>`下使用`<session-config></session-config>`中配置申明
 - 配置Session超时值：`<session-timeout>timeout</session-timeout>`
+
+### `Session`于`Cooko` 
+
