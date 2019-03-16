@@ -26,7 +26,7 @@ public class Music2 {
 }
 
 ```
-而上溯造型，可理解为
+而上溯造型，因子类的实例本质为同一类，拥有相同的实现方法（从父类继承下来），但因“个性”而对方法重写，
 
 ## 继承/上溯造型
 1. son只能继承father的default，protected，public成员值和方法。
