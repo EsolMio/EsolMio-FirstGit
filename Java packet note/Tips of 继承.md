@@ -5,6 +5,7 @@
 example：
 ```
 public class Music2 {
+   //大量且重复的方法（多次重载）
   public static void tune(Wind2 i) {
     i.play(Note2.middleC);
   }
@@ -14,16 +15,18 @@ public class Music2 {
   public static void tune(Brass2 i) {
     i.play(Note2.middleC);
   }
+  
   public static void main(String[] args) {
     Wind2 flute = new Wind2();
     Stringed2 violin = new Stringed2();
     Brass2 frenchHorn = new Brass2();
     tune(flute); // No upcasting
     tune(violin);
-tune(frenchHorn);
+    tune(frenchHorn);
 }
 
 ```
+而上溯造型，可理解为
 
 ## 继承/上溯造型
 1. son只能继承father的default，protected，public成员值和方法。
