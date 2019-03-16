@@ -28,5 +28,33 @@
 设置会话配置需要在DD中配置，在主标签`<web-app></web-app>`下使用`<session-config></session-config>`中配置申明
 - 配置Session超时值：`<session-timeout>timeout</session-timeout>`
 
-### `Session`于`Cooko` 
+### `Session`于`Cookie`的关系
+- 在使用`request.getSession()`以及容器认为需要创建新session时，容器会根据sessionID设置Cookie的name和value（`new Cookie(String name, String value)`）。
+- 在使用`request.getSession()`以及容器接收到request中有cookie，则根据cookie查找对应的session后通过前述方法传递给servlet。
+
+### 于会话相关的监听者（接口）
+Tips 1：
+属性类为，调用`setAttribute()`等方法时传递的类。
+其他类为，独立设立（如设立一个Listener package以存放）的类。
+Tips 2：
+一下监听器均有container容器触发。
+- `HttpSessionListener`，由其他类实现。
+  - 用于：监听session的创建`sessionCreated(HttpSessionEvent 
+  se)`；删除`sessionDestoryed(HttpSessionEvent se)`。
+  - **需要在DD中声明此监听器**。
+- `HttpSessionActivationListener`，由属性类或其他类实现（亦可
+  两者结合）。
+  - 用于：监听会话的迁移/序列化：1. 在迁移/序列化时执行自己制定的动作`sessionWillPassivate(HttpSessionEvent event)`（如可用于将非Serializable字段进行转换以便于迁移）；2. 在反序列化/抵达的时候执行自己制定的动作`sessionDidActivate(HttpSessionEvent event)`（如将前述括号中的过程反执行，转回原本的状态）。
+  - **不需要在DD中声明**。
+- `HttpSessionBindingListener`，由属性类实现。
+    - container容器会先检查添加/移除/重置的对象是否实现此监听器以确定是否要触发此监听器。
+    - 用于：1. 当此属性被session绑定/被用于`session.setAttribute(String name, Object value)`时会触发`valueBound(HrrpSessionBindingEvent event)`；2. 当session解绑此属性时/`session.removeAttribute(String name)`时会触发`valueUnbound(HttpSessionBindingEvent event)`。
+    - **不需要在DD中声明**
+- `HttpSessionAttributeListener`。由其他类实现。
+    - 用于：1. 当执行`session.setAttribute(String name, Object value)`以添加属性时触发`attributeAdded(HttpSessionEvent event)`；2. 当执行`session.reomveAttribute(String name)`删除对应属性时触发`attributeRemoved(HttpSessionBindingEvent event)`；3. 当执行`session.setAttribute(String name, Object value)`以更改对应属性名的值时触发`attributeReplaced(HttpSessionBindingEvent event)`。
+    - **注意**：container容器会先触发`HttpSessionBindingListener`（如果有）然后触发本监听器。
+
+ 
+
+ 
 
