@@ -1,8 +1,8 @@
 # Tips of 继承/上溯造型
 ## 继承/上溯造型
 1. son只能继承father的default，protected，public成员值和方法。
-2. son上溯造型至father时：
-    1. 若
+2. son上溯造型至father后新建一实例：
+    1. 若调用了从父类继承方法，未修改
 
 
 **总结：** 上溯造型后依旧使用son的定义
