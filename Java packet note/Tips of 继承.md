@@ -1,7 +1,29 @@
 # Tips of 继承/上溯造型
 
 ## 为何使用上溯造型呢？
-最直观的来讲，如果不使用上溯造型，当方法需要通过参数的方式传入继承自同一类的实例时，
+最直观的来讲，如果不使用上溯造型，当方法需要通过参数的方式对自己传入继承自同一类的实例时，会出现方法冗余：
+example：
+```
+public class Music2 {
+  public static void tune(Wind2 i) {
+    i.play(Note2.middleC);
+  }
+  public static void tune(Stringed2 i) {
+    i.play(Note2.middleC);
+  }
+  public static void tune(Brass2 i) {
+    i.play(Note2.middleC);
+  }
+  public static void main(String[] args) {
+    Wind2 flute = new Wind2();
+    Stringed2 violin = new Stringed2();
+    Brass2 frenchHorn = new Brass2();
+    tune(flute); // No upcasting
+    tune(violin);
+tune(frenchHorn);
+}
+
+```
 
 ## 继承/上溯造型
 1. son只能继承father的default，protected，public成员值和方法。
