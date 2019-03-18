@@ -17,7 +17,7 @@
 - `getCreationTime()`：返回创建此会话对象的时间，`return long`类型，自GMT1970/1/1开始以毫秒为单位。
 - `getLastAccessedTime()`：返回容器最后一次收到此会话用户请求后过去的时间，`return long`，以毫秒为单位。
 - `setMaxInactiveTime(int interval)`：设置此会话客户请求的最长间隔时间（即session的生存时间），以秒为单位。
-  - 也可以在
+  - 也可以在DD中配置超时/生存时间：`<session-config><sessu></session-config>`
 - `getMaxInactiveInterval()`：获得此会话客户请求的最大间隔时间，`return int`，以秒为单位。
 - `invalidate()`：结束会话，将原本的会话ID无效化。
 - **CAUTION!!!**：在"Head First servlet & jsp"p249中**有误**，其称使用`session.setMaxInactiveInterval(0)`时会话对象会立刻超时，而在servlet doc中的说明与其相反：
