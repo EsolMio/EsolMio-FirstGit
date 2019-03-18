@@ -1,7 +1,7 @@
 # JSP
 
 ## JSP元素
-1. Scriptlet: `<% ... %>`
+1. Scriptlet: `<% ... %>`，用于存放普通的Java
    Example: `<% InputStream in=req.getInputStram(); %>`
 
 2. 指令: `<%@ ... %>`
