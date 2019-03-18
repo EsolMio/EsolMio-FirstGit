@@ -110,6 +110,7 @@ example:
      throws CloneNotSupportedException {
   throw new CloneNotSupportedException();
   //Attention of "new", throwing a exception should
-  //create a new instance
+  //create a new instance of this exception class.
+  //After that, use "throw".
  }
 ```
