@@ -83,7 +83,7 @@ example:
 yyy handle1;
 zzz handle2;
 
-public clone() throws CloneNotSupportedException{
+public Object clone() throws CloneNotSupportedException{
   xxx handle;
   try{
     handle=super.clone();
@@ -103,4 +103,5 @@ public clone() throws CloneNotSupportedException{
 }
 ```
 ## 4. 完全拒绝
-类本身不实现`Cloneable`接口，后者因继承性质而获得了`Cloneable`接口。此时重写`clone()`，`return  CloneNotSupportedException;`。继承此对象的对象在调用super`super.clone()`时
+类本身不实现`Cloneable`接口，后者因继承性质而获得了`Cloneable`接口。此时重写`clone()`，`return  CloneNotSupportedException;`。继承此对象的对象在调用`super.clone()`时都直接指向此方法。
+exam
