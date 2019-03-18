@@ -78,3 +78,5 @@ class BackOn extends TurnOffClone {
 **针对其他对象实现克隆的不确定性**，在重写`clone()`时对所有句柄调用`clone()`且用`try{}catch{}`接收，如果掷出了错误，则让错误通过并处理下一个即可。
 example:
 ```
+public clone() 
+```
