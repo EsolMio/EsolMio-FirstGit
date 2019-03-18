@@ -74,4 +74,4 @@ class BackOn extends TurnOffClone {
 即不对`clone()`做任何修改，不实现`Cloneable`接口。但继承此类的类可以自行实现`Cloneable`接口并重写继承。
 
 ##3. 有条件的实现克隆
-
+类本身实现了`Cloneable`接口并重写了`clone()`方法，但类的
