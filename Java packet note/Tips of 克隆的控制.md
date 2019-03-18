@@ -66,7 +66,7 @@ class BackOn extends TurnOffClone {
 因为查看`Object`的源码可知`clone`有一修饰符为`native`，调用了第三方C语言文件，重写`clone()`方法后其修饰符`native`作用会消失，失去本身作用。
 
 # `clone()`的控制
-
+**Tips**：倘若父类实现了`Cloneable`接口，则其子类也会顺理成章实现`Cloneable`。
 
 ## 1. 支持`clone()`
 实现`Cloneable`接口，重写从`object`继承来的`clone()`，在其内部调用`super.clone();`并返回从它而来的句柄。
