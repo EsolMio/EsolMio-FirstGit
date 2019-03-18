@@ -5,6 +5,7 @@
    Example: `<% InputStream in=req.getInputStram(); %>`
 
 2. 指令: `<%@ ... %>`
-   Example: `<%@ page import=""`
+   Example: `<%@ page import="java.util.*, test.example.*"`
 
 3. 表达式: `<%= ... %>`
+   Example: `<%=Counter.getCount() %>`
