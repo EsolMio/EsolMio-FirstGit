@@ -32,7 +32,7 @@
 ### `Session`与`Cookie`的关系
 - 在使用`request.getSession()`以及容器认为需要创建新session时，容器会根据sessionID设置Cookie的name和value（`new Cookie(String name, String value)`）。
 - 在使用`request.getSession()`以及容器接收到request中有cookie，则根据cookie查找对应的session后传递给servlet（返回值）。
-- 使用`encodeURL(String URL)`时，倘若在其之前没有声明使用`request.getSession();`
+- 使用`encodeURL(String URL)`时，倘若在其之前没有声明使用`request.getSession();`则此方法将会失效，不会对指定的URL重编码。
 
 ### 与会话相关的监听者（接口）
 Tips 1：
