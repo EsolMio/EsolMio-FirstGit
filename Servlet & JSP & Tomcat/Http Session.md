@@ -53,6 +53,7 @@ Tips 2：
 - `HttpSessionAttributeListener`。由其他类实现。
     - 用于：1. 当执行`session.setAttribute(String name, Object value)`以添加属性时触发`attributeAdded(HttpSessionEvent event)`；2. 当执行`session.reomveAttribute(String name)`删除对应属性时触发`attributeRemoved(HttpSessionBindingEvent event)`；3. 当执行`session.setAttribute(String name, Object value)`以更改对应属性名的值时触发`attributeReplaced(HttpSessionBindingEvent event)`。
     - **注意**：container容器会先触发`HttpSessionBindingListener`（如果有）然后触发本监听器。
+    - 
 
  
 
