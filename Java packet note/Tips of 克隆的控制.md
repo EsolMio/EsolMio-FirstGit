@@ -74,10 +74,12 @@ class BackOn extends TurnOffClone {
 ## 2. 保持“中立”
 即不对`clone()`做任何修改，不实现`Cloneable`接口。但继承此类的类可以自行实现`Cloneable`接口并重写继承。
 
-##3. 有条件的实现克隆
+## 3. 有条件的实现克隆
 类本身实现了`Cloneable`接口并重写了`clone()`方法，但类的实例内部拥有其他对象的句柄。
 **针对其他对象实现克隆的不确定性**，在重写`clone()`时对所有句柄调用`clone()`且用`try{}catch{}`接收，如果掷出了错误，则让错误通过并处理下一个即可。
 example:
 ```
-public clone() 
+public clone() throws CloneNotSupportedException{
+  su
+}
 ```
