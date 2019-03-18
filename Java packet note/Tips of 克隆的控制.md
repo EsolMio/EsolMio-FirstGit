@@ -66,4 +66,5 @@ class BackOn extends TurnOffClone {
 因为查看`Object`的源码可知`clone`有一修饰符为`native`，调用了第三方C语言文件，重写`clone()`方法后其修饰符`native`作用会消失，失去本身作用。
 
 # `clone()`的控制
+## 1. 支持`clone()`
 
