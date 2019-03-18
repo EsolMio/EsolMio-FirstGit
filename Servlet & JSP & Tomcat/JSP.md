@@ -8,4 +8,5 @@
    Example: `<%@ page import="java.util.*, test.example.*"`
 
 3. 表达式: `<%= ... %>`
-   Example: `<%=Counter.getCount() %>`
+   Example: `<%= Counter.getCount() %>`
+   Attention: 最后没有结束分号";"，因为内部的值
