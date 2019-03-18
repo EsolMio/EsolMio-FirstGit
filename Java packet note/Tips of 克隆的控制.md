@@ -70,4 +70,4 @@ class BackOn extends TurnOffClone {
 实现`Cloneable`接口，重写从`object`继承来的`clone()`，在其内部调用`super.clone();`并返回从它而来的句柄。
 
 ## 2. 保持“中立”
-即不对`clone()`做
+即不对`clone()`做任何修改，不实现`Cloneable`接口。
