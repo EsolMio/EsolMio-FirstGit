@@ -102,3 +102,4 @@ public clone() throws CloneNotSupportedException{
   //should assemble this code to one "trycatch" code block 
 }
 ```
+## 4. 完全拒绝
