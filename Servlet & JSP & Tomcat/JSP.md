@@ -6,6 +6,7 @@
 
 2. 指令: `<%@ ... %>`
    Example: `<%@ page import="java.util.*, test.example.*"`
+   `import`的包通过属性形式输入。
 
 3. 表达式: `<%= ... %>`
    Example: `<%= Counter.getCount() %>`
