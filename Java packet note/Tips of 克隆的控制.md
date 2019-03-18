@@ -89,7 +89,12 @@ public clone() throws CloneNotSupportedException{
     handle=super.clone();
   }
   try{
-    handl
+    handle.yyy=yyy.clone()
+  }catch(Exception e){
+    
+  }
+  try{
+    handle.
   }
   
 }
