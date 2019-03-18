@@ -29,11 +29,11 @@
 设置会话配置需要在DD中配置，在主标签`<web-app></web-app>`下使用`<session-config></session-config>`中配置申明
 - 配置Session超时值：`<session-timeout>timeout</session-timeout>`
 
-### `Session``Cookie`的关系
+### `Session`与`Cookie`的关系
 - 在使用`request.getSession()`以及容器认为需要创建新session时，容器会根据sessionID设置Cookie的name和value（`new Cookie(String name, String value)`）。
 - 在使用`request.getSession()`以及容器接收到request中有cookie，则根据cookie查找对应的session后通过前述方法传递给servlet。
 
-### 于会话相关的监听者（接口）
+### 与会话相关的监听者（接口）
 Tips 1：
 属性类为，调用`setAttribute()`等方法时传递的类。
 其他类为，独立设立（如设立一个Listener package以存放）的类。
