@@ -37,7 +37,10 @@ Tips 1：
 属性类为，调用`setAttribute()`等方法时传递的类。
 其他类为，独立设立（如设立一个Listener package以存放）的类。
 Tips 2：
-一下监听器均有container容器触发。
+一下监听器均由Container容器触发。
+Tips 3：
+是否需要
+
 - `HttpSessionListener`，由其他类实现。
   - 用于：监听session的创建`sessionCreated(HttpSessionEvent 
   se)`；删除`sessionDestoryed(HttpSessionEvent se)`。
@@ -53,7 +56,7 @@ Tips 2：
 - `HttpSessionAttributeListener`。由其他类实现。
     - 用于：1. 当执行`session.setAttribute(String name, Object value)`以添加属性时触发`attributeAdded(HttpSessionEvent event)`；2. 当执行`session.reomveAttribute(String name)`删除对应属性时触发`attributeRemoved(HttpSessionBindingEvent event)`；3. 当执行`session.setAttribute(String name, Object value)`以更改对应属性名的值时触发`attributeReplaced(HttpSessionBindingEvent event)`。
     - **注意**：container容器会先触发`HttpSessionBindingListener`（如果有）然后触发本监听器。
-    - 
+    -  **是否需要在DD中声明有待验证**
 
  
 
