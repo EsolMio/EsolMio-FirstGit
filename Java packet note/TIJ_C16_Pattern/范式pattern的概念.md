@@ -1,5 +1,8 @@
 # 范式pattern的概念
 ## Total：
+- 使用`final`关键字可阻止类继承即其对象被克隆。
+
+
 
 ## From Book
 范式的概念:
