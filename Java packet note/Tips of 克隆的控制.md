@@ -80,6 +80,10 @@ class BackOn extends TurnOffClone {
 example:
 ```
 public clone() throws CloneNotSupportedException{
-  su
+  xxx handle;
+  try{
+    handle=super.clone();
+  }
+  
 }
 ```
