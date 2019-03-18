@@ -89,13 +89,15 @@ public clone() throws CloneNotSupportedException{
     handle=super.clone();
   }
   try{
-    handle.yyy=yyy.clone()
+    handle.handle1=handle1.clone()
   }catch(Exception e){
     
   }
   try{
-    handle.
-  }
+    handle.handle2=handle2.clone()
+  }catch(Excepiton e){
   
+  }
+  //maybe this code 
 }
 ```
