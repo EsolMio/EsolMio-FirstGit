@@ -67,4 +67,4 @@ class BackOn extends TurnOffClone {
 
 # `clone()`的控制
 ## 1. 支持`clone()`
-
+实现`Cloneable`接口，重写从`object`继承来的`clone()`，在其内部调用`super.clon`
