@@ -109,6 +109,7 @@ example:
  public Object clone()
      throws CloneNotSupportedException {
   throw new CloneNotSupportedException();
-  
+  //Attention of "new", throw a exception should create 
+this class
  }
 ```
