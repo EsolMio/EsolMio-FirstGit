@@ -99,6 +99,6 @@ public clone() throws CloneNotSupportedException{
   
   }
   //maybe this code complicated.
-  //should 
+  //should assemble this code to one trycatch 
 }
 ```
