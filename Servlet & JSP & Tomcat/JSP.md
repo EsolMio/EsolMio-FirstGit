@@ -1,5 +1,5 @@
 # JSP
-JSP本质将会被
+JSP本质为servlet，由容器转换。
 
 ## JSP元素
 1. Scriptlet: `<% ... %>`，用于存放普通的Java代码。
