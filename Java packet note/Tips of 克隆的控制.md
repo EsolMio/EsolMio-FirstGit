@@ -1,4 +1,4 @@
-# 对类的clone()控制
+# 控制对象的clone()
 tips: 
 1. 对本类的克隆均是调用Object.clone()实现（需要先实现Cloneable接口），其返回值类型为Object
 2. Base class: `class Ordinary{}`
