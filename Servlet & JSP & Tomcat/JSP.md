@@ -6,7 +6,8 @@ JSP本质为servlet，由容器转换。
    Example: 
    ```
    <% while(it.hasNext()){ %>
-   <%= it.>
+   <%= it.next() %><%-- -->
+   <% } %>
    ```
 
 2. 指令: `<%@ ... %>`，用于向容器Container传递特殊指令。
