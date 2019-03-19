@@ -6,7 +6,7 @@ JSP本质为servlet，由容器转换。
    Example: 
    ```
    <% while(it.hasNext()){ %>
-   <%= it.next() %><%-- -->
+   <%= it.next() %><%-- 被此标签块切断了，但下方的补充使其完整 -->
    <% } %>
    ```
 
