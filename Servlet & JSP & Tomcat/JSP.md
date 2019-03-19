@@ -9,7 +9,7 @@ JSP本质为servlet，由容器转换。
    Example: `<%@ page import="java.util.*, test.example.*"`
    `import`的包通过属性形式输入。
 
-3. 表达式: `<%= ... %>`，用于输出特定的值。
+3. 表达式: `<%= ... %>`，用于输出特定的值，只要返回值为`String`类型均可使用。
    Example: `<%= Counter.getCount() %>`
    Attention: 
     1. 最后没有结束分号";"，因为内部的值将作为参数传导至`out.write();`中。
