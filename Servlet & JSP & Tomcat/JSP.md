@@ -24,5 +24,8 @@ JSP本质为servlet，由容器转换。
 	3. HttpServletResponse -- response
 	4. HttpSession -- session
 	5. ServletContext -- application
+	6. ServletConfig -- config
+	7. Throwable -- exception
+	8. PageContext -- pageCo
 
 
