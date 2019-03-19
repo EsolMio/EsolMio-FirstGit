@@ -19,13 +19,14 @@ JSP本质为servlet，由容器转换。
    Example: `<% int count = 0; %>`
 
 5. 隐式对象：JSP本质也为servlet，由container容器自动生成，故也需要一些对象以获得数据：
-	1. JspWriter -- out
+	1. JspWriter -- out //与从response获得的PrintWriter不用，多了
 	2. HttpServletRequest -- request
 	3. HttpServletResponse -- response
 	4. HttpSession -- session
 	5. ServletContext -- application
 	6. ServletConfig -- config
 	7. Throwable -- exception
-	8. PageContext -- pageCo
+	8. PageContext -- pageContext
+	9. Object -- page
 
 
