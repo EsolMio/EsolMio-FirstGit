@@ -18,4 +18,6 @@ JSP本质为servlet，由容器转换。
 4. 声明: `<%! ... %>`，用于声明成员变量和成员方法。
    Example: `<% int count = 0; %>`
 
+5. 隐式对象：JSP本质也为servlet，由container容器自动生成。
+
 
