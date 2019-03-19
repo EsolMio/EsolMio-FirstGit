@@ -2,8 +2,8 @@
 JSP本质为servlet，由容器转换。
 
 ## JSP元素
-1. Scriptlet: `<% ... %>`，用于存放普通的Java代码。
-   Example: `<% InputStream in=req.getInputStram(); %>`
+1. Scriptlet: `<% ... %>`，用于存放普通的Java代码。不需要代码完整，即可以中途截断，但后面需要将其补充完整。
+   Example: `<% ; %>`
 
 2. 指令: `<%@ ... %>`，用于向容器Container传递特殊指令。
    Example: `<%@ page import="java.util.*, test.example.*"`
