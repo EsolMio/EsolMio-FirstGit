@@ -11,4 +11,4 @@
 	- 其中`Class<?>...`表示`Class<?>`数组，通过指定的`parameterTypes`类型参数获得对应的构造器，返回`Constructor`。
 	- 功能相似的方法：`getConstructors()`，将全部的构造器对象返回，返回`Constructor[]`。
 
-3. `.getMethod(Class)`
+3. `.getMethod(String name, Class<?>... parameterTypes)`
