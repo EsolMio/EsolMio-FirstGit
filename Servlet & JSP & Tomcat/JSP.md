@@ -47,4 +47,4 @@ JSP本质为servlet，由容器转换。
            </servlet>
            ```
 
-      3. Tips: `<js>`
+      3. Tips: `<jsp-file>`中为jsp文件所在的目录。
