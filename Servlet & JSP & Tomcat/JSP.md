@@ -20,7 +20,7 @@ JSP本质为servlet，由容器转换。
     1. 最后没有结束分号";"，因为内部的值将作为参数传导至`out.write();`中。
     2. 内部的参数必须有返回值，且和`out.println();`可输出参数相对应。若返回值为`void`则掷出错误。
 
-4. 声明: `<%! ... %>`，用于声明成员变量和成员方法。
+4. 声明: `<%! ... %>`，用于声明/覆盖成员变量和成员方法。
    Example: `<% int count = 0; %>`
 
 5. 隐式对象：JSP本质也为servlet，由container容器自动生成，故也需要一些对象以获得数据：
@@ -34,4 +34,4 @@ JSP本质为servlet，由容器转换。
 	8. PageContext -- pageContext
 	9. Object -- page
 
-
+## 初始化Servlet
