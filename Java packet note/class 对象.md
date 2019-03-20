@@ -13,4 +13,4 @@
 
 3. `.getMethod(String name, Class<?>... parameterTypes)`成员方法。
 	- 此方法将通过`name`参数查找方法，并需要和`patameterTypes`匹配，倘若查找不到对应的方法，则会在超类上递归调用本方法，直至找到。最终返回一个`Method`实例。
-	- 
+	- 功能相似的方法：`getMethods()`，将全部方法返回，返回`Method[]`。
