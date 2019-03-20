@@ -34,7 +34,8 @@
 2. `getInitParameter(String name)`，成员方法。从实现的`ServletConfig`接口得来的方法，可获得DD中配置的参数值，返回`String`。
     - 功能相似的方法：`getInitParameterNames()`，获得全部初始化参数的名称，返回`String[]`。
 3. `getServletConfig()`，成员方法。获得此servlet的配置对象`ServletConfig`实例。返回`ServletConfig`。
-4. `ge`
+4. `getServletContext()`，成员方法。获得此容器中的上下文对象`ServletContext`实例。
+5. 
 
 
 
