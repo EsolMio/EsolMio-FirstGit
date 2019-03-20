@@ -4,4 +4,5 @@
 **Tips**：`Observer`为接口，`Observable`为完整类。
 
 - 准备一类继承`extends Observable`类，虽然`Observable`本质为完整类，但若直接使用组合的方式使用其对象将无效果，故使用继承。
-- 将”视图“类实现`implements Observer`，并定义`update()`
+- 将”视图“类实现`implements Observer`，并定义`update(Observable ob, Object o)`。
+- 当需要”观察“的
