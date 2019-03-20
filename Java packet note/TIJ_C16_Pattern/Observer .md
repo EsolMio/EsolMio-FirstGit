@@ -11,4 +11,5 @@
 - 将`Observable`类组合进被观察的类中，并在适当的地方（被观察类内部/重写的`Observable`构造器/其他地方）使用`Observable`实例的`.addObserver(Observer ob)`方法添加实现`Observer`的实例。
 
 - 当需要”观察“的类数据发生改变后，调用`Observable`实例的`.notifyObservers(Object arg)`（参数arg可将更改的数据传至每个`Observer`实例）以及`.setChange()`(**必须**)
-- 
+
+- 随后将会在`Observable`的`.notifyObservers()`中
