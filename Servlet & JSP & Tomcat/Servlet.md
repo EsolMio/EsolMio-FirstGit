@@ -30,5 +30,5 @@
 详情参考"Head First servlet" p101
 
 ## `Servlet`的常用方法
-1. `init()`，成员方法。用于将servlet初始化为真正的servlet。可将
+1. `init()`，成员方法。用于将servlet初始化为真正的servlet。可将`init()`重写但不需要调用`super.init();`
 
