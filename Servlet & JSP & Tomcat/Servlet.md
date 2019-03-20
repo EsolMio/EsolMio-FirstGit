@@ -31,5 +31,5 @@
 
 ## `Servlet`的常用方法
 1. `init()`，成员方法。用于将servlet初始化为真正的servlet。可将`init()`重写但不需要调用`super.init();`
-2. `getInitParameter()`，成员方法，
+2. `getInitParameter()`，成员方法。从实现的`ServletConfig`接口得来的方法，可将
 
