@@ -41,7 +41,7 @@ JSP本质为servlet，由容器转换。
            ```
            <servlet>
                <servlet-name>JspInit</servlet-name>
-               <>
+               <jsp-file>/TestInit.jsp</jsp-file>
            </servlet>
            ```
 
