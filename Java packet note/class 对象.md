@@ -7,4 +7,4 @@
 	1. 类需要放在环境变量`PATH`设定的位置中。
 	2. `className`为类全称，如：`java.io.InputStream`
 
-2. `.getConstructor(Class<?> paramterTypes)`
+2. `.getConstructor(Class<?>... paramterTypes)`
