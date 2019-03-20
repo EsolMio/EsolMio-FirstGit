@@ -1,6 +1,8 @@
 # Class 对象
 
 ## `Class`的使用
+Tips：构建数组时可用：
+1. Test[] testArray={}
 `Class`拥有的几个常用方法：
 1. `Class.forName(String className)`，`static`方法 ，通过`className`加载对应的类，可用于运行期加载额外类。
 **注意**：
