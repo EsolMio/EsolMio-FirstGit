@@ -5,5 +5,5 @@
 
 - 准备一类继承`extends Observable`类，虽然`Observable`本质为完整类，但若直接使用组合的方式使用其对象将无效果，故使用继承。
 - 将”视图“类实现`implements Observer`，并定义`update(Observable ob, Object o)`。
-- 将`Observable`类组合进被观察的类中，并在适当的地方（被观察类内部/重写的`Observable`构造器/其他地方）使用`Observable`实例的`.addObserver(Observer ob)`方法添加
-- 当需要”观察“的类数据发生改变后，调用
+- 将`Observable`类组合进被观察的类中，并在适当的地方（被观察类内部/重写的`Observable`构造器/其他地方）使用`Observable`实例的`.addObserver(Observer ob)`方法添加实现`Observer`的实例。
+- 当需要”观察“的类数据发生改变后，调用`Observable`实例的`.notifyObserver`
