@@ -1,3 +1,4 @@
+#Servlet
 # Servlet的一生
 - web容器（服务器）加载类（load .class file）
   Tips：不同的容器会提供不同的加载类时间，有些会在容器启动时同时加载，有些会在任何时刻加载
@@ -28,5 +29,5 @@
 
 详情参考"Head First servlet" p101
 
-
+#
 
