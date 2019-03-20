@@ -1,5 +1,5 @@
-#Servlet
-# Servlet的一生
+# Servlet
+## Servlet的一生
 - web容器（服务器）加载类（load .class file）
   Tips：不同的容器会提供不同的加载类时间，有些会在容器启动时同时加载，有些会在任何时刻加载
 - 调用servlet的构造函数（不需要自行编写构造函数），此时的servlet尚不完整，无法正常使用
@@ -9,7 +9,7 @@
 
 参考"Head First servlet" p97
 
-# Servlet的调用
+## Servlet的调用
 1. User -> `click URL`指向Servlet -> 容器获得客户发送的POST/GET请求
 2. 容器 -> 创建两对象`HttpServletReponse` `HttpServletRequest`
 3. 容器 according to -> URL -> serach CORRECT Servlet -> 创建或分配线程 -> 调用Servlet的`service()`方法
@@ -17,17 +17,18 @@
 5. Servlet -> `HttpServletReponse` -> User
 6. `service()`结束，对象回收
 
-# 调用servlet时容器创建了什么
+## 调用servlet时容器创建了什么
 - 容器创建了：`HttpServletRequest`对象，`HttpServletResponse`对象。
 - 容器通过调用了servlet的`service(request，response)`方法将请求对象和响应对象传递至servlet
 
 详情参考"Head First servlet" p95-96
 
-# 请求与线程
+## 请求与线程
 - **每个请求都在一个线程中运行**
 - 对于每个请求，无论是否来自于同一个用户，容器均会提供一个单独线程/栈以运行。
 
 详情参考"Head First servlet" p101
 
-#
+## `Servlet`的常用方法
+1. 
 
