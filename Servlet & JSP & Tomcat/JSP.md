@@ -34,4 +34,6 @@ JSP本质为servlet，由容器转换。
 	8. PageContext -- pageContext
 	9. Object -- page
 
-## 初始化Servlet
+## 初始化JSP
+1. 使用配置文件DD：
+	1. 需要在`<servlet>`标签内使用。
