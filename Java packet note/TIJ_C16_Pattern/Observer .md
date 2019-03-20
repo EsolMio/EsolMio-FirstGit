@@ -12,4 +12,4 @@
 
 - 当需要”观察“的类数据发生改变后，调用`Observable`实例的`.notifyObservers(Object arg)`（参数arg可将更改的数据传至每个`Observer`实例）以及`.setChange()`(**必须**)
 
-- 随后将会在`Observable`的`.notifyObservers()`中调用到每个`Observer`实例的`update()`方法（前提是`!changed`为false，即之前已正确调用`setChanged()`）
+- 随后将会在`Observable`的`.notifyObservers()`中调用到每个`Observer`实例的`update()`方法（前提是`!changed`为false，即之前已正确调用`setChanged()`，否则此方法将失效）。
