@@ -4,7 +4,7 @@
 Tips：构建数组时可用：
 1. `Test[] testArray={new Test(1), new Test(2), ...};`
 2. `Test[] testArray=new Test[4];`
-3. `new Test[]{ new Test(1), new Test(2), ... }`
+3. `new Test[]{ new Test(1), new Test(2), ... }`//无等号下创建数组。
 
 `Class`拥有的几个常用方法：
 1. `Class.forName(String className)`，`static`方法 ，通过`className`加载对应的类，可用于运行期加载额外类。
