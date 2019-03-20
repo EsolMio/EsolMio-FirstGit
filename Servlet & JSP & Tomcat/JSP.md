@@ -38,6 +38,8 @@ JSP本质为servlet，由容器转换。
 1. 使用配置文件DD：
 	1. 需要在`<servlet>`标签内声明。
 	2. Example:
+
+
            ```
            <servlet>
                <servlet-name>JspInit</servlet-name>
@@ -45,3 +47,4 @@ JSP本质为servlet，由容器转换。
            </servlet>
            ```
 
+      3. Tips: `<js>`
