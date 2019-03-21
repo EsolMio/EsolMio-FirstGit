@@ -29,6 +29,7 @@ Tips：构建数组时可用：
           
           Integer.TYPE == int.class return true
           Integer.class == int.class return false
+- 基本类型和封装类在Java 5中支持自动
 
 
 
