@@ -22,5 +22,7 @@ Tips：构建数组时可用：
 	- 功能相似的方法：`getMethods()`，将全部方法返回，返回`Method[]`。
 
 ## 关于基本类型的Class对象
-对于基本类型，如：int，double，char，包括void，都可以生成对应的
+- 对于基本类型，如：int，double，char，包括void，都可以生成对应的Class对象，通过`.class`。
+	- Example: `int.class`, `void.class`
+
 
