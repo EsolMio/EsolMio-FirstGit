@@ -24,5 +24,7 @@ Tips：构建数组时可用：
 ## 关于基本类型的Class对象
 - 对于基本类型，如：int，double，char，包括void，都可以生成对应的Class对象，通过`.class`。
 	- Example: `int.class`, `void.class`
+- **注意**：对于基本类型的封装类，Integer，Double等等，若想生成与`int.class`, ``
+
 
 
