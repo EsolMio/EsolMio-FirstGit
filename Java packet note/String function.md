@@ -4,4 +4,4 @@
 2. `concat(String str)`，将指定的str添加至本String对象的后方。
 3. `indexOf(int ch)`，返回第一次出现ch的索引
 	1. `indexOf(String str, int fromIndex)`功能相同，但从指定的fromIndex开始查找。
-	2. `lastIndexOf(int ch)`
+	2. `lastIndexOf(int ch)`，返回最后一次出现ch的索引。
