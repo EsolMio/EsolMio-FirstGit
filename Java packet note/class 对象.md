@@ -28,7 +28,7 @@ Tips：构建数组时可用：
 	- Example:
           
           Integer.TYPE == int.class return true
-          Integ
+          Integer.class == int.class return false
 
 
 
