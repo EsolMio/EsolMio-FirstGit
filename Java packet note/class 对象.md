@@ -30,10 +30,10 @@ Tips：构建数组时可用：
           Integer.TYPE == int.class return true
           Integer.class == int.class return false
 - 基本类型和封装类在Java 5中支持自动装箱/拆箱：
-	- “装箱”：将基本类型的值用`=`赋值给封装类对象
+	- “装箱”：将基本类型的值用`=`赋值给封装类对象j，JVM自动调用Integer的构造器。
 		- Example:`Integer i=10;`
-	- “拆箱”：将封装类对象的值（成员变量）通过`=`赋值给基本类型。
-		- Example：`Integer i = new Integer(10); int ii=i`
+	- “拆箱”：将封装类对象的值（成员变量）通过`=`赋值给基本类型。JVM自动调用Integer对象的
+		- Example：`Integer i = new Integer(10); int ii=i;`
 
 
 
