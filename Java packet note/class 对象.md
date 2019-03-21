@@ -25,7 +25,10 @@ Tips：构建数组时可用：
 - 对于基本类型，如：int，double，char，包括void，都可以生成对应的Class对象，通过`.class`。
 	- Example: `int.class`, `void.class`
 - **注意**：对于基本类型的封装类，Integer，Double等等，若想生成与`int.class`, `double.class`相同的class对象，需要使用`.TYPE`
-	- Example: `Integer.TYPE == int.class`, `return true`
+	- Example:
+          
+          Integer.TYPE == int.class return true
+          Integ
 
 
 
