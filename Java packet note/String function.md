@@ -6,3 +6,4 @@
 	1. `indexOf(String str, int fromIndex)`功能相同，但从指定的fromIndex开始查找。
 	2. `lastIndexOf(int ch)`，返回最后一次出现ch的索引。
 		1. `lastIndexOf(int ch, int fromIndex)`功能相同，但范围锁定在fromIndex之前。
+4. `trim()`，消除掉本String对象前后的whitespace。
