@@ -33,6 +33,7 @@ Tips：构建数组时可用：
 	- “装箱”：将基本类型的值用`=`赋值给封装类对象
 		- Example:`Integer i=10;`
 	- “拆箱”：将封装类对象的值（成员变量）通过`=`赋值给基本类型。
+		- Example：`Integer i = new Integer(10); int ii=i`
 
 
 
