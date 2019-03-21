@@ -1,4 +1,5 @@
 # String 常用的方法
 1. `substring(int beginIndex, int endIndex)`，返回指定的索引index范围内的字符串，从"beginIndex"开始，至"endIndex-1"，`return String`。
 	1. `substring(int beginIndex)`功能相同方法。
-2. 
+2. `concat(String str)`，将指定的str添加至本String对象的后方。
+3. `index`
