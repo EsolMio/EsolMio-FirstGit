@@ -55,5 +55,6 @@ JSP本质为servlet，由容器转换。
 3. 执行，容器调用`_jspService()`
 
 ## jsp中的`PageContext`对象
-- `PageContext`，JSP文件中的
+- `PageContext`，JSP文件中的上下文对象，作用域在由jsp转换成的servlet中。
+- `PageContext`
 
