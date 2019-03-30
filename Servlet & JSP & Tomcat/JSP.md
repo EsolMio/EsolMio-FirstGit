@@ -39,17 +39,14 @@ JSP本质为servlet，由容器转换。
 1. 使用配置文件DD：
 	1. 需要在`<servlet>`标签内声明。
 	2. Example:
-
-
            ```
            <servlet>
                <servlet-name>JspInit</servlet-name>
                <jsp-file>/TestInit.jsp</jsp-file>
            </servlet>
            ```
-
       3. Tips: `<jsp-file>`中为jsp文件所在的目录。
 2. 初始化，覆盖`jspInit()`
    - 使用`<%! ... %>`声明标签。在其中定义`jspInit()`方法，容器默认先调用自定义的`jspInit()`。
 
-3.执行，容器调用`_jspInit()`
+3.执行，容器调用`_jspService()`
