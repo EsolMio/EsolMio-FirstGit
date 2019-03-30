@@ -17,7 +17,8 @@ JSP本质为servlet，由容器转换。
 		1. `contextType`-设置页面类型；
 		2. `import`-设置jsp中要包含的package（包）；
 		3. `language`-当前使用scriptlet的语言（如"java"）；
-		4. `isErrorPage`-鉴定当前jsp是否时另一个jsp的错误页面，默认为`false`。若为`true`（即有其他jsp指定本页面为错误页面）则此jsp可访问被隐藏的实现`Throwable`的对象。 
+		4. `isErrorPage`-鉴定当前jsp是否时另一个jsp的错误页面，默认为`false`。若为`true`（即有其他jsp指定本页面为错误页面）则此jsp可访问被隐藏的实现`Throwable`的对象。
+		5. `errorPage`- 
 	2. taglib指令：定义JSP可使用指定的标记库。
 	3. include指令：将指定的jsp/html内的内同融合进本jsp，即允许建立可从用的块。
 		- 看上去和jsp动作`<jsp:include>`相似，实际实现方法不同。
