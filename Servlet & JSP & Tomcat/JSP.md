@@ -13,6 +13,7 @@ JSP本质为servlet，由容器转换。
 2. 指令: `<%@ ... %>`，用于向容器Container传递特殊指令。
    Example: `<%@ page import="java.util.*, test.example.*"`
    `import`的包通过属性形式输入。
+	1. 
 
 3. 表达式: `<%= ... %>`，用于输出特定的值，只要返回值为`String`类型均可使用。
    Example: `<%= Counter.getCount() %>`
@@ -59,5 +60,8 @@ JSP本质为servlet，由容器转换。
 - `PageContext`拥有获得四个作用域- `application`, `pageContext`, `request`, `session`属性（Attribute）的能力
 	- 使用`getAttribute(String attributeName, int scope)`，`scope`可为`PageContext`中的四个静态变量：`APPLICATION_SCOPE`, `PAGE_SCOPE`, `REQUEST_SCOPE`, `SESSION_SCOPE`。
 	- 使用`setAttribute(String attributeName, Object value, int scope)`往指定的`scope`添加值。
-	- p.s. 在使用无`int scope`参数的`setAttribute()`, `getAttrib`
+	- p.s. 在使用无`int scope`参数的`setAttribute()`, `getAttribute()`时均默认为`pageContext`。
+
+## 
+
 
