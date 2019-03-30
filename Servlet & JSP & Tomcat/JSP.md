@@ -13,7 +13,11 @@ JSP本质为servlet，由容器转换。
 2. 指令: `<%@ ... %>`，用于向容器Container传递特殊指令。
    Example: `<%@ page import="java.util.*, test.example.*"`
    `import`的包通过属性形式输入。
-	1. page指令：设定页面的属性，其中包括了`contextType`-设置页面类型, `import`-设置jsp中要包含的package（包）, `language`-当前使用scriptlet的语言（如"Java"）
+	1. page指令：设定页面的属性，其中包括了：
+		1. `contextType`-设置页面类型；
+		2. `import`-设置jsp中要包含的package（包）；
+		3. `language`-当前使用scriptlet的语言（如"java"）；
+	2. taglib指令，
 
 3. 表达式: `<%= ... %>`，用于输出特定的值，只要返回值为`String`类型均可使用。
    Example: `<%= Counter.getCount() %>`
