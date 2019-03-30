@@ -58,4 +58,5 @@ JSP本质为servlet，由容器转换。
 - `PageContext`，JSP文件中的上下文对象，作用域在由jsp转换成的servlet中。
 - `PageContext`拥有获得四个作用域- `application`, `pageContext`, `request`, `session`属性（Attribute）的能力
 	- 使用`getAttribute(String attributeName, int scope)`，`scope`可为`PageContext`中的四个静态变量：`APPLICATION_SCOPE`, `PAGE_SCOPE`, `REQUEST_SCOPE`, `SESSION_SCOPE`。
+	- 使用`setAttribute(String attributeName, Object )`
 
