@@ -18,7 +18,10 @@ JSP本质为servlet，由容器转换。
 		2. `import`-设置jsp中要包含的package（包）；
 		3. `language`-当前使用scriptlet的语言（如"java"）；
 	2. taglib指令：定义JSP可使用指定的标记库。
-	3. include指令：将指定的jsp/html内的内同融合进本
+	3. include指令：将指定的jsp/html内的内同融合进本jsp，即允许建立可从用的块。
+		- 看上去和jsp动作`《》`
+
+
 
 3. 表达式: `<%= ... %>`，用于输出特定的值，只要返回值为`String`类型均可使用。
    Example: `<%= Counter.getCount() %>`
