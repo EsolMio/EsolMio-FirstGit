@@ -53,3 +53,7 @@ JSP本质为servlet，由容器转换。
    - 如何覆盖？ 使用`<%! ... %>`声明标签，在其中申明自定义的`jspInit()`方法。容器默认先调用自定义的`jspInit()`。
 
 3. 执行，容器调用`_jspService()`
+
+## jsp中的`PageContext`对象
+- `PageContext`，JSP文件中的
+
