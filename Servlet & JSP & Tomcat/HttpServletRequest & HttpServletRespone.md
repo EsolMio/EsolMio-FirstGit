@@ -51,7 +51,7 @@
   - 待补充...
 
 ## RequestDispatcher
-`RequestDispatcher`的实例只能通过`request`获得，当
+`RequestDispatcher`的实例只能通过`request`获得，当获得一个`RequestDispatcher`的实例后调用了它的`forward()`方法
 
 
 ## 为什么会有GenericServlet，ServletRequest，ServletResponse类/接口？不是只有Http系的类/接口就可以了吗？
