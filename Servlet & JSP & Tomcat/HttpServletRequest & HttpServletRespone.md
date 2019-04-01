@@ -1,5 +1,5 @@
 # HttpServletRequest & HttpServletRespone
-### HttpServletRequest
+## HttpServletRequest
 - 包含的几个主要使用的方法，包括继承下来的（**Remember**）：
   -  `getParameter(String name) return String `, `getParameterValues(String name) return String[] ` **Tips**:此方法用于返回**一个参数**带有**多个值**的情况, `getParameterNames() return Enumeration `
      这些方法都是返回从HTTP方法**GET/POST**中获得的参数，即客户在网页上做出操作后返回的参数。
@@ -40,7 +40,7 @@
   - 待补充...
 - 待补充...
 
-### HttpServletResponse
+## HttpServletResponse
 - 包含的几个重要方法（Remember）：
   - `getWriter()`, 获得一个字符输出流，专门用于处理Unicode系字符，返回一个`PrintWriter`对象。
   - `getOutputStream()`, 获得一个输出流，返回一个`ServletOutputStream`对象。
@@ -50,10 +50,11 @@
   - `encodeURL(String URL)`，此方法会在指定参数`URL`后加上名为`jsessionid`的参数值，此参数值代表Session对象的ID，而非Cookie。
   - 待补充...
 
-###
+## RequestDispatcher
+`RequestDispatcher`的实例只能通过`request`获得，当
 
 
-### 为什么会有GenericServlet，ServletRequest，ServletResponse类/接口？不是只有Http系的类/接口就可以了吗？
+## 为什么会有GenericServlet，ServletRequest，ServletResponse类/接口？不是只有Http系的类/接口就可以了吗？
 提供了灵活性，以适应需要使用其他协议的servlet。
 
 
