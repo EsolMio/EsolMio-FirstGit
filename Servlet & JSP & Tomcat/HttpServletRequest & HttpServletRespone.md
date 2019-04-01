@@ -50,6 +50,9 @@
   - `encodeURL(String URL)`，此方法会在指定参数`URL`后加上名为`jsessionid`的参数值，此参数值代表Session对象的ID，而非Cookie。
   - 待补充...
 
+###
+
+
 ### 为什么会有GenericServlet，ServletRequest，ServletResponse类/接口？不是只有Http系的类/接口就可以了吗？
 提供了灵活性，以适应需要使用其他协议的servlet。
 
