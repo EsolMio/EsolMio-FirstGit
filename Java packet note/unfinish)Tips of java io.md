@@ -47,7 +47,7 @@ Writer类详见JDK
 - 。。。
 
 ## `BufferedOutputStream`同普通`OutputStream`的区别
-`BufferedOutput`
+`BufferedOutputStream`会将上层数据流写入自己的`Byte[] buf`中，
 
 
 ## `PrintWriter`不用手动调用`flush()`的类
