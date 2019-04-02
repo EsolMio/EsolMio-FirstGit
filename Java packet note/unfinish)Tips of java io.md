@@ -59,7 +59,8 @@ Writer类详见JDK
 - 但是，需要在构造`PrintWriter`对象时使用`new PrintWriter(Writer/OutputStream out, boolean autoFlush);`，其中参数`autoFlush`使用`true`。
 
 ## `BufferedReader`可以直接读取一行字符
-因Buffered本身拥有缓冲区，可使用`new BufferedReader(Reader in ,int size)`更改缓冲区大，则可以一次性容纳更多的字符。
+- 因Buffered本身拥有缓冲区，可使用`new BufferedReader(Reader in ,int size)`更改缓冲区大，则可以一次性容纳更多的字符。
 `readLine()`实现以上功能，`return String`。
+
 
 
