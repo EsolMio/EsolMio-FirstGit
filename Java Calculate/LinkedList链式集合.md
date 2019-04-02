@@ -5,4 +5,5 @@
 3. `LinkedListIterator`类，实现`Iterator`接口。
 
 ## 注意事项：
-1. 需要预备两个`Node`类型的handle分别指向头元素和
+1. 需要预备两个`Node`类型的handle分别指向头元素和尾元素（头指针&尾指针）
+2. 初始化时将头尾指针
