@@ -52,7 +52,7 @@ Writer类详见JDK
 - 普通`OutputStream`会直接写入输出流中。
 
 ## `flush`方法
-
+`flush()`方法的使用需要同`BufferedOutputStream`一同配合调用才会有效。
 
 
 ## `PrintWriter`不用手动调用`flush()`的类
