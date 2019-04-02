@@ -47,7 +47,8 @@ Writer类详见JDK
 - 。。。
 
 ## `BufferedOutputStream`同普通`OutputStream`的区别
--`BufferedOutputStream`会将上层数据流写入自己的`Byte[] buf`中，无论调用多少次的`write()`，只要Byte长度不超过`buf`则均写入`buf`中。
+-`BufferedOutputStream`会将上层数据流写入自己的`Byte[] buf`中，无论调用多少次的`write()`，只要Byte长度不超过`buf`则均写入`buf`中，直到长度len超过`buf`。
+- 普通`OutputStream`会直接
 
 
 ## `PrintWriter`不用手动调用`flush()`的类
