@@ -11,4 +11,5 @@
 
 ## LinkedListIterator
 1. 需要声明一`Node`成员变量current指针，默认值指向`LinkedList`的first指针所指向的对象（`current=list`）。通过此指针以通过`next()`获得下一个node所存储的成员。
-2. 
+
+
