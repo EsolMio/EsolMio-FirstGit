@@ -6,6 +6,7 @@
 
 ## LinkedList
 1. `LinkedList`本身需要有两个`Node`类型的handle分别指向头元素和尾元素（头指针&尾指针）。
+2. 具体定义`remove()`时，可将
 
 ## 注意事项：
 1. 需要预备两个`Node`类型的handle分别指向头元素和尾元素（头指针&尾指针）
