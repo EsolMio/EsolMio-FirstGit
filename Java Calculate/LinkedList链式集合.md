@@ -6,7 +6,7 @@
 
 ## LinkedList
 1. `LinkedList`本身需要有两个`Node`类型的handle分别指向头元素和尾元素（头指针&尾指针）。
-2. 为了实现可以使用index索引获得对应的node，需要
+2. 为了实现可以使用index索引获得对应的node，需要特地申明一int成员变量，用于存储当前node数量
 3. 删除节点的本质是：将删除的node所指向的前后node分别指向对反即可（若需要可以将remove的node设为`null`）
 4. 
 
