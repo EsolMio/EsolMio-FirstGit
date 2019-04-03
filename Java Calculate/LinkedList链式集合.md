@@ -4,6 +4,9 @@
 2. `LinkedList`本身。
 3. `LinkedListIterator`类，实现`Iterator`接口。
 
+## LinkedList
+1. `LinkedList`本身需要有两个`Node`类型的handle分别指向头元素和尾元素（头指针&尾指针）。
+
 ## 注意事项：
 1. 需要预备两个`Node`类型的handle分别指向头元素和尾元素（头指针&尾指针）
 2. 初始化时将头尾指针和尾指针同时指向`null`。
