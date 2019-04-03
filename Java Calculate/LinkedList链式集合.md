@@ -10,4 +10,4 @@
 3. 删除节点的本质是：将删除的node所指向的前后node分别指向对反即可（若需要可以将remove的node设为`null`）
 
 ## LinkedListIterator
-1. 需要声明一`Node`成员变量current指针，默认值指向`LinkedLis`
+1. 需要声明一`Node`成员变量current指针，默认值指向`LinkedList`的first指针所指向的对象（`current=list`）。通过此
