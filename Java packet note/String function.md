@@ -10,5 +10,5 @@
 5. `split(String regex)`，通过参数regex将String对象分割，regex参数不保留在新字串中。
 6. `toLowerCase()`，全部根据ASCII转换为小写。
 	1. `toUpperCase()`，根据ASCII转换为大写。
-7. `valueOf(boolean/char/chae[]/double/int/long/Object/float c)`
+7. `valueOf(boolean/char/chae[]/double/int/long/Object/float c)`，将指定类型的参数转换为`String`类型。
 
