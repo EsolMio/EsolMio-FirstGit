@@ -8,5 +8,7 @@
 		1. `lastIndexOf(int ch, int fromIndex)`功能相同，但范围锁定在fromIndex之前。
 4. `trim()`，消除掉本String对象前后的whitespace。
 5. `split(String regex)`，通过参数regex将String对象分割，regex参数不保留在新字串中。
-6. `toLowerCase()`，全部根据ASCII转换为小写
-7. 
+6. `toLowerCase()`，全部根据ASCII转换为小写。
+	1. `toUpperCase()`，根据ASCII转换为大写。
+7. `values`
+
