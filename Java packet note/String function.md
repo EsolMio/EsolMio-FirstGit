@@ -11,4 +11,5 @@
 6. `toLowerCase()`，全部根据ASCII转换为小写。
 	1. `toUpperCase()`，根据ASCII转换为大写。
 7. `valueOf(boolean/char/chae[]/double/int/long/Object/float c)`，将指定类型的参数转换为`String`类型。
+8. `length()`，返回此`String`实例的长度。
 
