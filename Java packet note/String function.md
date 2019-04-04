@@ -12,4 +12,4 @@
 	1. `toUpperCase()`，根据ASCII转换为大写。
 7. `valueOf(boolean/char/chae[]/double/int/long/Object/float c)`，将指定类型的参数转换为`String`类型。
 8. `length()`，返回此`String`实例的长度。
-
+9. `equals(Object anObject)`，与指定的`Object`实例对比两者是否相同，
