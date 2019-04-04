@@ -7,4 +7,5 @@
 	2. `lastIndexOf(int ch)`，返回最后一次出现ch的索引。
 		1. `lastIndexOf(int ch, int fromIndex)`功能相同，但范围锁定在fromIndex之前。
 4. `trim()`，消除掉本String对象前后的whitespace。
-5. `split(String regex)`，通过参数regex
+5. `split(String regex)`，通过参数regex将String对象分割，regex参数不保留在新字串中。
+6. 
