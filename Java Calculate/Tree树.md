@@ -1,4 +1,3 @@
 # Tree树
 
-## CheckPoints
-Book C4_1
+## 基本概念
