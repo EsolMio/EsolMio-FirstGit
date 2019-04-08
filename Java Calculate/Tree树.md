@@ -18,3 +18,6 @@ class TreeNode{
     TreeNode nextSibling;// 指针，指向它的下一个兄弟，若无则为null
 }
 ```
+
+## 遍历
+遍历分为
