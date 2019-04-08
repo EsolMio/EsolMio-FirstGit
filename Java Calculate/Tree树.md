@@ -26,3 +26,13 @@ class TreeNode{
 
 ## 二叉树 Binary Tree
 此树的每个子节点不能有超过两个的子节点
+
+最坏二叉树：每个节点只有一个子节点。
+
+定义二叉树：
+CODE：
+```
+class BinaryTree{
+   
+}
+```
