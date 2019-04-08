@@ -39,3 +39,6 @@ class BinaryTree{
      BinaryTree right;
 }
 ```
+
+Tips:
+1. 
