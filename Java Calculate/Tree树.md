@@ -15,6 +15,6 @@ CODE:
 class TreeNode{
     Object element;
     TreeNode firstChild;// 指针，指向其第一个子集，若无则为null
-    TreeNode nextSibling;// 指针，指向
+    TreeNode nextSibling;// 指针，指向它的下一个兄弟，若无则为null
 }
 ```
