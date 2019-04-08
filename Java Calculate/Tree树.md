@@ -33,6 +33,8 @@ class TreeNode{
 CODE：
 ```
 class BinaryTree{
-   
+     Object element;
+     BinaryTree left;
+     BinaryTree right;
 }
 ```
