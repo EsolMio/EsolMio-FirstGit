@@ -14,6 +14,7 @@ JSP有以下几个标准动作（常用）：
 	- "name"为必须，指定从`getAttribute()`中的名称name，
 	- "property"为必须，指定从Attribute中获得的实例的property值（Tips：一个JavaBean中可能有多个property）
 	- "param"非必须，设置此参数可直接从request中获得nane相匹配的值，e.g.  HTML: `<input type="text" name="userName">`, JSP: `<jsp:setProperty param="userName">`
+		- 若request的请求参数
 3. `<jsp:forward>`
 4. `<jsp:include>`
 
