@@ -2,7 +2,7 @@
 
 ## JSP 标准动作
 JSP有以下几个标准动作（常用）：
-1. `<jsp:useBean id="" class="" scope="" [type=""] />`，获得JavaBean。
+1. `<jsp:useBean id="" class="" scope="" [type=""] />`，获得JavaBean。**Tips**：
 	- "id"为必须，对应java代码中指向JavaBean的句柄名，
 	- "class"为必须，对应java代码中JavaBean的申明类型，以及生成(`new`)新JavaBean的必须值，
 	- "scope"非必须，默认值为`pageContext`。
