@@ -17,8 +17,8 @@ JSP有以下几个标准动作（常用）：
 		- 若request（只针对request）的请求参数名称与`<jsp:setProperty>`指定JavaBean的property相同，则value直接配对。
 		- 在上条条件下，可将"property"设置为"*"，意味着与JavaBean中的property相匹配的请求参数均自动对应上。
 		- 若请求参数为纯数字，则`<jsp:setProperty>`会自动将其从String转译为int(`Integer.parseInt(String)`)，但若在"value"中使用scriptlet则不会自动转译(`value="<%=rquest.getParameter(name) %>"`)
-3. `<jsp:forward>`，将页面
-4. `<jsp:include>`，功能上与`<%@include %>`相同，将指定页面安插在本页面中。两者的区别：
+3. `<jsp:forward page="">`，将页面转发给指定的jsp
+4. `<jsp:include page>`，功能上与`<%@include %>`相同，将指定页面安插在本页面中。两者的区别：
 	1. `<jsp:include>`jsp动作在运行时“插入”被插入页面的响应，即将本jsp处理的响应传递到指定jsp中（使用`RequestDispatcher`），对动作在代码中使用的位置不敏感，
 	2. `<%@include%>`include指令则将指定的jsp在编译器之间将其与本jsp合并，编译后为单一的servlet，对动作在代码中使用的位置敏感。
 
