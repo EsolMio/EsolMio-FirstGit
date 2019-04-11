@@ -1,4 +1,5 @@
 # JSP 标准动作 & EL表达式
+Tips: 在servlet中，大部分的对象都放置于属性Attribute中，故通过`setAttribute()`和`getAttribute()`
 
 ## JSP 标准动作
 JSP有以下几个标准动作（常用）：
