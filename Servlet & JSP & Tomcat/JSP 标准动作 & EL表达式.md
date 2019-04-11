@@ -32,5 +32,5 @@ Tips: 可在属性中使用Scriptlet`<%...%>`，但这不推荐。
 		- "sessionScope"
 		- "applicationScope"
 	- 请求参数的Map:
-		- "param"
-		- "paramValues"
+		- "param"，此泛型为`Map<String, String>`
+		- "paramValues"，此泛型为`Map<String, String[]>`
