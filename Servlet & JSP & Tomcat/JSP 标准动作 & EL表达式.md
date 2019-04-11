@@ -16,7 +16,7 @@ JSP有以下几个标准动作（常用）：
 	- "param"非必须，设置此参数可直接从request中获得nane相匹配的值，e.g.  HTML: `<input type="text" name="userName">`, JSP: `<jsp:setProperty param="userName">`
 		- 若request（只针对request）的请求参数名称与`<jsp:setProperty>`指定JavaBean的property相同，则value直接配对。
 		- 在上条条件下，可将"property"设置为"*"，意味着与JavaBean中的property相匹配的请求参数均自动对应上。
-		- 若请求参数为纯数字，则`<jsp:setProperty>`会自动将其从String转译为int(`Integer.parseTo`)
+		- 若请求参数为纯数字，则`<jsp:setProperty>`会自动将其从String转译为int(`Integer.parseInt(String)`)，但若在""
 3. `<jsp:forward>`
 4. `<jsp:include>`
 
