@@ -18,7 +18,7 @@ JSP有以下几个标准动作（常用）：
 		- 在上条条件下，可将"property"设置为"*"，意味着与JavaBean中的property相匹配的请求参数均自动对应上。
 		- 若请求参数为纯数字，则`<jsp:setProperty>`会自动将其从String转译为int(`Integer.parseInt(String)`)，但若在"value"中使用scriptlet则不会自动转译(`value="<%=rquest.getParameter(name) %>"`)
 3. `<jsp:forward>`
-4. `<jsp:include>`，
+4. `<jsp:include>`，功能上与`<%@include %>`相同，将指定页面安插在本页面中
 
 Tips: 可在属性中使用Scriptlet`<%...%>`，但这不推荐。
 
