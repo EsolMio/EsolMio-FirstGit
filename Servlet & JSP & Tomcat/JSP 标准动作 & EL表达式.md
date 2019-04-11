@@ -40,6 +40,6 @@ Tips: 可在属性中使用Scriptlet`<%...%>`，但这不推荐。
 	- "cookie"，Map，曲奇
 	- "initParam"，Map，上下文Context初始化参数（于web.xml中定义）
 	- 唯一的真引用：
-		- "pageContext"，真正的对象引用，非Map，与jsp生成的servlet中的`pageContext`相对应。
+		- "pageContext"，真正的对象引用（JavaBean），非Map，与jsp生成的servlet中的`pageContext`相对应。
 
 
