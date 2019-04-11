@@ -19,7 +19,7 @@ JSP有以下几个标准动作（常用）：
 		- 若请求参数为纯数字，则`<jsp:setProperty>`会自动将其从String转译为int(`Integer.parseInt(String)`)，但若在"value"中使用scriptlet则不会自动转译(`value="<%=rquest.getParameter(name) %>"`)
 3. `<jsp:forward>`
 4. `<jsp:include>`，功能上与`<%@include %>`相同，将指定页面安插在本页面中。两者的区别：
-	1. `<jsp:include>`jsp动作在运行时插入
+	1. `<jsp:include>`jsp动作在运行时“插入”被插入页面的响应，即将本jsp处理的响应传递到指定jsp中（使用RequestDispatcher）
 
 Tips: 可在属性中使用Scriptlet`<%...%>`，但这不推荐。
 
