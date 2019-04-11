@@ -26,6 +26,8 @@ Tips: 可在属性中使用Scriptlet`<%...%>`，但这不推荐。
 - 作用域为`${...}`
 - 可以使用`.`或`[]`操作，其中`[]`中可使用`""`抑或不用。
 - EL中的隐式对象
+	- 作用域属性的Map类型
 	- "pageScope"
 	- "rquestScope"
-	- "session"
+	- "sessionScope"
+	- "applicationScope"
