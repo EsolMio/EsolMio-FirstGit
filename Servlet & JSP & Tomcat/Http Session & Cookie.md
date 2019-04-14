@@ -1,4 +1,6 @@
-# Http Session
+# Http Session & Cookie
+- Cookie
+
 ### Session的使用
 
 - 若使用了`request.getSeesion()`：
