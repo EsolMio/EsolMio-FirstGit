@@ -1,5 +1,5 @@
 # Http Session & Cookie
-- Cookie
+- Cookie存放在client，session存放在server。
 
 ### Session的使用
 
