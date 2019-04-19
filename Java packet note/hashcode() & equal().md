@@ -11,21 +11,5 @@
     }
 ...
 ```
-但在HashMap中，`get()`的具体实现为：
-```
-public V get(Object key) {
-    if (key == null)
-        return getForNullKey();
-    // 获得key的hash值
-    int hash = hash(key.hashCode());
-    for (Entry<K,V> e = table[indexFor(hash, table.length)];
-        e != null;
-        e = e.next) {
-        Object k;
-        // 通过hash值判断
-        if (e.hash == hash && ((k = e.key) == key || key.equals(k)))
-            return e.value;
-        }
-        return null;
-    }
-```
+但在HashMap中，`get()`方法会调用到`getNode(int hash, Object key)`，其中使用到了hash，
+
