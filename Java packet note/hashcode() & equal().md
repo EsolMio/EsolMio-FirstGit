@@ -22,7 +22,7 @@ public V get(Object key) {
         e != null;
         e = e.next) {
         Object k;
-        // 通过hash值
+        // 通过hash值判断
         if (e.hash == hash && ((k = e.key) == key || key.equals(k)))
             return e.value;
         }
