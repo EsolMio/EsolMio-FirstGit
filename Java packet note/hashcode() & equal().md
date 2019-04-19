@@ -2,7 +2,7 @@
 - 两方法均来自于`Object`
 - 若想实现通过类型相同对象不相同的key在散列表中获得相同的value，则需要在修改继承下来的`equals()`方法，同时修改`hashcode()`，否则将会得到`null`。
 	- Reason：因为在大部分“键-值”的集合类对象中，通过key获得value需要同时用到`equals()`和`hashcode()`
-	- 同时使用`equals()`和`hashcode()`的原因：`hashcode()`有很大可能会产生相同的值，因为hash值本身为int类型，范围为$2^{32}$。
+	- 同时使用`equals()`和`hashcode()`的原因：`hashcode()`有很大可能会产生相同的值，因为hash值本身为int类型，范围为 $2^{32}$ ，超出范围则hash值相同。
 	- 通过`hashcode()`验证两个对象是否不同（不验证相同），当hash值不同时则对象绝对不同。
 	- 再通过`equals()`
 
