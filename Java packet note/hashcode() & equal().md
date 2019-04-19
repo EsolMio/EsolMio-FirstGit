@@ -5,7 +5,7 @@
 	- 通过`hashcode()`验证两个对象是否不同（不验证相同），当hash值不同时则对象绝对不同。
 	- 再通过`equals()`
 
-Tips: `hashcode()`默认为映射对象内存地址。
+Tips: `hashcode()`**默认为映射对象内存地址**。
 
 
 如，修改`equals`
