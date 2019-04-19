@@ -11,5 +11,5 @@
     }
 ...
 ```
-但在HashMap中，`get()`方法会调用到`getNode(int hash, Object key)`，其中使用到了hash，
+但在HashMap中，`get()`方法会调用到`getNode(int hash, Object key)`，其中使用到了hash，即与是否修改`equals()`无关.
 
