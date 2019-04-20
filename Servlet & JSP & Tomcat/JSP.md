@@ -73,6 +73,7 @@ JSP本质为servlet，由容器转换。
 	- 使用`setAttribute(String attributeName, Object value, int scope)`往指定的`scope`添加值。
 	- p.s. 在使用无`int scope`参数的`setAttribute()`, `getAttribute()`时均默认为`pageContext`。
 
-## 
+##  让JSP禁用脚本
+在DD
 
 
