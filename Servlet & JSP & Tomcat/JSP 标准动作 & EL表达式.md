@@ -47,7 +47,7 @@ Tips: 可在属性中使用Scriptlet`<%...%>`，但这不推荐。
 	- 唯一的真引用：
 		- "pageContext"，真正的对象引用（JavaBean），非Map，与jsp生成的servlet中的`pageContext`相对应。
 - EL中的运算符号：
-	- 算数："+", "-", "*", "/ div"(Tips: ), "% mod"
+	- 算数："+", "-", "*", "/ div"(Tips: 除以0不会出错，而是返回infinity), "% mod"
 	- 逻辑："&& and", "|| or", "! not"
 	- 关系："== eq", "!= ne", "< lt", "> gt", "<= le", ">= ge"。
 - 倘若EL中出现了null值
