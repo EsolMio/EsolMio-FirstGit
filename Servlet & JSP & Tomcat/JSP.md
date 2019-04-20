@@ -82,5 +82,5 @@ JSP本质为servlet，由容器转换。
 - true则禁用
 - 无（默认）为启用
 - 标签用于`<jsp-config><jsp-property-group>`中
-- 需要同时声明`<url-pattern>`
+- 需要同时声明`<url-pattern>`标签，确定配置的jsp文件，若值为`*.jsp`则为全部jsp。
 
