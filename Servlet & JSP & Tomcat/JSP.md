@@ -78,6 +78,6 @@ JSP本质为servlet，由容器转换。
 
 
 ##  让JSP禁用脚本
-在DD中使用
+在DD中使用`<scripting-invalid>`标签设定jsp是否使用脚本（seriptlet，Java表达式，声明）
 
 
