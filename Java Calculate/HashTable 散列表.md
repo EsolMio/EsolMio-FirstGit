@@ -6,4 +6,4 @@
 - 故需要确定一函数以处理冲突和确定散列表大小问题。
 
 ## 冲突处理
-1. 对于任何的散列表，key所对应的hash值需要限制在表的大小之内（即 $hash=getHash(x)$ % $tablesize$）
+1. 对于任何的散列表，key所对应的hash值需要限制在表的大小之内（即 $hash=getHash(x)$ mod $tablesize$）
