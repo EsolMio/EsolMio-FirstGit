@@ -6,3 +6,5 @@
 - practices
 - proxy
 - repository
+- Parallel
+- Artifact
