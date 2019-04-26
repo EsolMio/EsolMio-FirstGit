@@ -13,3 +13,5 @@
 - verify
 - archetype
 - mechanism
+- template
+- combined
