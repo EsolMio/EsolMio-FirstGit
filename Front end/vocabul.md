@@ -20,3 +20,4 @@
 - revolves
 - essentially
 - familiarize
+- indicates
