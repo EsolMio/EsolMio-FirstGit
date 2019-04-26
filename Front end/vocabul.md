@@ -1,4 +1,6 @@
 # Vocabulary
+
+## 19.4.26
 - nutshell
 - patterns
 - promote
@@ -8,3 +10,4 @@
 - repository
 - Parallel
 - Artifact
+- verify
