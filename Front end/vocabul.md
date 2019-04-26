@@ -23,3 +23,4 @@
 - indicates
 - infrequently 
 - mandatory
+- typically
