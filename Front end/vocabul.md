@@ -15,3 +15,4 @@
 - mechanism
 - template
 - combined
+- inherently
