@@ -11,3 +11,5 @@
 - Parallel
 - Artifact
 - verify
+- archetype
+- mechanism
