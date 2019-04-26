@@ -21,3 +21,5 @@
 - essentially
 - familiarize
 - indicates
+- infrequently 
+- mandatory
