@@ -37,3 +37,5 @@
 - varying 
 - mention
 - prized
+- guarantee
+- stable
