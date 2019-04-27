@@ -15,6 +15,6 @@
 - 通过hash值定位在数组中的位置，再将其放入至相应位置所拥有的链表中（hash值通过`int hash=obj.hashcode(); hash %=arrayLength; return hash;`方式获得）
 
 ### 2. 线性探测法（非链式）
-
+在发生冲突时，则线性查找下一个空闲地址，若有则
 
 
