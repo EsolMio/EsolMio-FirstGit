@@ -30,3 +30,6 @@
 - convention
 - common
 - pretty
+- observer
+- conventions
+- explicitly
