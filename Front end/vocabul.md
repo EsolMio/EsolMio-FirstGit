@@ -26,6 +26,7 @@
 - typically
 - generated
 - standard
--  layout
+- layout
 - convention
 - common
+- pretty
