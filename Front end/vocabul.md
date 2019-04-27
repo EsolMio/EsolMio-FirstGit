@@ -25,3 +25,5 @@
 - mandatory
 - typically
 - generated
+- standard
+-  layout
