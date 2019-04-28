@@ -16,7 +16,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 
 2. 使用Build Lifecycle（构建项目时的生命周期）有两种方式：1. 使用打包方式的goal（其绑定了不同的阶段）2. 使用plugin（插件）
 
-	1. 不同的打包方式有不同的goal绑定在特定的。以下示范`jar`：
+	1. 不同的打包方式有不同的goal绑定在特定的phase上。以下示范`jar`：
 
 |Phase|plugin:goal|
 |-|-|
@@ -30,3 +30,4 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 |`deploy`|`deploy:deploy`|
 
    需按照以上顺序执行，顺序执行下来为一个生命周期（不确定）
+		2. 
