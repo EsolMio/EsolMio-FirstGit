@@ -9,4 +9,5 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成：
 - test 测试
 - package 打包
 - verify 校验
-- install 安装至
+- install 安装至repository
+- deploy 部署
