@@ -12,4 +12,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 	- install 安装至repository
 	- deploy 部署
 
-2. 
+   上述所说的几项即在命令行中需要
+
+
+2. 上述
