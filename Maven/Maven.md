@@ -28,4 +28,4 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 |`install`|`install:install`|
 |`deploy`|`deploy:deploy`|
 
-   需按照以上顺序执行，
+   需按照以上顺序执行，顺序执行下来为一个生命周期
