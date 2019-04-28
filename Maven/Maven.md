@@ -20,10 +20,12 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 |Phase|plugin:goal|
 |-|-|
 |`process-resources`|`resources:resources`|
-|compile|compiler:compile|
-|process-test-resources|resources:testResources|
+|`compile`|`compiler:compile`|
+|`process-test-resources`|`resources:testResources`|
 |`test-compile`|`compiler:testCompile`|
 |`test`|`surefire:test`|
 |`package`|`jar:jar`|
 |`install`|`install:install`|
-|``|``|
+|`deploy`|`deploy:deploy`|
+
+   按照以上顺序
