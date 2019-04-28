@@ -12,7 +12,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 	- install 安装至repository
 	- deploy 部署
 
-   上述所说的几项即在命令行中需要
+   上述所说的几项即在命令行中需要输入以执行的语句，即对于一个新的项目，需要按照上述的顺序执行上述的语句。
 
 
 2. 上述
