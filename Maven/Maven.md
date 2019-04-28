@@ -18,5 +18,6 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 2. 对于不同的打包方式有不同的lifecycle，且会bind绑定一串`goals`在particular指定的phase上。以下示范`jar`：
 
 |Phase|plugin:goal|
-|-|-|-|
-|content1|content2|
+|-|-|
+|`process-resources`|`resources:resources`|
+|1|2|
