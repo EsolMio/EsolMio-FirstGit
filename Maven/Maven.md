@@ -15,4 +15,4 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
    上述所说的几项即在命令行中需要输入以执行的语句，即对于一个新的项目，需要按照上述的顺序执行上述的语句。
 
 
-2. 对于不同的打包方式有不同的lifecycle，且会bind绑定a list of `goals`在particular
+2. 对于不同的打包方式有不同的lifecycle，且会bind绑定一串`goals`在particular指定的phase上。
