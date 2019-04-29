@@ -49,3 +49,4 @@ pom.xml包含了整个项目POM（project object model），POM是整个Maven项
 > For each external dependency, you'll need to define at least 4 things: groupId, artifactId, version, and scope. The groupId, artifactId, and version are the same as those given in the pom.xml for the project that built that dependency. The scope element indicates how your project uses that dependency, and can be values like compile, test, and runtime
 
 #### i. 多个项目之间的依赖会产生传递性依赖
+在产生传递依赖时，对于依赖树（）
