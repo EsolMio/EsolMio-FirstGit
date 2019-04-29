@@ -50,5 +50,5 @@ pom.xml包含了整个项目POM（project object model），POM是整个Maven项
 
 #### i. 多个项目之间的依赖会产生传递性依赖
 在产生传递依赖时，会产生依赖树（dependency tree），如`A->B->C->D`:A依赖于(dependen on)B，B依赖于C，C依赖于D，A为此依赖树的根(root)
-- *依赖调节*(Dependency mediation)：在依赖树中，若出现依赖树中不同的子树中依赖项的版本不同，则Maven会使用**距离根最近**的依赖项的版本，并不以版本号的高低做判断，如：两棵依赖子树`A->B->C->D ver2.0`和`A->E->D ver 1.0`，Maven将会使用`D ver1.0`，因距离最近。
-- *依赖关系管理*(Dependency management)
+- *依赖调节* (Dependency mediation)：在依赖树中，若出现依赖树中不同的子树中依赖项的版本不同，则Maven会使用**距离根最近**的依赖项的版本，并不以版本号的高低做判断，如：两棵依赖子树`A->B->C->D ver2.0`和`A->E->D ver 1.0`，Maven将会使用`D ver1.0`，因距离最近。
+- *依赖关系管理* (Dependency management)：
