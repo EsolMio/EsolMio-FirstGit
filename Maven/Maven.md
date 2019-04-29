@@ -30,4 +30,5 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
 |`deploy`|`deploy:deploy`|
 
    需按照以上顺序执行，顺序执行下来为一个生命周期（不确定）
-- 配置plugin
+
+- 配置plugin，
