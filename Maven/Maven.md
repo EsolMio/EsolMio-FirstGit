@@ -3,7 +3,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 在整个Maven项目中，最基本的文件为`pom.xml`，此文件用于指明`reprository`, `dependencies`, `plugins`
 
 ## 暂时未归类项目记录
-1. 若需要
+1. 若需要将resources加入`jar`包中，需要将文件放置在
 
 ## Lifecycle
 maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为简述，会因为打包方式的不同而改变：
