@@ -34,4 +34,4 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
 - 配置plugin:
   > The goals that are configured will be added to the goals already bound to the lifecycle from the packaging selected. If more than one goal is bound to a particular phase, the order used is that those from the packaging are executed first, followed by those configured in the POM. 
   
-   如果有多个goal绑定到同一个phase，会先执行指定打包方式所默认绑定的goal，followed其次再执行
+   如果有多个goal绑定到同一个phase，会先执行指定打包方式所默认绑定的goals，followed其次再执行配置的goals
