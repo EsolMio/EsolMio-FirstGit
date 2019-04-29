@@ -42,4 +42,5 @@
 -  utilize 
 - distributing 
 - valid 
-- explicitly 
+- explicitly
+- clarity 
