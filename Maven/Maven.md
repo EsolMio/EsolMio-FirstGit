@@ -44,4 +44,4 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
 pom.xml包含了整个项目POM（project object model），POM是整个Maven项目的基础
 
 ### 1. 使用external dependencies（外部依赖项）
-在`pom.xml`中定义，
+在`pom.xml`中定义，在define（定义）时至少使用4个tag：`groupID`, `artifacitid`
