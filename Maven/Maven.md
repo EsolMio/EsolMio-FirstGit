@@ -45,4 +45,5 @@ pom.xml包含了整个项目POM（project object model），POM是整个Maven项
 
 ### 1. 使用external dependencies（外部依赖项）
 在`pom.xml`中定义，在define（定义）时至少使用4个tag：`groupid`, `artifacitid`, `version`, `scope`
-> 
+
+> For each external dependency, you'll need to define at least 4 things: groupId, artifactId, version, and scope. The groupId, artifactId, and version are the same as those given in the pom.xml for the project that built that dependency. The scope element indicates how your project uses that dependency, and can be values like compile, test, and runtime
