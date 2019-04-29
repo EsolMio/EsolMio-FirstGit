@@ -18,7 +18,7 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
 
 - 不同的打包方式有不同的goal绑定在特定的phase上。以下示范`jar`：
 
-|Phase( 固定 )|plugin:goal()|
+|Phase( 固定 )|plugin:goal(可自定义)|
 |-|-|
 |`process-resources`|`resources:resources`|
 |`compile`|`compiler:compile`|
