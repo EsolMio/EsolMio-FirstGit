@@ -56,7 +56,21 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
      </pulgin>
      ```
    - 对于可以使用亦可使用`<phase>`tag声明`goal`运行的phase（阶段）
-
+example:
+     ```
+     <plugin><!-- tips: modello only on generate-source phase -->
+         <groupID>com.mycompany.example</groupId>
+         <artifactId>modello-maven-plugin</artifactId>
+         <version>1.8.1</version>
+         <executions>
+             <exectuion>
+                 <goals>
+                     <goal>java</goal>
+                 </goals>
+             </exectuion>
+         </executions>
+     </pulgin>
+     ```
 ## pom.xml - A basic file of all Maven project
 pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是整个Maven项目的基础**
 
