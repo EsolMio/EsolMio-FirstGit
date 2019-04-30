@@ -149,7 +149,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	- system
 	- import
 - 对于不同的依赖项范围，会以不同的方式影响依赖的传递性：
-  上行为传递依赖项的作用域，左行为依赖项的作用域，中间为最终作用域（但作用域作用于谁？）
+  上行为传递依赖项的作用域，左行为依赖项的作用域，中间为最终作用域（但作用域作用于谁？待解决）
 
 
 ||compile|provided|runtime|test|
