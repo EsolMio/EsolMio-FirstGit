@@ -94,8 +94,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 - *可选择依赖* (optional dependencies)：用于取消传递/间接依赖，对于依赖关系`Y->Z`，可在Y中使用`<optional>`tag将Z标记为optional可选性。此时若有X依赖于Y，则X无法传递依赖/间接依赖于Z，但仍可以使用特别指明依赖项Z
 
-- 依赖项范围（dependency scope）：
-	- compile：
+- 依赖项范围（dependency scope）url:：
+	- compile：默认范围，在没有指定范围时使用。
 	- provided
 	- runtime
 	- test
