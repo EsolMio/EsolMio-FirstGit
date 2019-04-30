@@ -142,7 +142,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 - 依赖项范围（dependency scope）url:[Dependency Scope](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope)：（使用`<scope>`标签声明范围，于`<dependency>`标签中）
 	- compile 编译：默认范围，在没有指定范围时使用（声明）。使用此范围的依赖项可传递，并且可在项目中的全部类路径(classpaths)中使用
 	- provided 提供：在使用JDK或者容器(container)类依赖项时使用（声明），此范围仅允许在`compliation`编译和`test`测试的类路径(classpaths)中使用，声明此范围的依赖无法使用。
-	- runtime 运行期：依赖项应用于执行期(execution)，在运行期和测试的
+	- runtime 运行期：依赖项应用于执行期(execution)，仅可使用运行期(runtime)和测试(test)的路径，不包含编译期(compile)类路径。
 	- test 测试
 	- system
 	- import
