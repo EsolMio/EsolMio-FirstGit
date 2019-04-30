@@ -21,10 +21,10 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 
    上述所说的几项即在命令行中需要输入以执行的语句，即对于一个新的项目，需要按照上述的顺序执行上述的语句。
 
-2. 使用Build Lifecycle（构建项目时的生命周期）有两种方式：1. 使用打包方式的goal（其绑定了不同的阶段）2. 配置plugin（插件）
+2. 使用Build Lifecycle（构建项目时的生命周期）有两种方式：1. 在命令行中使用每个阶段phase的默认名称 2. 配置plugin（插件）的goals并在命令行中使用
 
 3. 执行声明周期中的特定阶段，在命令行输入`mvn [phase]`即可，如：`mvn compile`。
-	1. Tips：在使用默认的phase名称
+	1. Tips：在使用默认的phase名称时
 
 ### Use `goal` to binding phase
 
