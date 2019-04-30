@@ -57,5 +57,6 @@ pom.xml包含了整个项目POM（project object model），POM是整个Maven项
 
 	  > Although transitive dependencies can implicitly include desired dependencies, it is a good practice to explicitly specify the dependencies you are directly using in your own source code. This best practice proves its value especially when the dependencies of your project changes their dependencies.
 
-- 排除依赖项(Excluded dependencies)：对于依赖树`A->B->C`，可在A中使用`<exclusion>`tag声明C以排除A对C的传递依赖（间接依赖）
-- 
+- *排除依赖项(Excluded dependencies)：对于依赖树`A->B->C`，可在A中使用`<exclusion>`tag声明C以排除A对C的传递依赖（间接依赖）
+
+- 可选择依赖(optional dependencies)：对于
