@@ -56,12 +56,12 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
          <version>1.8.1</version>
          <executions>
              <exectuion>
-<configuration>
-         <models>
-           <model>src/main/mdo/maven.mdo</model>
-         </models>
-         <version>4.0.0</version>
-       </configuration>
+                <configuration>
+                   <models>
+                   <model>src/main/mdo/maven.mdo</model>
+                   </models>
+                   <version>4.0.0</version>
+                </configuration>
                  <goals>
                      <goal>java</goal>
                  </goals>
