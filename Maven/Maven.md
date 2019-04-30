@@ -7,7 +7,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 2. 
 
 ## Lifecycle
-### 简介
+### inintroduce phase & use
 
 1. maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为简述，会因为打包方式的不同而改变：
 	- validate 验证
