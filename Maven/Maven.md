@@ -139,8 +139,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 - *可选择依赖* (optional dependencies)（被动）：用于取消传递/间接依赖，对于依赖关系`Y->Z`，可在Y中使用`<optional>`tag将Z标记为optional可选性。此时若有X依赖于Y，则X无法传递依赖/间接依赖于Z，但仍可以使用特别指明依赖项Z
 
-- 依赖项范围（dependency scope）url:[Dependency Scope](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope)：
-	- compile 编译：默认范围，在没有指定范围时使用。使用此范围的依赖项可传递，并且可使用项目中的全部类路径(classpath)
+- 依赖项范围（dependency scope）url:[Dependency Scope](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope)：（使用`<scope>`标签声明范围，于`<dependency>`）
+	- compile 编译：默认范围，在没有指定范围时使用（声明）。使用此范围的依赖项可传递，并且可使用项目中的全部类路径(classpath)
 	- provided 提供：在使用JDK或者容器(container)类依赖项时使用（声明）
 	- runtime
 	- test
