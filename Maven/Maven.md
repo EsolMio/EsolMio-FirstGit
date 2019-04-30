@@ -147,5 +147,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	- test 测试：使用此范围的依赖项仅适用于测试编译(test compilation)和执行(execution)阶段(phase)（此阶段非彼阶段），不具有传递性，
 	- system
 	- import
-	- 
+- 对于不同的依赖项范围，会以不同的方式影响依赖的传递性：
+|column1|column2|column3|
+|-|-|-|
+|content1|content2|content3|
+
 
