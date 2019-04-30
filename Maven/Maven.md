@@ -151,6 +151,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 ||compile|provided|runtime|test|
 |-|-|-|-|-|
-|content1|content2|content3||
+|compile|compile(*)|content3||
+|provided|provided|
+|runtime|runtime|
+|test||
 
 
