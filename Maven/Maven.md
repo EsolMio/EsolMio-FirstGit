@@ -9,8 +9,8 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 ## Lifecycle
 maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为简述，会因为打包方式的不同而改变：
 - validate 验证
-- compile 编译，
-- test 测试
+- compile 编译，对应`src/main/java`
+- test 测试，对应`src/test/java`
 - package 打包
 - verify 校验
 - install 安装至repository
