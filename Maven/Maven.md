@@ -9,7 +9,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 ## Lifecycle
 maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为简述，会因为打包方式的不同而改变：
 - validate 验证
-- compile 编译
+- compile 编译，
 - test 测试
 - package 打包
 - verify 校验
@@ -20,7 +20,7 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
 
 使用Build Lifecycle（构建项目时的生命周期）有两种方式：1. 使用打包方式的goal（其绑定了不同的阶段）2. 配置plugin（插件）
 
-在使用命令行执行声明周期中的特定阶段时，
+执行声明周期中的特定阶段，在命令行输入`mvn [phase]`即可，如：`mvn compile`
 
 - 不同的打包方式有不同的goal绑定在特定的phase上。以下示范`jar`：
 
