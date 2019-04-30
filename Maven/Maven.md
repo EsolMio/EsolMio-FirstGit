@@ -99,8 +99,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 ### 1. Dependency-依赖项
 
 #### i. Transitive Dependencies-传递依赖
-对于各个依赖项之间存在传递依赖——即通过项与项之间的依赖以实现传递依赖(Transivate dependencies)，不需要额外的声明即可使用存在于依赖树的依赖项。如：`A->B->C`，A可以使用依赖项C。
-可以理解为，在一个project项目中使用了依赖项A，若存在C为A的传递依赖，则可以在项目中无声明C的
+- 对于各个依赖项之间存在传递依赖——即通过项与项之间的依赖以实现传递依赖(Transivate dependencies)，不需要额外的声明即可使用存在于依赖树的依赖项。如：`A->B->C`，使用A的项目可以使用依赖项C。
+- 可以理解为，在一个project项目中使用了依赖项A，若存在C为A的传间接依赖，则可以在项目中无声明C的情况下使用依赖项C
 
 #### ii. 在`pom.xml`中使用external dependencies（外部依赖项）
 在`pom.xml`中定义，在define（定义）时至少使用4个tag：`groupid`, `artifacitid`, `version`, `scope`，于`<dependencies>`(`<project>`标签的下一层级标签)中使用`<dependency>`tag
