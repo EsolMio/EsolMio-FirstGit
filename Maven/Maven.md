@@ -69,7 +69,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
          </executions>
      </pulgin>
      ```
-     1. 一个`<execution>`对应一个`<configuration>`he
+     1. 一个`<execution>`对应一个`<configuration>`和多个`<goal>`(`<goals>`位于`<execution>`中)
      2. 为何在`<exectuions>`中定义`<goals>`？可以多次在不同的配置(configuration)中运行相同的goal
 
       > You might be wondering why that <executions> element is there. That is so that you can run the same goal multiple times with different configuration if needed.
