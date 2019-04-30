@@ -44,14 +44,14 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
      ```
      <plugin>
          <groupID>org.codehaus.modello</groupId>
+         <artifactId>modello-maven-plugin</artifactId>
+         <version>1.8.1</version>
+         <executions>
+             <exectuion>
+                 <goals>
+                 
          
          
-         
-         
-         
-         
-         
-
      </pulgin>
      ```
 
