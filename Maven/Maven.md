@@ -24,10 +24,11 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 2. 使用Build Lifecycle（构建项目时的生命周期）有两种方式：1. 使用打包方式的goal（其绑定了不同的阶段）2. 配置plugin（插件）
 
 3. 执行声明周期中的特定阶段，在命令行输入`mvn [phase]`即可，如：`mvn compile`。
+	1. Tips：在使用默认的phase名称
 
 ### Use `goal` to binding phase
 
-- 使用不同的打包方式以使用不同的phase：不同的打包方式有不同的goal绑定在特定的phase上。以下示范`jar`：
+- 使用不同的打包方式以使用不同的phase：不同的打包方式有不同的goal绑定在特定的phase上，以下示范`jar`：
 
 |Phase( 固定 )|plugin:goal(可自定义)|
 |-|-|
