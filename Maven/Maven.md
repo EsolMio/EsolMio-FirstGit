@@ -51,7 +51,8 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
                  <goals>
                      <goal>java</goal>
                  </goals>
-         
+             </exectuion>
+         </executions>
      </pulgin>
      ```
 
