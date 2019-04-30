@@ -11,7 +11,7 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
 - validate 验证
 - compile 编译，对应`src/main/java`
 - test 测试，对应`src/test/java`
-- package 打包
+- package 打包，对应`target/classes`
 - verify 校验
 - install 安装至repository
 - deploy 部署
@@ -20,7 +20,7 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
 
 使用Build Lifecycle（构建项目时的生命周期）有两种方式：1. 使用打包方式的goal（其绑定了不同的阶段）2. 配置plugin（插件）
 
-执行声明周期中的特定阶段，在命令行输入`mvn [phase]`即可，如：`mvn compile`
+执行声明周期中的特定阶段，在命令行输入`mvn [phase]`即可，如：`mvn compile`。
 
 - 不同的打包方式有不同的goal绑定在特定的phase上。以下示范`jar`：
 
