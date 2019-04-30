@@ -55,15 +55,16 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
          </executions>
      </pulgin>
      ```
-   - 对于可以使用亦可使用`<phase>`tag声明`goal`运行的phase（阶段）
+   - 对于可以使用亦可使用`<phase>`tag声明`goal`运行的phase（阶段）（即将）
 example:
      ```
      <plugin><!-- tips: modello only on generate-source phase -->
          <groupID>com.mycompany.example</groupId>
-         <artifactId>modello-maven-plugin</artifactId>
-         <version>1.8.1</version>
+         <artifactId>display-maven-plugin</artifactId>
+         <version>1.0</version>
          <executions>
              <exectuion>
+                 <phase>process-test-resources</phase>
                  <goals>
                      <goal>java</goal>
                  </goals>
