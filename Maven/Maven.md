@@ -43,7 +43,15 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
      example:
      ```
      <plugin>
+         <groupID>org.codehaus.modello</groupId>
          
+         
+         
+         
+         
+         
+         
+
      </pulgin>
      ```
 
