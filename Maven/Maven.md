@@ -20,6 +20,8 @@ maven的lifecycle（生命周期）由多个phase（阶段）组成，一下为�
 
 使用Build Lifecycle（构建项目时的生命周期）有两种方式：1. 使用打包方式的goal（其绑定了不同的阶段）2. 配置plugin（插件）
 
+在使用
+
 - 不同的打包方式有不同的goal绑定在特定的phase上。以下示范`jar`：
 
 |Phase( 固定 )|plugin:goal(可自定义)|
