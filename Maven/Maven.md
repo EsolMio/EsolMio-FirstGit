@@ -59,4 +59,4 @@ pom.xml包含了整个项目POM（project object model），POM是整个Maven项
 
 - *排除依赖项* (Excluded dependencies)：对于依赖树`A->B->C`，可在A中使用`<exclusion>`tag声明C以排除A对C的传递依赖（间接依赖）
 
-- *可选择依赖* (optional dependencies)：对于依赖关系`X->Y`，可在X中使用`<optional>`tag
+- *可选择依赖* (optional dependencies)：对于依赖关系`Y->Z`，可在Y中使用`<optional>`tag将Z标记为optional可选性。此时若有X依赖于
