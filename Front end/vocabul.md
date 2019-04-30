@@ -46,3 +46,4 @@
 - clarity 
 - encountered 
 - Furthermore
+- inherits 
