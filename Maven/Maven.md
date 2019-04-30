@@ -63,7 +63,8 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
          </executions>
      </pulgin>
      ```
-      为何在`<exectuions>`中定义`<goals>`？可以多次在不同的配置(configuration)中运行相同的
+      为何在`<exectuions>`中定义`<goals>`？可以多次在不同的配置(configuration)中运行相同的goal
+      > That is so that you can run the same goal multiple times with different configuration if needed
    - 对于可以使用亦可使用`<phase>`tag声明`goal`运行的phase（阶段）（即将goal和phase绑定）
 example:
      ```
