@@ -174,7 +174,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 ***
 
-#### iv. Dependency Management
+#### iv.i Dependency Management
 此节将介绍Dependency Management: `<dependencyManagement>`标签。
 
 - 此标签适合于公共父项目的`pom.xml`中适用，此举将简化子项目`pom.xml`文件中声明dependency的子标签。如：
