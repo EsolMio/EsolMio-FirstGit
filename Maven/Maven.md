@@ -211,4 +211,4 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
   <dependencies>
 </project>
 ```
-注意，在父项目的`pom.xml`中
+注意，在父项目的`pom.xml`中使用了`<type>`标签，表明
