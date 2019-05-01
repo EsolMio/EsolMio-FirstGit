@@ -109,7 +109,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 	- `artifacitid`
 	- `version`
-	- `scope`（虽说至少，其实是可以不用声明的，不声明）
+	- `scope`（虽说至少，其实是可以不用声明的，不声明则为默认值，详见下 iii）
 
 	于`<dependencies>`(`<project>`标签的下一层级标签)中使用`<dependency>`tag
 ```
@@ -171,5 +171,5 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 #### iv. Dependency Management
 此节将介绍Dependency Management: `<dependencyManagement>`标签。
 
-- 此标签适合于公共父项目的`pom.xml`中适用，此举将简化子项目`pom.xml`文件中声明dependency的子标签。如，在父`pom.xml`中定义了`<dependencyManagement>`标签，其中声明了依赖项的基本信息：`<groupId>`, `<artificId>`, `<version>`,
+- 此标签适合于公共父项目的`pom.xml`中适用，此举将简化子项目`pom.xml`文件中声明dependency的子标签。如，在父`pom.xml`中定义了`<dependencyManagement>`标签，其中声明了依赖项的基本信息：`<groupId>`, `<artificId>`, `<version>`,`<scope>`
 
