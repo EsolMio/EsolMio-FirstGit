@@ -232,5 +232,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 由`<type>`的原因：依赖项将引用打包方式的“制品”(artifacts)，大多数引用jar的artifact，但仍然存在部分依赖项引用其他打包方式的artifacts，比如上述例子中的依赖引用`war`打包方式。
 
+- 
+
 
 
