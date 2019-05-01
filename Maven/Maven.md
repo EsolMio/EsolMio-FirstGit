@@ -178,6 +178,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
   e.g 例子：
 ```
+
 <project>
   ...
   <dependencyManagement>
@@ -186,7 +187,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
         <groupId>group-a</groupId>
         <artifactId>artifact-a</artifactId>
         <version>1.0</version>
-	<scope>runtime</scope>
+        <scope>runtime</scope>
  
         <exclusions>
           <exclusion>
@@ -194,7 +195,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
             <artifactId>excluded-artifact</artifactId>
           </exclusion>
         </exclusions>
-	
+      </dependency>
+    </dependecies>
 </project>
 ```
 
