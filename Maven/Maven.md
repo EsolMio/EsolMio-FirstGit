@@ -12,7 +12,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 
 ### Introduce phase & use
 
-1. maven的lifecycle（生命周期）由多个phase（阶段）组成，以下为简述，实际的会因为打包方式的不同而改变：
+1. maven的lifecycle（生命周期）由多个phase（阶段）组成，以下为简述，实际的；Lifecycle会因为打包方式的不同而改变：
 	- validate 验证
 	- compile 编译，对应`src/main/java`
 	- test 测试，对应`src/test/java`
@@ -163,5 +163,5 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 #### iv. Dependency Management
 此节将介绍Dependency Management: `<dependencyManagement>`标签。
 
-- 此标签适合于公共父项目的`pom.xml`中适用，此举将简化子项目`pom.xml`文件中声明dependency的子标签。如，在父`pom.xml`中定义了`<dependencyManagement>`标签，其中声明了依赖项的基本信息：`<groupId>`, `<artificId>`, `<version>`, `<`
+- 此标签适合于公共父项目的`pom.xml`中适用，此举将简化子项目`pom.xml`文件中声明dependency的子标签。如，在父`pom.xml`中定义了`<dependencyManagement>`标签，其中声明了依赖项的基本信息：`<groupId>`, `<artificId>`, `<version>`,
 
