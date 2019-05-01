@@ -178,7 +178,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
   e.g 例子：
 ```
-<!-- Father pom.xml file, 父类pom.xml文件 -->
+<!-- Father pom.xml file, 父项目pom.xml文件 -->
 <project>
   ...
   <dependencyManagement>
@@ -188,6 +188,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
         <artifactId>artifact-a</artifactId>
         <version>1.0</version>
         <scope>runtime</scope>
+        <type>war</type><!-- Attention! -->
  
         <exclusions>
           <exclusion>
