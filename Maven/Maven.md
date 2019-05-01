@@ -188,7 +188,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
         <artifactId>artifact-a</artifactId>
         <version>1.0</version>
         <scope>runtime</scope>
-        <type>war</type><!-- Attention! -->
+        <type>war</type><!-- Attention! Here we use a <type> tag! -->
  
         <exclusions>
           <exclusion>
@@ -211,4 +211,4 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
   <dependencies>
 </project>
 ```
-
+注意，在父项目的`pom.xml`中
