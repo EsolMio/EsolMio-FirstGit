@@ -199,5 +199,14 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
     </dependecies>
 </project>
 ```
-
+```
+<project>
+  <dependencies>
+    <dependency>
+      <groupId>group-a</groupId>
+      <artifactId>artifact-a</artifactId>
+      <version>1.0</version>
+      <scope>runtime</scope>
+</project>
+```
 
