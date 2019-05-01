@@ -220,7 +220,12 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 注意，在父项目的`pom.xml`中使用了`<type>`标签
 
 **Tips：** 对于`<dependencyManagement>`的标签最小声明应为: 
-	- `<groupId>`
-	- `<artifactId>`
-	- `<type>`
-	- `<classifier>`。其中`<type>`在默认情况（即使用jar）时无需声明；`<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。
+
+- `<groupId>`
+
+- `<artifactId>`
+- `<type>`
+- `<classifier>`。
+
+其中`<type>`在默认情况（即使用jar）时无需声明；`<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。
+结合以上信息，我们发现
