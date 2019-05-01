@@ -102,6 +102,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 - 对于各个依赖项之间存在传递依赖——即通过项与项之间的依赖以实现传递依赖(Transivate dependencies)，不需要额外的声明即可使用存在于依赖树的依赖项。如：`A->B->C`，使用A的项目可以使用依赖项C。
 - 可以理解为，在一个project项目中使用了依赖项A，若存在C为A的传间接依赖，则可以在项目中无声明C的情况下使用依赖项C
 
+***
+
 #### ii. 在`pom.xml`中使用external dependencies（外部依赖项）
 - 在`pom.xml`中定义，在define定义时**至少**使用4个tag：
 
@@ -136,6 +138,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 > For each external dependency, you'll need to define at least 4 things: groupId, artifactId, version, and scope. The groupId, artifactId, and version are the same as those given in the pom.xml for the project that built that dependency. The scope element indicates how your project uses that dependency, and can be values like compile, test, and runtime
 
+***
+
 #### iii. 多个项目之间的依赖会产生传递性依赖
 在产生传递依赖时，会产生依赖树（dependency tree），如`A->B->C->D`
 
@@ -168,7 +172,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 |runtime|runtime|-|runtime|-|
 |test|test|-|test|-|
 
-**
+***
 
 #### iv. Dependency Management
 此节将介绍Dependency Management: `<dependencyManagement>`标签。
@@ -190,7 +194,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
         <artifactId>artifact-a</artifactId>
         <version>1.0</version>
         <scope>runtime</scope>
-        <type>war</type><!-- Attention! Here we use a <type> tag! -->
+        <type>war</type> <!-- Attention! Here we use a <type> tag! -->
  
         <exclusions>
           <exclusion>
@@ -214,4 +218,5 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 </project>
 ```
 注意，在父项目的`pom.xml`中使用了`<type>`标签
+
 **Tips：** 对于`<dependencyManagement>`的标签最小声明应为: `<groupId>`, `<artifactId>`, `<type>`, `<classifier>`。其中`<type>`在默认情况（即使用jar）时无需声明；`<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。
