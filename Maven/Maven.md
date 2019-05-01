@@ -230,5 +230,5 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 1. 其中`<type>`指代依赖项所对应的打包“制品”(artifacts)，在默认情况，即使用jar时无需声明；
 2. `<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。
 
-由`<type>`的原因：依赖项将引用打包方式的“制品”(artifacts)，
+由`<type>`的原因：依赖项将引用打包方式的“制品”(artifacts)，大多数引用jar的artifact，但仍然存在部分依赖项引用其他
 
