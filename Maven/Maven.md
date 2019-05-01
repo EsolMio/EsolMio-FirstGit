@@ -194,7 +194,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
         <artifactId>artifact-a</artifactId>
         <version>1.0</version>
         <scope>runtime</scope>
-        <type>war</type> <!-- Attention! Here we use a <type> tag! -->
+        <type>war</type> <!-- !!!Attention!!! Here we use a <type> tag! -->
  
         <exclusions>
           <exclusion>
@@ -219,4 +219,4 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 ```
 注意，在父项目的`pom.xml`中使用了`<type>`标签
 
-**Tips：** 对于`<dependencyManagement>`的标签最小声明应为: `<groupId>`, `<artifactId>`, `<type>`, `<classifier>`。其中`<type>`在默认情况（即使用jar）时无需声明；`<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。
+**Tips：** 对于`<dependencyManagement>`的标签最小声明应为: `<groupId>`, `<artifactId>`, `<type>`, `<classifier>`。其中`<type>`在默认情况（即使用jar）时无需声明；`<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。x`
