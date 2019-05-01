@@ -176,7 +176,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	- 以及附加信息：`<exclusion>`,`<type>`时，只需要在子类声明对应版本的`<groupId>`, `<artifactId>`即可。
 	- **Tips：** 对于`<dependencyManagement>`的标签最小声明应为: `<groupId>`, `<artifactId>`, `<type>`, `<classifier>`。其中`<type>`在默认情况（即使用jar）时无需声明；`<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。
 
-  e.g 例子：
+  ：
 ```
 <!-- Father pom.xml file, 父项目pom.xml文件 -->
 <project>
