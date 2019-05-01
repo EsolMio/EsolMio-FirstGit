@@ -103,7 +103,12 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 - 可以理解为，在一个project项目中使用了依赖项A，若存在C为A的传间接依赖，则可以在项目中无声明C的情况下使用依赖项C
 
 #### ii. 在`pom.xml`中使用external dependencies（外部依赖项）
-在`pom.xml`中定义，在define（定义）时至少使用4个tag：`groupid`, `artifacitid`, `version`, `scope`，于`<dependencies>`(`<project>`标签的下一层级标签)中使用`<dependency>`tag
+在`pom.xml`中定义，在define定义时至少使用4个tag：
+	- `groupid`
+	- `artifacitid`
+	- `version`
+	- `scope`
+	- 于`<dependencies>`(`<project>`标签的下一层级标签)中使用`<dependency>`tag
 ```
 <project>
   ...
