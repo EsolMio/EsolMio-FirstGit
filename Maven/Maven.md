@@ -227,6 +227,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 - `<type>`
 - `<classifier>`。
 
-其中`<type>`指代打包“”在默认情况，即使用jar时无需声明；`<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。
+- 其中`<type>`指代依赖项所对应的打包“制品”(artifacts)，在默认情况，即使用jar时无需声明；
+- `<classifier>`所指代的为分类器，在默认情况时（其值`null`）无需使用`<classifier>`。
 
 
