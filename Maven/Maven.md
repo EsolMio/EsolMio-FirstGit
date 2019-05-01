@@ -178,7 +178,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
   e.g 例子：
 ```
-
+<!-- Father pom.xml file, 父类pom.xml文件 -->
 <project>
   ...
   <dependencyManagement>
@@ -199,4 +199,5 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
     </dependecies>
 </project>
 ```
+
 
