@@ -150,14 +150,14 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 - *可选择依赖* (optional dependencies)（被动）：用于取消传递/间接依赖，对于依赖关系`Y->Z`，可在Y中使用`<optional>`tag将Z标记为optional可选性。此时若有X依赖于Y，则X无法传递依赖/间接依赖于Z，但仍可以使用特别指明依赖项Z
 
-- 依赖项范围（dependency scope）url:[Dependency Scope](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope)：（使用`<scope>`标签声明范围，于`<dependency>`标签中）（作用域对应的传递性作用于指定的依赖项，即`<scope>`所在的`<dependency>`）Tips：作用域本义为：使得依赖项在作用域对应的阶段(phase)使用
+- *依赖项范围*（dependency scope）url:[Dependency Scope](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope)：（使用`<scope>`标签声明范围，于`<dependency>`标签中）（作用域对应的传递性作用于指定的依赖项，即`<scope>`所在的`<dependency>`）Tips：作用域本义为：使得依赖项在作用域对应的阶段(phase)使用
 	- *compile* 编译-compile (phase)：**默认范围，在没有指定范围时使用（声明）**。使用此范围的依赖项可传递，并且可在项目中的全部类路径(classpaths)中使用
 	- *provided* 提供-compile (phase)：功能上与compile相似（但并不相同），在使用JDK或者容器(container)类依赖项时使用（声明），此范围仅允许在`compliation`编译和`test`测试的类路径(classpaths)中使用，声明此范围的依赖无法使用。
 	- *runtime* 运行期：依赖项应用于执行期(execution)，仅可使用运行期(runtime)和测试(test)的类路径(classpaths)，不包含编译期(compile)类路径。
 	- *test* 测试-test (phase)：使用此范围的依赖项仅适用于测试编译(test compilation)和执行(execution)阶段(phase)（此阶段非彼阶段），不具有传递性。
 	- *system* ：此范围和`povided`相似，但需要此依赖项为`jar`文件且要在`pom.xml`中指定此依赖项所需的jar文件地址，于`<systemPath>`标签中（如：`<systemPath>${basedir}\src\lib\ldapjsk.jar</systemPath>`）。适用于依赖项于地址`lib`的文件（但一般直接将需要的jar包使用`mvn install`即可直接在`pom.xml`中声明）。
 	- *import*
-- 对于不同的依赖项范围，会以不同的方式影响依赖的传递性：
+- 对于不同的依赖项范围，会以不同的方式影响依赖的传递性，如下表所示：
   上行为传递依赖项的作用域，左行为依赖项的作用域，中间为最终作用域（但作用域作用于谁？待解决）
 
 
