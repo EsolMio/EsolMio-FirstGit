@@ -161,5 +161,6 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 |test|test|-|test|-|
 
 #### iv. Dependency Management
+此节将介绍Dependency Management: `<dependencyManagement>`标签。
 
 
