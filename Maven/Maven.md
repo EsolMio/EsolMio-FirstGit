@@ -129,7 +129,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 > For each external dependency, you'll need to define at least 4 things: groupId, artifactId, version, and scope. The groupId, artifactId, and version are the same as those given in the pom.xml for the project that built that dependency. The scope element indicates how your project uses that dependency, and can be values like compile, test, and runtime
 
 #### iii. 多个项目之间的依赖会产生传递性依赖
-在产生传递依赖时，会产生依赖树（dependency tree），如`A->B->C->D`:A依赖于(dependen on)B，B依赖于C，C依赖于D，A为此依赖树的根(root)
+在产生传递依赖时，会产生依赖树（dependency tree），如`A->B->C->D`
+
 - *依赖调节* (Dependency mediation)：用于调节版本，在依赖树中，若出现依赖树中不同的子树中依赖项的版本不同，则Maven会使用**距离根最近**的依赖项的版本，并不以版本号的高低做判断，如：两棵依赖子树`A->B->C->D ver2.0`和`A->E->D ver 1.0`，Maven将会使用`D ver1.0`，因距离最近。若需要强制使用`D ver2.0`则需在`A`的`<dependency></dependecy>`中直接指明
 
 - *依赖关系管理* (Dependency management)：允许项目的使用者直接指定在直接依赖/间接依赖上的依赖项版本问题。如上列所述的强制使用`D ver2.0`，尽管`D ver2.0`不是由`A`直接依赖，但依旧可以申明，于`A`的`<dependecyManager>`tag中指定`<version>`
