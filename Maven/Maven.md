@@ -107,11 +107,11 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 #### ii. 在`pom.xml`中使用external dependencies（外部依赖项）
 - 在`pom.xml`中定义，在define定义时**至少**使用4个tag：
 
-	- `groupid`
+	- `groupId`
 
-	- `artifacitid`
+	- `artifacitId`
 	- `version`
-	- `scope`（虽说至少，其实是可以不用声明的，不声明则为默认值，详见下 iii）
+	- `scope`（虽说至少，可不声明，不声明则为默认值，详见下 iii）
 
 	于`<dependencies>`(`<project>`标签的下一层级标签)中使用`<dependency>`tag
 ```
