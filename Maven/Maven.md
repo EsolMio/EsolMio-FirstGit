@@ -235,7 +235,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 - **iv.ii** `<dependencyManagement>`最主要用于控制依赖版本，**主要功能**！
 	- **子项目依赖项的版本将由父项目pom管理，无需各子项目额外声明**。如上例子所示，在父pom的`<dependencyManagement>`中声明`<version>`后，子pom的依赖项版本对应父pom所声明的。
 	- 若在**子项目pom中声明了依赖项版本**，则Maven会**以子项目声明的为准**
-	- 若子项目pom中声明了新`<dependncyManagement>`并声明了对应依赖项的新特性（如版本），则只覆盖父项目`<dependencymanagement>`中对应的依赖项，其余不变。
+	- 若子项目pom中声明了新`<dependncyManagement>`并声明了对应依赖项的新特性（如版本），则只覆盖父项目`<dependencymanagement>`中对应的依赖项，其余不变，且继承子项目的项目将受到新`<dependencyManage>`的影响。
 
 父pom：
 ```
@@ -287,6 +287,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
       </dependency>
     </dependencies>
   </dependecyManagement>
+
+  <dep
 </project>
 ```
 
