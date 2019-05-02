@@ -249,7 +249,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
       <dependency>
         <groupId>test</groupId>
         <artifactId>a</artifactId>
-        <version>1.1<version
+        <version>1.1</version>
+      </dependency
 ```
 
 
