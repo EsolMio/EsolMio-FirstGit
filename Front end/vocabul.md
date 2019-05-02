@@ -47,4 +47,4 @@
 - encountered 
 - Furthermore
 - inherits 
-- 
+- Assuming
