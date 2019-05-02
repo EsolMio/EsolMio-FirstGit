@@ -268,7 +268,11 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 <project>
   <parent>
     <artifactId>A</artifactId>
-    <groupId>
+    <groupId>maven</groupId>
+    <version>1.0-SNAPSHOt</version>
+  </parent>
+...
+  
 </project>
 ```
 
