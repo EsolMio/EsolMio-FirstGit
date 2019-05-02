@@ -238,8 +238,11 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	- 若子项目pom中声明了新`<dependncyManagement>`并声明了对应依赖项的新特性（如版本），则只覆盖父项目`<dependencymanagement>`中对应的依赖项，其余不变。
 ```
 <project>
-  <modelVersion>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>maven</maven>
   <artifactId>A</artifactId>
+  <packing>pom</packing>
+  <name>
 ```
 
 
