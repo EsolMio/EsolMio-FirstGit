@@ -254,8 +254,11 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
         <exclusions>
            <exclusion>
              <groupId>group-c</groupid>
-             <artifact
+             <artifactId>excluded-artfact</artifactId>
+           </exclusion>
+        </exclusions>
       </dependency>
+    <dependencies>
 ```
 
 
