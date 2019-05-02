@@ -258,7 +258,14 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
            </exclusion>
         </exclusions>
       </dependency>
-    <dependencies>
+    </dependencies>
+  </dependecyManagement>
+...
+</project>
+```
+
+```
+<project
 ```
 
 
