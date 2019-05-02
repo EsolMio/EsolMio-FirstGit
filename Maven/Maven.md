@@ -294,7 +294,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 </project>
 ```
 
-## 继承
+## pom.xml中的tag（标签）
+- 
 
 
 
