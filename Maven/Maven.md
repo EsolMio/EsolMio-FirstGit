@@ -288,7 +288,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
     </dependencies>
   </dependencyManagement>
 
-  <dependencies><!-- 将会以本pom中声明的<depend> -->
+  <dependencies><!-- 将会以本pom中声明的<dependencyManagement>为准 -->
     ...
   </dependencies>
 </project>
