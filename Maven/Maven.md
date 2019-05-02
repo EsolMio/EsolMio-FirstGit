@@ -177,9 +177,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 #### iv. Dependency Management
 此节将介绍Dependency Management: `<dependencyManagement>`标签。
 
-- **iv.i** 此标签适用于简化子项目依赖项，
+- **iv.i** 此标签适用于简化子项目依赖项的声明，
 	- 若在父项目的pom中声明了`<dependencyManagement>`标签，其中包含了依赖项的基本信息：`<groupId>`, `<artificId>`, `<version>`,`<scope>`；以及附加信息：`<exclusion>`,`<type>`时。
-	- 在父类
+	- 子类pom只需声明对应依赖项的`<groupId>`, `<artificId>`即可拥有夫项目
 	
 
   如下所示范（example）：
