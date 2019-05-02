@@ -272,7 +272,22 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
     <version>1.0-SNAPSHOt</version>
   </parent>
 ...
-  
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>test</groupId>
+        <artifactId>a</artifactId>
+        <version>1.1</version>
+        
+        <exclusions>
+           <exclusion>
+             <groupId>group-c</groupid>
+             <artifactId>excluded-artfact</artifactId>
+           </exclusion>
+        </exclusions>
+      </dependency>
+    </dependencies>
+  </dependecyManagement>
 </project>
 ```
 
