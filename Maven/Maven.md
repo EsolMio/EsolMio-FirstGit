@@ -111,7 +111,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 	- `artifacitId`
 	- `version`
-	- `scope`（虽说至少，可不声明，不声明则为默认值，详见下 iii）
+	- `scope`（虽说至少，可不声明的，不声明则为默认值，详见下 iii）
 
 	于`<dependencies>`(`<project>`标签的下一层级标签)中使用`<dependency>`tag
 ```
