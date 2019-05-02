@@ -243,7 +243,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
   <artifactId>A</artifactId>
   <packing>pom</packing>
   <name>A</name>
-  <version>1.0-SNAPSHOT</
+  <version>1.0-SNAPSHOT</vresion>
+  <dependen
 ```
 
 
