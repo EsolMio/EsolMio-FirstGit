@@ -5,17 +5,17 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 
 Maven本质上以插件为核心的集成框架，插件为执行，实现的主体。插件用于创建文件、项目，编译，测试等等
 
-## 暂时未归类项目记录
+## ++暂时未归类项目记录++
 1. 若需要将resources加入`jar`包中，需要将文件放置在`${basicdir}/src/main/resources`目录下，并在命令行中执行`mvn package`或者`mvn jar:jar`（在打包方式为`jar`时使用）
 2. 在命令行输入`mvn ...`时，均是执行对应的插件plugin（对应的goal）。
 3. 对于不同的打包方式有对应的dependency
 4. `mvn compile` `mvc test`/`mvc test-compile` `mvc package` `mvc install` - instead of phase
 
-## ==创建Maven项目==
+## ++创建Maven项目++
 1. 在cmd中使用`mvn archetype:generate`
 2. Maven本身提供了多种“原型”archetype
 
-## ==Lifecycle-生命周期==
+## ++Lifecycle-生命周期++
 
 ### Introduce phase & use
 
@@ -102,7 +102,7 @@ example:
      ```
 关于plugin的详细配置，见下"Configuring Plugins"
 
-## ==pom.xml - A basic file of all Maven project==
+## ++pom.xml - A basic file of all Maven project++
 pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是整个Maven项目的基础**
 
 ### 1. Dependency-依赖项
@@ -303,8 +303,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 </project>
 ```
 
-
-## ==POM中的tag（标签）==
+## POM中的tag（标签）
 - project: main tag ==>[maven pom tag](http://maven.apache.org/ref/3.6.1/maven-model/maven.html#class_project)
 
 ## Configuring Plugins - 配置插件
