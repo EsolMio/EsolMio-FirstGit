@@ -301,7 +301,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 ## Configuring Plugins - 配置插件
 在maven中，分为`build`插件和`report`插件
-- `build`：将会在项目构建期间执行（执行）
+- `build`：将会在项目构建期间执行（即完整的声明周期），需要在
 
 
 
