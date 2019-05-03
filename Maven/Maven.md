@@ -319,8 +319,18 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 2. `<artifactId/>`
 3. `<version/>`
 
-使用`<build>`/`<re>`
-
+使用`<build>`/`<reproting>`, `<plugins>`, `<plugin>`标签包装
+```
+  <build>
+        <plugins>
+            <plugin>
+                <artifactId>test-plugin</artifactId>
+                <groupId>com.esolmio.plugin</groupId>
+                <version>1.0-SNAPSHOT</version>
+            </plugin>
+        </plugins>
+    </build>
+```
 
 ### 自定义plugin
 1. 创建Mojo，Mojo全名为“**M**aven-**O**ld-**J**ava-**O**bject”。参考：[create first Mojo](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html)
