@@ -302,9 +302,12 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
   </dependencies>
 </project>
 ```
+***
 
 ## pom.xml中的tag（标签）
 - project: main tag ==>[maven pom tag](http://maven.apache.org/ref/3.6.1/maven-model/maven.html#class_project)
+***
+
 
 ## Configuring Plugins - 配置插件
 在maven中，分为`build`插件和`report`插件
