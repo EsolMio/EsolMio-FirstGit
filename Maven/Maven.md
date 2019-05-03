@@ -305,7 +305,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 - `report`：将在站点生成期间执行，需要使用`<reporting/>`标签执行。
 
 声明plugin至少需要：
-1. 
+1. `<groupId/>`
+2. `<artifactId/>`
+3. `<version/>`
 
 
 
