@@ -343,8 +343,11 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	3. 在pom中声明打包方式`<packaging>`为`maven-plugin`
 	4. 将插件执行`maven-plugin`的声明周期(`generate-resources`, `process-resources`, `compile`) [Build Lifecycle](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 	
-2. 执行插件，为了顺利执行，一定要将其编译`compile`=>打包`package`=>安装`install`
-	- 随后在需要的项目pom中声明本插件
+2. 执行插件
+	1. 为了顺利执行，一定要将其编译`compile`=>打包`package`=>安装`install`
+
+	2. 随后在需要的项目pom中声明本插件
+	3. 
 
 
 
