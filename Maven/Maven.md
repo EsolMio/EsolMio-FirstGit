@@ -1,6 +1,9 @@
 # Maven
 maven是一个将项目视为对象的管理工具（Porject Object Model，POM）
+
 在整个Maven项目中，最基本的文件为`pom.xml`，此文件用于指明`reprository`, `dependencies`, `plugins`
+
+Maven本质上
 
 ## 暂时未归类项目记录
 1. 若需要将resources加入`jar`包中，需要将文件放置在`${basicdir}/src/main/resources`目录下，并在命令行中执行`mvn package`或者`mvn jar:jar`（在打包方式为`jar`时使用）
