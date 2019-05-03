@@ -309,6 +309,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 2. `<artifactId/>`
 3. `<version/>`
 
+配置之前需要在`pom.xml`中确认是否
+
+
 
 
 
