@@ -318,7 +318,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 ### 自定义plugin
 1. 创建Mojo，Mojo全名为“**M**aven-**O**ld-**J**ava-**O**bject”
-	1. 创建Maven需要用到
+	1. 创建Maven需要用到`org.apache.maven, maven-plugin-api`, `maven-plugin-annotations`
 2. 
 
 
