@@ -316,8 +316,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 2. `<artifactId/>`
 3. `<version/>`
 
-### 1. 自定义plugin
-1. 
+### 自定义plugin
+1. 创建Mojo，Mojo全名为
 
 
 
