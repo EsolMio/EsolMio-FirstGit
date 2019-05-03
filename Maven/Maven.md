@@ -10,6 +10,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 
 ## 创建Maven项目
 1. 在cmd中使用`mvn archetype:generate`
+2. Maven本身提供了多种“原型”archetype
 
 ## Lifecycle-生命周期
 
