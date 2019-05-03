@@ -326,7 +326,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 		c. 可以使用`getLog()`方法于`execute()`中以实现在cmd中输出需要的log信息。
 	3. 在pom中声明打包方式`<packaging>`为`maven-plugin`
 	4. 将插件执行`maven-plugin`的声明周期(`generate-resources`, `process-resources`, `compile`) [Build Lifecycle](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
-	5. 要顺利执行插件，一定要将其编译`compile`==>`package`==>`install`
+	5. 要顺利执行插件，一定要将其编译`compile`=>打包`package`=>安装`install`
+	6. 随后在需要的项目pom中声明本插件
 2. 
 
 
