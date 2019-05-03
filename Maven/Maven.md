@@ -93,6 +93,8 @@ example:
          </executions>
      </pulgin>
      ```
+关于plugin的详细配置，见下"Configuring Plugins"
+
 ## pom.xml - A basic file of all Maven project
 pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是整个Maven项目的基础**
 
@@ -296,6 +298,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 ## pom.xml中的tag（标签）
 - project: main tag ==>[maven pom tag](http://maven.apache.org/ref/3.6.1/maven-model/maven.html#class_project)
+
+## Configuring 
+
 
 
 
