@@ -321,10 +321,11 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	1. 创建Mojo需要用到`org.apache.maven:maven-plugin-api`, `org.apache.maven.plugin-tools:maven-plugin-annotations`依赖项。
 	
 	2. 一个插件中只需要一个Mojo类（有些插件将Mojo定义为抽象类）：
-		3. Mojo类需要继承`org.apache.maven:maven-plugin-api`下的包`org.apache.maven.plugin`中的抽象类`AbstractMojo`，故在Mojo类中需要实现`execute():void`方法。
-		4. 必须声明`@Mojo(name="...")`，此注解控制Mojo的使用（亦可使用自带的注解并声明`@goal`等注释）。
-		5. 可以使用`getLog()`方法于`execute()`中以实现在cmd中输出需要的log信息。
-	3. 在pom中声明打包方式`<package>`为`maven-plugin`
+		a. Mojo类需要继承`org.apache.maven:maven-plugin-api`下的包`org.apache.maven.plugin`中的抽象类`AbstractMojo`，故在Mojo类中需要实现`execute():void`方法。
+		b. 必须声明`@Mojo(name="...")`，此注解控制Mojo的使用（亦可使用自带的注解并声明`@goal`等注释）。
+		c. 可以使用`getLog()`方法于`execute()`中以实现在cmd中输出需要的log信息。
+	3. 在pom中声明打包方式`<packaging>`为`maven-plugin`
+	4. 
 2. 
 
 
