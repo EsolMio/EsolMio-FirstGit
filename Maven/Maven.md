@@ -347,7 +347,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	1. 为了顺利执行，一定要将其编译`compile`=>打包`package`=>安装`install`
 
 	2. 随后在需要的项目pom中声明本插件
-	3. 
+	3. 在对应的项目根目录下使用cmd`mvn artifactId:groupId:version:goal`执行插件
+	4. 
 
 
 
