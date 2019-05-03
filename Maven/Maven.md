@@ -9,7 +9,7 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 4. `mvn compile` `mvc test`/`mvc test-compile` `mvc package` `mvc install` - instead of phase
 
 ## 创建Maven项目
-1. 在cmd中使用`mvn `
+1. 在cmd中使用`mvn archetype:generate`
 
 ## Lifecycle-生命周期
 
