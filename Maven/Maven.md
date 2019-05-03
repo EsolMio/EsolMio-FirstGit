@@ -316,7 +316,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 2. `<artifactId/>`
 3. `<version/>`
 
-在`<build>`或`<repto>`
+在`<build>`或`<reptoting>`中使用
 
 
 ### 自定义plugin
