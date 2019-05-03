@@ -11,11 +11,11 @@ Maven本质上以插件为核心的集成框架，插件为执行，实现的主
 3. 对于不同的打包方式有对应的dependency
 4. `mvn compile` `mvc test`/`mvc test-compile` `mvc package` `mvc install` - instead of phase
 
-## 创建Maven项目
+## ==创建Maven项目==
 1. 在cmd中使用`mvn archetype:generate`
 2. Maven本身提供了多种“原型”archetype
 
-## Lifecycle-生命周期
+## ==Lifecycle-生命周期==
 
 ### Introduce phase & use
 
@@ -102,7 +102,7 @@ example:
      ```
 关于plugin的详细配置，见下"Configuring Plugins"
 
-## pom.xml - A basic file of all Maven project
+## ==pom.xml - A basic file of all Maven project==
 pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是整个Maven项目的基础**
 
 ### 1. Dependency-依赖项
@@ -304,7 +304,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 ```
 
 
-## POM中的tag（标签）
+## ==POM中的tag（标签）==
 - project: main tag ==>[maven pom tag](http://maven.apache.org/ref/3.6.1/maven-model/maven.html#class_project)
 
 ## Configuring Plugins - 配置插件
