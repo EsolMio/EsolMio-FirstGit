@@ -8,6 +8,9 @@ maven是一个将项目视为对象的管理工具（Porject Object Model，POM�
 3. 对于不同的打包方式有对应的dependency
 4. `mvn compile` `mvc test`/`mvc test-compile` `mvc package` `mvc install` - instead of phase
 
+## 创建Maven项目
+1. 在cmd中使用`mvn `
+
 ## Lifecycle-生命周期
 
 ### Introduce phase & use
