@@ -361,7 +361,16 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 		2. `${prefix}-maven-plugin`, 第三方/用户插件, 剩下`${prefix}`
 	2. 倘若不遵行标准的`artifactId`命名方式，则需要在使用插件的项目的pom中独立声明前缀
 		1. 使用`<plugin>`-`<configuration>`-`<goalPrefix>`
-		`<plugin><configuration><goalPrefix>sel`
+```
+<plugin>
+  <artifactId>maven-plugin-plugin</artifactId>
+  <version>2.3</version>
+        <configuration>
+          ...
+          <goalPrefix>somePrefix</goalPrefix>
+        </configuration>
+      </plugin>
+```
 
 
 
