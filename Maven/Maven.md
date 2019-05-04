@@ -358,7 +358,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 3. 使用指定前缀Prefix
 	1. Maven会根据插件的artifactId猜测指定的前缀，将artifactId中的`maven`, `plugin`以及连字符"-"删除，如：
 		1. `maven-${prefix}-plugin`,  Maven官方插件, 剩下`${prefix}`
-		2. `${prefix}-maven-plugin`, , 剩下`${prefix}`
+		2. `${prefix}-maven-plugin`, 第三方/用户插件, 剩下`${prefix}`
+	2. 倘若不遵行标准的`artifactId`命名方式，则需要在pom中独立声明前缀
 
 
 
