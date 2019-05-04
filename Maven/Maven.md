@@ -56,7 +56,7 @@ Maven本质上以插件为核心的集成框架，插件为执行，实现的主
   > The goals that are configured will be added to the goals already bound to the lifecycle from the packaging selected. If more than one goal is bound to a particular phase, the order used is that those from the packaging are executed first, followed by those configured in the POM. 
   
    如果有多个goal绑定到同一个phase，会先执行指定打包方式所默认绑定的goals，followed（其次）再执行配置的goals
-   - 使用`<executions>`，`<goals>`tag以实现对plugin的配置:
+   - 使用`<executions>`，`<goals>`tag以实现对plugin的goal的声明:
      example:
      ```
      <plugin><!-- tips: modello only on generate-source phase -->
