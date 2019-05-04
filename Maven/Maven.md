@@ -364,6 +364,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 		1. 使用`<plugin>`-`<configuration>`-`<goalPrefix>`
 	3. 执行时使用`mvn selfPrefix:goal`
 	4. 此方法需要额外多声明一个插件: `maven-plugin-plugin`，若本地仓库无此插件可以先在依赖中声明
+	5. 成功后，在本地仓库，自定义插件的文件夹，
 ```
 <!-- EXAMPLE, 例子, 于"<project>"-"<build>"-“plugins”之下 -->
 <plugin>
