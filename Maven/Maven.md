@@ -358,13 +358,13 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 3. 使用指定前缀Prefix
 	
 	1. Maven会根据插件的artifactId猜测指定的前缀，将artifactId中的`maven`, `plugin`以及连字符"-"删除，如：
-		1. `maven-${prefix}-plugin`,  Maven官方插件, 剩下`${prefix}`
-		2. `${prefix}-maven-plugin`, 第三方/用户插件, 剩下`${prefix}`
-	2. 倘若不遵行标准的`artifactId`命名方式，则需要在插件的pom中声明`maven-plugin-plugin`依赖项，并使用`<goalPrefix>`标签独立声明前缀（注意，修改后需要重新package并install）
-		1. 使用`<plugin>`-`<configuration>`-`<goalPrefix>`
-	3. 执行时使用`mvn selfPrefix:goal`
-	4. 此方法需要额外多声明一个插件: `maven-plugin-plugin`，若本地仓库无此插件可以先在依赖中声明
-	5. 成功后，在本地仓库，自定义插件的文件夹，
+		1. `maven-${prefix}-plugin`,  Maven官方插件, 剩下`${prefix}`。
+		2. `${prefix}-maven-plugin`, 第三方/用户插件, 剩下`${prefix}`。
+	2. 倘若不遵行标准的`artifactId`命名方式，则需要在插件的pom中声明`maven-plugin-plugin`依赖项，并使用`<goalPrefix>`标签独立声明前缀。（注意，修改后需要重新package并install）
+		1. 使用`<plugin>`-`<configuration>`-`<goalPrefix>`。
+	3. 执行时使用`mvn selfPrefix:goal`。
+	4. 此方法需要额外多声明一个插件: `maven-plugin-plugin`，若本地仓库无此插件可以先在依赖中声明。
+	5. 成功后，在本地仓库，自定义插件的文件夹，`maven-metadata-local.xml`文件中将会多出自定义声明的前缀。
 ```
 <!-- EXAMPLE, 例子, 于"<project>"-"<build>"-“plugins”之下 -->
 <plugin>
