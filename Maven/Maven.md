@@ -356,7 +356,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 **对于plugin的执行，Maven只会使用继承`AbstractMojo`或实现`Mojo`的类，且这些类只有一个**（再次强调）
 
 3. 使用指定前缀Prefix
-	1. Maven会根据插件的artifactId
+	1. Maven会根据插件的artifactId猜测指定的前缀，将如：
+		1. `maven-${prefix}-plugin`, 
 
 
 
