@@ -353,7 +353,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	2. 随后在需要的项目pom中声明本插件（亦可在插件的pom中声明，方便直接测试？（可使用test））
 	3. 在对应的项目根目录下使用cmd`mvn artifactId:groupId:version:goal`执行插件
 	
-对于plugin的执行，Maven只会使用实现`AbstractMojo`\`Moko`
+**对于plugin的执行，Maven只会使用继承`AbstractMojo`或实现`Mojo`的类，且这些类只有一个**（再次强调）
 
 
 
