@@ -363,15 +363,14 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 		1. 使用`<plugin>`-`<configuration>`-`<goalPrefix>`
 		   ```
 		   <plugin>
-        		<artifactId>maven-plugin-plugin</artifactId>
-        		<version>2.3</version>
-        		<configuration>
-          		...
-          			<goalPrefix>somePrefix</goalPrefix>
-        		</configuration>
+        	<artifactId>maven-plugin-plugin</artifactId>
+            	<version>2.3</version>
+            	<configuration>
+          	...
+            	<goalPrefix>somePrefix</goalPrefix>
+        	  </configuration>
       		</plugin>
-
-
+			```
 
 
 
