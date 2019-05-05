@@ -376,9 +376,29 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
     </configuration>
 </plugin>
 ```
-4. *配置plugin执行期的参数：*
+4. *为Mojo配置参数*
+	1. 所有的参数声明均位于pom的`<configuration>`标签中
+	2. 在Mojo中的声明：
+		1. 使用javadoc注释`@parameter`于每个field的上方
+		   ```
+		   @parameter
+		   private List animals;
+		   ``` 
+	3. 参数在pom中的声明：
+		1. 声明时的标签名与Mojo中声明field名称相同；
+		2. 倘若时集合类，则需要在Mojo中的名称后加上"s"，在pom中声明时需要使用`<xxs><xx>vaule1</xx><xx>value2</xx></xxs>`的方式；
+		3. 对于Map类的field，则声明方式为:
+		   ```
+		   <myMap>
+		     <key1>value1</key1>
+		     <key2>value2</key2>
+		   </myMap>
+		   ```
+
+5. *配置plugin执行期的参数：*
 	1. 关于plugin的执行期参数配置，均存在于`<plugin>`下的`<executions>`标签内，如：`<goals>`, `<phase>`, `<configuration>`（此标签比较特殊，亦可以不在`<exectuions>`的标签内声明而在`<plugin>`中直接声明）
-	2. 
+	2. `<phase>`标签声明了plugin的执行阶段。
+		- 在命令行输入指定的阶段名称后，会执行项目pom中指定的打包方式所指定的运行插件以及在指定阶段内的自定义插件
 
 
 
