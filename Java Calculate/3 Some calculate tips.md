@@ -18,3 +18,5 @@ public static long gcd(long m, long n){
 对 $x^n$ 的化简，使用递归算法会更合适：
 若 $n$ 是偶数，则 $x^n=x^o*x^o$，其中 $o=n/2$
 若 $n$ 是奇数，则 $x^n=x^t*x^t*x$，其中 $t=(n-1)/2$
+
+## 
