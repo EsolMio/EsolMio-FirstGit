@@ -376,7 +376,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
     </configuration>
 </plugin>
 ```
-4. 配置
+4. 配置plugin执行期的参数：
+	1. 关于plugin的
 
 
 
