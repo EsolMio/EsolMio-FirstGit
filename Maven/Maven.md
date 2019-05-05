@@ -186,9 +186,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 ### iv. Dependency Management
 此节将介绍Dependency Management: `<dependencyManagement>`标签。
 
-- **i.** 此标签适用于简化子项目依赖项的声明，
-	- 若在父项目的pom中声明了`<dependencyManagement>`标签，其中包含了依赖项的基本信息：`<groupId>`, `<artificId>`, `<version>`,`<scope>`；以及附加信息：`<exclusion>`,`<type>`时。
-	- 子项目pom只需声明对应依赖项的`<groupId>`, `<artificId>`即获得父项目pom中对应依赖项所声明的项
+#### a. 此标签适用于简化子项目依赖项的声明，
+- 若在父项目的pom中声明了`<dependencyManagement>`标签，其中包含了依赖项的基本信息：`<groupId>`, `<artificId>`, `<version>`,`<scope>`；以及附加信息：`<exclusion>`,`<type>`时。
+- 子项目pom只需声明对应依赖项的`<groupId>`, `<artificId>`即获得父项目pom中对应依赖项所声明的项
 	
 
   如下所示范（example）：
@@ -241,7 +241,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 由`<type>`的原因：依赖项将引用打包方式的“制品”(artifacts)，大多数引用jar的artifact，但仍然存在部分依赖项引用其他打包方式的artifacts，比如上述例子中的依赖引用`war`打包方式。
 
-- **ii.** `<dependencyManagement>`最主要用于控制依赖版本，**主要功能**！
+#### b. `<dependencyManagement>`最主要用于控制依赖版本，**主要功能**！
 	- **子项目依赖项的版本将由父项目pom管理，无需各子项目额外声明**。如上例子所示，在父pom的`<dependencyManagement>`中声明`<version>`后，子pom的依赖项版本对应父pom所声明的。
 	- 若在**子项目pom中声明了依赖项版本**，则Maven会**以子项目声明的为准**
 	- 若子项目pom中声明了新`<dependncyManagement>`并声明了对应依赖项的新特性（如版本），则只覆盖父项目`<dependencymanagement>`中对应的依赖项，其余不变，且继承子项目的项目将受到新`<dependencyManage>`的影响。
