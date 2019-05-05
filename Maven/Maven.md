@@ -1,4 +1,4 @@
-# Maven
+# Maven -
 maven是一个将项目视为对象的管理工具（Porject Object Model，POM）
 
 在整个Maven项目中，最基本的文件为`pom.xml`，此文件用于指明`reprository`, `dependencies`, `plugins`
@@ -332,8 +332,8 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
     </build>
 ```
 
-### 自定义plugin
-1. *创建Mojo，Mojo全名为“**M**aven-**O**ld-**J**ava-**O**bject”*。参考：[create first Mojo](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html)
+### 自定义plugin -[Guide java plugin development](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html)
+1. *创建Mojo，Mojo全名为“**M**aven-**O**ld-**J**ava-**O**bject”*。
 	1. 创建Mojo需要用到(`groupId:artifactId`)`org.apache.maven:maven-plugin-api`, `org.apache.maven.plugin-tools:maven-plugin-annotations`依赖项。
 	
 	2. 一个插件中只需要**一个Mojo**类（有些插件将Mojo定义为抽象类）：
