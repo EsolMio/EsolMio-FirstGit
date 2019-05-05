@@ -105,7 +105,7 @@ example:
 ## ++pom.xml - A basic file of all Maven project++
 pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是整个Maven项目的基础**
 
-## 1. Dependency-依赖项 - [Introduction to dependency mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
+## Dependency-依赖项 - [Introduction to dependency mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
 
 ### i. Transitive Dependencies-传递依赖
 - 对于各个依赖项之间存在传递依赖——即通过项与项之间的依赖以实现传递依赖(Transivate dependencies)，不需要额外的声明即可使用存在于依赖树的依赖项。如：`A->B->C`，使用A的项目可以使用依赖项C。
@@ -183,7 +183,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 ***
 
-## 2. Dependency Management
+### iv. Dependency Management
 此节将介绍Dependency Management: `<dependencyManagement>`标签。
 
 - **i.** 此标签适用于简化子项目依赖项的声明，
