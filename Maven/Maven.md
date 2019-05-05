@@ -105,15 +105,15 @@ example:
 ## ++pom.xml - A basic file of all Maven project++
 pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是整个Maven项目的基础**
 
-### 1. Dependency-依赖项 - [Introduction to dependency mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
+## 1. Dependency-依赖项 - [Introduction to dependency mechanism](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
 
-#### i. Transitive Dependencies-传递依赖
+### i. Transitive Dependencies-传递依赖
 - 对于各个依赖项之间存在传递依赖——即通过项与项之间的依赖以实现传递依赖(Transivate dependencies)，不需要额外的声明即可使用存在于依赖树的依赖项。如：`A->B->C`，使用A的项目可以使用依赖项C。
 - 可以理解为，在一个project项目中使用了依赖项A，若存在C为A的传间接依赖，则可以在项目中无声明C的情况下使用依赖项C
 
 ***
 
-#### ii. 在`pom.xml`中使用external dependencies（外部依赖项）
+### ii. 在`pom.xml`中使用external dependencies（外部依赖项）
 - 在`pom.xml`中定义，在define定义时**至少**使用4个tag：
 
 	- `groupId`
@@ -149,7 +149,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 
 ***
 
-#### iii. 多个项目之间的依赖会产生传递性依赖
+### iii. 多个项目之间的依赖会产生传递性依赖
 在产生传递依赖时，会产生依赖树（dependency tree），如`A->B->C->D`
 
 - *依赖调节* (Dependency mediation)：用于调节版本，在依赖树中，若出现依赖树中不同的子树中依赖项的版本不同，则Maven会使用**距离根最近**的依赖项的版本，并不以版本号的高低做判断，如：两棵依赖子树`A->B->C->D ver2.0`和`A->E->D ver 1.0`，Maven将会使用`D ver1.0`，因距离最近。若需要强制使用`D ver2.0`则需在`A`的`<dependency></dependecy>`中直接指明
