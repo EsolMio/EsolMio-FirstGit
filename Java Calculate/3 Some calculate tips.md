@@ -20,4 +20,4 @@ public static long gcd(long m, long n){
 若 $n$ 是奇数，则 $x^n=x^t*x^t*x$，其中 $t=(n-1)/2$
 
 ## 递归往while的转换
-再使用while循环时有一特性即会出现
+再使用while循环时有一特性即会出现“将新的值赋予自己”这种情况，此时的“自己”为循环所围绕的“根”。
