@@ -333,7 +333,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 ```
 
 ### 自定义plugin
-1. 创建Mojo，Mojo全名为“**M**aven-**O**ld-**J**ava-**O**bject”。参考：[create first Mojo](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html)
+1. *创建Mojo，Mojo全名为“**M**aven-**O**ld-**J**ava-**O**bject”*。参考：[create first Mojo](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html)
 	1. 创建Mojo需要用到(`groupId:artifactId`)`org.apache.maven:maven-plugin-api`, `org.apache.maven.plugin-tools:maven-plugin-annotations`依赖项。
 	
 	2. 一个插件中只需要**一个Mojo**类（有些插件将Mojo定义为抽象类）：
@@ -347,7 +347,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	3. 在pom中声明打包方式`<packaging>`为`maven-plugin`
 	4. 将插件执行`maven-plugin`的声明周期(`generate-resources`, `process-resources`, `compile`) [Build Lifecycle](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 	
-2. 执行插件
+2. *执行插件*
 	1. 为了顺利执行，一定要将其编译`compile`=>打包`package`=>安装`install`
 
 	2. 随后在需要的项目pom中声明本插件（亦可在插件的pom中声明，方便直接测试？（可使用test））
@@ -355,7 +355,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	
 **对于plugin的执行，Maven只会使用继承`AbstractMojo`或实现`Mojo`的类，且这些类只有一个**（再次强调）
 
-3. 使用指定前缀Prefix
+3. *使用指定plugin的前缀Prefix*
 	
 	1. Maven会根据插件的artifactId猜测指定的前缀，将artifactId中的`maven`, `plugin`以及连字符"-"删除，如：
 		1. `maven-${prefix}-plugin`,  Maven官方插件, 剩下`${prefix}`。
@@ -376,8 +376,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
     </configuration>
 </plugin>
 ```
-4. 配置plugin执行期的参数：
-	1. 关于plugin的执行期参数配置，均存在于`<plugin>`下的`<executions>`标签内，如：
+4. *配置plugin执行期的参数：*
+	1. 关于plugin的执行期参数配置，均存在于`<plugin>`下的`<executions>`标签内，如：`<goals>`, `<phase>`, `<configuration>`（此标签比较特殊，亦可以不在`<exectuions>`的标签内声明而在`<plugin>`中直接声明）
+	2. 
 
 
 
