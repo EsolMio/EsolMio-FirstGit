@@ -11,7 +11,7 @@
 - 对于字符串`String`：
 此方法涉及到字符串中的所有字符ASCII码，使用函数$\sum_{i=0}^{KeySize-1}Key*37^i$。
 使用Horner法则将此多象时展开，如：$h_k=k_0+37k_1+37^2k_2$，展开后为 $h_k=((k_2)*37+k_1)*37+k_0$ 。
-使用Horner法则的原因：在编程中高次树在
+使用Horner法则的原因：在编程中高次数的计算会导致数冗余（37\*37\*37\*...）
 
 ```
 public static in hash(String key, int tableSize){
