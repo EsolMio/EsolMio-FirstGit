@@ -32,4 +32,4 @@ public static long gcd(long m, long n){
 
 ## 余数，mod
 - mod即表示求余，当表示为 $X$ (mod $number$ )时表示以 $X$ 被number除以求余数，从另一角度来讲即将 $X/number$ 求得的值限制于 $0$ ~ $number$ 范围内
-- 对于表达式 $number1$≡$number2$ $(mod$ $X)$，表示在模为 $X$ 时，$number1$ 的效果于 $number2$ 的
+- 对于表达式 $number1$≡$number2$ $(mod$ $X)$，表示在模为 $X$ 时，$number1$ 的效果与 $number2$ 的效果相同
