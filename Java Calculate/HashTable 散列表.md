@@ -9,7 +9,7 @@
 一般使用具有“代表性”的值计算以计算哈希值
 
 - 对于字符串`String`
-此方法涉及到字符串中的所有字符ASCII码，：
+此方法涉及到字符串中的所有字符ASCII码，使用函数$$：
 ```
 public static in hash(String key, int tableSize){
     int hashVal = 0;
