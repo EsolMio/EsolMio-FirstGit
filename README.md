@@ -1,2 +1,2 @@
 # README
-This is a self note respority
+This is a self note repository
