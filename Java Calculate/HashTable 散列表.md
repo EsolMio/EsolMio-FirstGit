@@ -18,7 +18,8 @@
 public static in hash(String key, int tableSize){
     int hashVal = 0;
     for(int i=0;i<key.length;i++)
-        hashVal+=37*hashVal
+        hashVal+=37*hashVal+key.charAt(i);
+    hashVal%=tableSize;
 }
 ```
 
