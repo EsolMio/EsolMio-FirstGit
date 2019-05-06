@@ -31,4 +31,4 @@ public static long gcd(long m, long n){
 - 在使用递归时也要考虑：是否要用处理null情况，通过方法使用的范围确定，若需要，则添上处理的方法
 
 ## 余数，mod
-mod即表示求余，当表示为 $X$ (mod $number$ )时表示以 $X$ 被number除以求余数，从另一角度来讲即将 $X/number$ 求得的值
+mod即表示求余，当表示为 $X$ (mod $number$ )时表示以 $X$ 被number除以求余数，从另一角度来讲即将 $X/number$ 求得的值限制于 $0$ ~ $number$ 范围内
