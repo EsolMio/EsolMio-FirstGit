@@ -14,7 +14,7 @@
 **散列表创建时的大小通常为素数（只可被"1"和自身整除的数）**
 
 - 先判断是否发生冲突
-  `array[currentPos]!=null && !array[currentPos].element.equy`
+  `array[currentPos]!=null && !array[currentPos].element.equals(x)`返回`true`
 - 通过
 
 ### 1. 分离链接表
