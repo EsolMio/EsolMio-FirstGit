@@ -6,6 +6,7 @@
 - 故需要确定一函数以处理冲突和确定散列表大小问题。
 
 ## 好的哈希函数
+一般使用具有“代表性”的值计算以计算哈希值
 对于字符串`String`：
 ```
 public static in hash(String key, int tableSize){
