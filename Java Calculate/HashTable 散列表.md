@@ -62,7 +62,7 @@ public static in hash(String key, int tableSize){
 - 因函数中出现两个散列函数，故称双散列
 
 ### 5. 可扩散列
-- 此散列基于比特bit
+- 此散列的哈希值基于比特bit
 
 
 
