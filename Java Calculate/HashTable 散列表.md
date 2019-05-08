@@ -63,7 +63,7 @@ public static in hash(String key, int tableSize){
 
 ### 5. 可扩散列
 - 此散列的哈希值基于比特bit
-- 
+- 此方法通过B树的
 
 
 
