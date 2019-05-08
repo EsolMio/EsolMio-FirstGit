@@ -61,6 +61,10 @@ public static in hash(String key, int tableSize){
 	- 通常使用：$hash_2(x)=R-(x$ $mod$ $R)$ ，$R$ 为小于 $tableSize$ 的素数
 - 因函数中出现两个散列函数，故称双散列
 
+### 5. 可扩散列
+- 此散列基于比特bit
+
+
 
 
 
