@@ -9,4 +9,4 @@
 
 ## 待整合
 - 创建应用组件之间协作（即类与类之间的“交流”——对象注入）的行为通常称为装配（wiring）。Spring提供了xml和Java两种方法。
-- 面向切面编程（aspect-oriented programming，AOP）
+- 面向切面编程（aspect-oriented programming，AOP），
