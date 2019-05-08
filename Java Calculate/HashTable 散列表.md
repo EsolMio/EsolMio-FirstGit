@@ -63,7 +63,8 @@ public static in hash(String key, int tableSize){
 
 ### 5. 可扩散列
 - 此散列的哈希值基于比特bit
-- 此方法通过B树的特性$O(log_{m/2}N)$——当节点数越多时，树的
+- 此方法通过B树的特性：$O(log_{m/2}N)$（$N$为节点数）——当节点数越多时，树的深度增长越慢。
+- 
 
 
 
