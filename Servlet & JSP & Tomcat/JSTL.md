@@ -17,4 +17,14 @@ JSTL分为简单标记和传统标记
 1. 类需要继承SimpleTagSupport类
 2. 覆盖`doTag() throws JspException, IOException:void`方法，用以实现自定的Tag行为
 
+e.g
+```
+package foo
+```
+
+
+### ii. 编写传统Tag
+
+## 2. 
+
 
