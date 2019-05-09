@@ -32,6 +32,7 @@ public class SimpleTagTest1 extends SimpleTagSupport{
 ### ii. 编写传统Tag
 1. 
 
-## 2. 为Tag
+## 2. 为Tag创建一个TLD文件
+此TLD文件用于声明配置tag以及所使用的类
 
 
