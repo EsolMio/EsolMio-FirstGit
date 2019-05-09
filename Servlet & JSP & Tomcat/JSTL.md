@@ -19,7 +19,13 @@ JSTL分为简单标记和传统标记
 
 e.g
 ```
-package foo
+package foo;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+public class SimpleTagTest1 extends SimpleTagSupport{
+
+    public void 
+}
 ```
 
 
