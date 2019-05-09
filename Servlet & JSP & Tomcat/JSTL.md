@@ -34,6 +34,6 @@ public class SimpleTagTest1 extends SimpleTagSupport{
 
 ## 2. 为Tag创建一个TLD文件
 此TLD文件用于声明配置tag
-1. 所使用的
+1. TLS
 
 
