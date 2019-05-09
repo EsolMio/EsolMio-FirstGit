@@ -13,5 +13,7 @@ JSTL分为简单标记和传统标记
 ~~旧版本（JSP 2.0）之前需要在DD中声明`<jsp-config><taglib></taglib></jsp-config>`~~
 
 ## 1. 编写Tag对应的类
+### i. 编写简单Tag
+1. 类需要继承SimpleTagSupport
 
 
