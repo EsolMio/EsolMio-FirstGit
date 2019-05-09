@@ -24,13 +24,14 @@ import javax.servlet.jsp.tagext.SimpleTagSupport;
 
 public class SimpleTagTest1 extends SimpleTagSupport{
 
-    public void 
+    public void doTag() throws JspException, IOException { ... }
 }
 ```
 
 
 ### ii. 编写传统Tag
+1. 
 
-## 2. 
+## 2. 为Tag
 
 
