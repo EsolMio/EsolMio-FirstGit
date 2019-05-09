@@ -36,5 +36,5 @@ public class SimpleTagTest1 extends SimpleTagSupport{
 此TLD文件用于声明配置tag
 1. TLD文件本质为xml
 2. TLD中基本标签为`<taglib>`，其中需要声明`xmlns`, `xmlns:xsi`, `xsi:schemaLocation`
-3. 
+3.  
 
