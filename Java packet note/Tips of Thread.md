@@ -140,7 +140,7 @@ From "Thing in Java"
 - 在指定线程上通过使用某对象对象的`wait()`, `notify()`, `notifyAll()`时，当前线程**必须**需拥有此**对象的监视器(Monitor)**，即当前运行过`synchronized(){}`代码块/`synchronized`修饰的方法，**结果为当前线程进入等待阻塞**。**Tips**：此时无论synchronized()中的锁对象句柄的名称为何，只要句柄指向的对象一致，线程即可获得此对象的监视器。synchronized中的锁对象需要先在适合的作用域中定义（即类型需确定），后才可在synchronized()的括号中使用。
 
   **获得对象监视器的方法**：
-  - 线程执行~~指定对象~~的同步方法（synchronized修饰的成员方法）
+  - 线程执行自己~~指定对象~~的同步方法（synchronized修饰的成员方法）
   - 线程执行指定对象的synchronized代码块，且锁对象为指定对象
   - 对于`Class`类对象，可执行synchronized修饰的类方法。
 - 正式调用以上三个方法时也需要在synchronized修饰的方法/代码块中使用
