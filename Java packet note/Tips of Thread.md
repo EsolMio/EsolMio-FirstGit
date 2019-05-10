@@ -51,7 +51,8 @@ tips：进入Runnable状态的对象均有机会争抢CPU资源以运行，根�
 2. **`MAX_PRIORITY`** = 10，最大优先级值。
 3. **`NORM_PRIORITY`** = 5，优先级默认值。
 
-设置
+设置优先级使用`setPriority(int newPriority):void`方法
+获得当前线程优先级使用`getPriority`
 
 进入阻塞的方法有三个：（同步锁：每个Thread对象均有）
 1. **`Thread.sleep(long millis)`**，Thread类方法，在任何Thread对象/main()中均可调用。调用后**运行中的线程**进入阻塞，**且原本持有的同步锁（对方的）不释放（如果有）**
