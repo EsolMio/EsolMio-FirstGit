@@ -132,7 +132,7 @@ public void doGet(HttpServletRequest request,
 - Tips of `run()`：Thread创建的线程对象在运行时均是执行`run()`语句，`run()`结束表示线程终结。
 
 ### 9. `wait()`, `notify()`, `notifyAll()`
-good example：
+good example：[wait(), notify()...](https://www.yiibai.com/java_concurrency/concurrency_interthread_communication.html#article-start)
 
 - `wait()`, `notify()`, `notifyAll()`三个方法均位于Object对象中，使用于全部的对象。
   位于Object的原因：
