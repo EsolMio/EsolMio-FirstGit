@@ -77,8 +77,9 @@ package com.testAnnotation
 import com.selfAnnotation.MyAnnotation
 
 class Test{
+    @MyAnnotation(value = {"test1", "test2"})
     class test(String name, int num){
-        System.out.println("test: "+)
+        System.out.println("test: "+name+", "+num);
     }
 }
 ```
