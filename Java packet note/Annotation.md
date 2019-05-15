@@ -61,4 +61,4 @@ public enum RetentionPolicy {
 - `@Retention`对应声明本注解可存在的阶段
 
 ## 反射机制中的`Annotation`
-对于`Class`, `ConStructor`, `Method`, `Field`
+对于`Class`, `ConStructor`, `Method`（`ConStructor`, `Method`均由`@Target(Elet)`）, `Field`
