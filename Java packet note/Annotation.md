@@ -98,29 +98,11 @@ public class AnnotationTest {
         // 获取 test() 方法的Method实例
         Method test = t.getMethod("test", new Class[]{String.class, int.class});
         // 执行该方法
-        mEmpty.invoke(person, new Object[]{String.class});        
-        iteratorAnnotations(mEmpty);
+        test.invoke(person, new Object[]{String.class, int.class});        
+        iteratorAnnotations(test);
     }
     
-    public static void iteratorAnnotations(Method method) {
-
-        // 判断 somebody() 方法是否包含MyAnnotation注解
-        if(method.isAnnotationPresent(MyAnnotation.class)){
-            // 获取该方法的MyAnnotation注解实例
-            MyAnnotation myAnnotation = method.getAnnotation(MyAnnotation.class);
-            // 获取 myAnnotation的值，并打印出来
-            String[] values = myAnnotation.value();
-            for (String str:values)
-                System.out.printf(str+", ");
-            System.out.println();
-        }
-        
-        // 获取方法上的所有注解，并打印出来
-        Annotation[] annotations = method.getAnnotations();
-        for(Annotation annotation : annotations){
-            System.out.println(annotation);
-        }
-    }
+    
 }
 ```
 
