@@ -59,3 +59,5 @@ public enum RetentionPolicy {
 需要有最基本的两个注释`@Target`, `@Retention`，注解内的属性分别对应了`ElementType`和`RetentionPolicy`两个类。
 - `@Target`对应声明本注解需要注解的对象
 - `@Retention`对应声明本注解可存在的阶段
+
+## 反射机制中的`Annotation`
