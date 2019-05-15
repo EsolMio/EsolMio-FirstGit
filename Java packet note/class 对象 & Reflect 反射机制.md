@@ -31,7 +31,10 @@ Tips：构建数组时可用：
 	- 返回本Class对象所有的域成员
 
 7. `getAnnotation(Class<A> annotationClass):<A extends Annotation>`
-	- 
+	- 通过指定的注解类类对象获得对应的注解类，若无则返回null
+
+8. `getAnn`
+
 
 5. `newInstance()`，通过本Class对象创建一个新的实例
 
