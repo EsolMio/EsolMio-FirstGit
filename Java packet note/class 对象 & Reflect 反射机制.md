@@ -20,7 +20,7 @@ Tips：构建数组时可用：
 3. `.getMethod(String name, Class<?>... parameterTypes)`成员方法。
 	- 此方法将通过`name`参数查找方法，并需要和`patameterTypes`匹配，倘若查找不到对应的方法，则会在超类上递归调用本方法，直至找到。最终返回一个`Method`实例。
 	- 功能相似的方法：`getMethods()`，将全部方法返回，返回`Method[]`。
-4. `newInstance()`，创建一个
+4. `newInstance()`，通过本Class对象创建一个新的实例
 
 
 ## 关于基本类型的Class对象
@@ -38,5 +38,5 @@ Tips：构建数组时可用：
 		- Example：`Integer i = new Integer(10); int ii=i;`
 
 ## Reflect反射机制
-
+根据上述的三个方法
 
