@@ -69,7 +69,7 @@ package com.selfAnnotation
 @Target(ElementType.Method)
 @Retention(RetentionPolicy.RUNTIME)
 @interface MyAnnotation {
-    //
+    // 1.
     String[] value() default "unknown";
 }
 ```
@@ -116,7 +116,7 @@ public class AnnotationTest {
     
 }
 ```
-1. 在自身
+1. 在自定义的注解中声明的成员方法均为抽象，无实际执行方法
 
 
 ## 反射机制中的`Annotation`
