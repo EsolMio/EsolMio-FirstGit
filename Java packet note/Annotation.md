@@ -93,17 +93,10 @@ public class AnnotationTest {
 
     public static void main(String[] args) throws Exception {
         Test test = new Test();
-        // 获取Person的Class实例
-        Class<Person> c = Person.class;
-        // 获取 somebody() 方法的Method实例
-        Method mSomebody = c.getMethod("somebody", new Class[]{String.class, int.class});
-        // 执行该方法
-        mSomebody.invoke(person, new Object[]{"lily", 18});
-        iteratorAnnotations(mSomebody);
-        
-
-        // 获取 somebody() 方法的Method实例
-        Method mEmpty = c.getMethod("empty", new Class[]{});
+        Class<Test> t = Test.class;
+     
+        // 获取 test() 方法的Method实例
+        Method test = t.getMethod("test", new Class[]{});
         // 执行该方法
         mEmpty.invoke(person, new Object[]{});        
         iteratorAnnotations(mEmpty);
