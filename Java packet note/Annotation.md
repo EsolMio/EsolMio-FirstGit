@@ -105,7 +105,9 @@ public class AnnotationTest {
         if(method.isAnnotationPresent(MyAnnotation.class)==true){
             // 判断此方法是否有被MyAnnotation标注
             MyAnnotation myAnnotation = method.getAnnotation(MyAnnotation.class);
-            // 打印
+            // 打印MyAnnotation中的"value"值
+            String[] elements = myAnnotation.value();
+            for(String elem)
         }
     }
     
