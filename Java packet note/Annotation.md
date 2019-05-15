@@ -94,12 +94,12 @@ import com.testAnnotation.Test
 public class AnnotationTest {
 
     public static void main(String[] args) throws Exception {
-        Test test = new Test();
+        Test testO = new Test();
         Class<Test> t = Test.class;
         // 获取 test() 方法的Method实例
         Method test = t.getMethod("test", new Class[]{String.class, int.class});
         // 执行该方法
-        test.invoke(test, new Object[]{String.class, int.class});        
+        test.invoke(testO, new Object[]{String.class, int.class});        
         iteratorAnnotations(test);
     }
 
