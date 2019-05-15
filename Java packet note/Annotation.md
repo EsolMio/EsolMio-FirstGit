@@ -107,7 +107,8 @@ public class AnnotationTest {
             MyAnnotation myAnnotation = method.getAnnotation(MyAnnotation.class);
             // 打印MyAnnotation中的"value"值
             String[] elements = myAnnotation.value();
-            for(String elem)
+            for(String element:elements)
+                System.out.print("the element of value is: "+element);
         }
     }
     
