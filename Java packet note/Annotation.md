@@ -96,7 +96,7 @@ public class AnnotationTest {
         Class<Test> t = Test.class;
      
         // 获取 test() 方法的Method实例
-        Method test = t.getMethod("test", new Class[]{});
+        Method test = t.getMethod("test", new Ckla);
         // 执行该方法
         mEmpty.invoke(person, new Object[]{});        
         iteratorAnnotations(mEmpty);
