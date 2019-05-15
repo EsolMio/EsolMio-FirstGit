@@ -79,6 +79,7 @@ package com.testAnnotation
 import com.selfAnnotation.MyAnnotation
 
 class Test{
+    // 2.
     @MyAnnotation(value = {"test1", "test2"})
     class test(String name, int num){
         System.out.println("test: "+name+", "+num);
@@ -118,8 +119,7 @@ public class AnnotationTest {
 ```
 1. 在自定义的注解中声明的成员方法均为抽象，无实际执行方法。因注解类**本质为接口**。
 	- 使用关键字`default`指定对应方法默认返回的值（默认值类型和返回类型相同）
-	-  
-2. 
+2. 在对应的位置上设置注解，因注解的`@Target`设置为
 
 
 ## 反射机制中的`Annotation`
