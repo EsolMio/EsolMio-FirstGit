@@ -106,6 +106,7 @@ public class AnnotationTest {
     public static iteratorAnnotation(Method method){
         if(method.isAnnotationPresent(MyAnnotation.class)==true){
             // 判断此方法是否有被MyAnnotation标注
+            // 3.
             MyAnnotation myAnnotation = method.getAnnotation(MyAnnotation.class);
             // 打印MyAnnotation中的"value"值
             String[] elements = myAnnotation.value();
@@ -120,7 +121,7 @@ public class AnnotationTest {
 1. 在自定义的注解中声明的成员方法均为抽象，无实际执行方法。因注解类**本质为接口**。
 	- 使用关键字`default`指定对应方法默认返回的值（默认值类型和返回类型相同）
 2. 在对应的位置上设置注解，因注解的`@Target`设置为`ElementType.METHOD`，故只能注解在方法上；设置了`value`值，此值将会体现在`value()`方法的返回值中。
-3. 
+3. 通过反射技术获得对应方法的注解
 
 
 ## 反射机制中的`Annotation`
