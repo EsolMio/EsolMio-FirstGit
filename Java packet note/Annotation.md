@@ -64,6 +64,16 @@ public enum RetentionPolicy {
 ### 在Annotation中声明方法
 先上例子
 ```
+package com.selfAnnotation
+
+@Target(ElementType.Method)
+@Retention(RetentionPolicy.RUNTIME)
+@interface MyAnnotation {
+    String[] value() default "unknown";
+}
+
+
+```
 
 
 ## 反射机制中的`Annotation`
