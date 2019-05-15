@@ -57,5 +57,5 @@ Tips：构建数组时可用：
 		- Example：`Integer i = new Integer(10); int ii=i;`
 
 ## Reflect反射机制
-根据上述的三个方法，主要获得三个对象`Field`, `Cond`
+根据上述的三个方法，主要获得三个对象`Field`, `Condtructor`, `Method`（执行对应的方法`invoke(Object obj, Object[] args)`）
 
