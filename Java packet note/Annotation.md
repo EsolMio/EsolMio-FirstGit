@@ -94,12 +94,15 @@ public class AnnotationTest {
     public static void main(String[] args) throws Exception {
         Test test = new Test();
         Class<Test> t = Test.class;
-     
         // 获取 test() 方法的Method实例
         Method test = t.getMethod("test", new Class[]{String.class, int.class});
         // 执行该方法
         test.invoke(person, new Object[]{String.class, int.class});        
         iteratorAnnotations(test);
+    }
+
+    public static iteratorAnnotation(Method method){
+        if(method.isAnnotationPresent(MyAnnotation.class))
     }
     
     
