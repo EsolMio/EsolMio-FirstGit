@@ -61,5 +61,8 @@ public enum RetentionPolicy {
 - `@Target`对应声明本注解需要注解的对象
 - `@Retention`对应声明本注解可存在的阶段
 
+
+
+
 ## 反射机制中的`Annotation`
 对于`Class`, `ConStructor`, `Method`, `Field`类中，均有获得注解对应类的注解类的方法`getAnnotation(Class<T> annotation):<T extends Annotation>`，此方法会获得对应参数指明的注解类。若无对应注解，则返回`null`。此方法可用于验证是否拥有对应注解。
