@@ -77,7 +77,9 @@ package com.testAnnotation
 import com.selfAnnotation.MyAnnotation
 
 class Test{
-
+    class test(String name, int num){
+        System.out.println("test: "+)
+    }
 }
 ```
 
