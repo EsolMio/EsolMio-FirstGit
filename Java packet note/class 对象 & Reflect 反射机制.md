@@ -25,8 +25,12 @@ Tips：构建数组时可用：
 	- 获得本Class对象的所有方法（无论是实例亦或者static）。
 
 5. `getField(String name):Field`，实例方法
-	- 返回指定名称的
+	- 返回指定名称的域成员
 
+6. `getFields():Field[]`
+	- 返回本Class对象所有的域成员
+
+7. 
 
 5. `newInstance()`，通过本Class对象创建一个新的实例
 
