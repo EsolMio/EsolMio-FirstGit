@@ -24,6 +24,10 @@ Tips：构建数组时可用：
 4. `getMethods():Methos[]`，实例方法
 	- 获得本Class对象的所有方法（无论是实例亦或者static）。
 
+5. `getField(String name):Field`，实例方法
+	- 返回指定名称的
+
+
 5. `newInstance()`，通过本Class对象创建一个新的实例
 
 
