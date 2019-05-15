@@ -56,3 +56,4 @@ public enum RetentionPolicy {
 }
 ```
 ## 声明一个自定义`Annotation`
+需要有最基本的两个注释`@Target`, `@Retention`，
