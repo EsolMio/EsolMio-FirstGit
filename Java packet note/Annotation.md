@@ -74,6 +74,7 @@ package com.selfAnnotation
 ```
 ```
 package com.testAnnotation
+
 import com.selfAnnotation.MyAnnotation
 
 class Test{
@@ -84,13 +85,14 @@ class Test{
 }
 ```
 ```
-packag
+package other
+
+import com.testAnnotation.Test
+
 public class AnnotationTest {
 
     public static void main(String[] args) throws Exception {
-        
-        // 新建Person
-        Person person = new Person();
+        Test test = new Test();
         // 获取Person的Class实例
         Class<Person> c = Person.class;
         // 获取 somebody() 方法的Method实例
