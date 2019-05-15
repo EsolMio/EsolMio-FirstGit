@@ -21,7 +21,8 @@ Tips：构建数组时可用：
 	- 此方法将通过`name`参数查找方法，并需要和`patameterTypes`匹配，倘若查找不到对应的方法，则会在超类上递归调用本方法，直至找到。最终返回一个`Method`实例。
 	- 功能相似的方法：`getMethods()`，将全部方法返回，返回`Method[]`。
 	
-4. `getMethods():Methos[]`，获得本Class对象的所有方法
+4. `getMethods():Methos[]`，实例方法
+	- 获得本Class对象的所有方法（无论是实例亦或者static）。
 
 5. `newInstance()`，通过本Class对象创建一个新的实例
 
