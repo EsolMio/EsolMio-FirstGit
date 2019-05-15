@@ -71,8 +71,14 @@ package com.selfAnnotation
 @interface MyAnnotation {
     String[] value() default "unknown";
 }
+```
+```
+package com.testAnnotation
+import com.selfAnnotation.MyAnnotation
 
+class Test{
 
+}
 ```
 
 
