@@ -36,7 +36,8 @@ Tips：构建数组时可用：
 8. `getAnnotations():Annotation[]`
 	- 返回所有的Annotation对象，若无，则返回长度为0的Annotation数组 
 
-9.`isAnnotationPresent(Class<? extends>)`
+9.`isAnnotationPresent(Class<? extends Annoation> annotationClass):boolean`
+	- 判断指定的注解类是否注解了本类
 
 5. `newInstance()`，通过本Class对象创建一个新的实例
 
