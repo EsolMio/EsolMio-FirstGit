@@ -33,7 +33,8 @@ Tips：构建数组时可用：
 7. `getAnnotation(Class<A> annotationClass):<A extends Annotation>`
 	- 通过指定的注解类类对象获得对应的注解类，若无则返回null
 
-8. `getAnn`
+8. `getAnnotations():Annotation[]`
+	- 返回所有的Annotation对象，若无，则返回长度为0的Annotation数组 
 
 
 5. `newInstance()`，通过本Class对象创建一个新的实例
