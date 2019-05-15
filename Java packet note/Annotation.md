@@ -61,4 +61,4 @@ public enum RetentionPolicy {
 - `@Retention`对应声明本注解可存在的阶段
 
 ## 反射机制中的`Annotation`
-对于`Class`, `ConStructor`, `Method`, `Field`类中，均有获得注解对应类的注解类的方法`getAnnotation(Class<T> annotation):<T extends Annotation>`
+对于`Class`, `ConStructor`, `Method`, `Field`类中，均有获得注解对应类的注解类的方法`getAnnotation(Class<T> annotation):<T extends Annotation>`，此方法会获得对应参数指明的注解类。
