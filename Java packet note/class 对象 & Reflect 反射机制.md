@@ -30,7 +30,7 @@ Tips：构建数组时可用：
 6. `getFields():Field[]`
 	- 返回本Class对象所有的域成员
 
-7. 
+7. `getAnnotation():`
 
 5. `newInstance()`，通过本Class对象创建一个新的实例
 
