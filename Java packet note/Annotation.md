@@ -61,7 +61,9 @@ public enum RetentionPolicy {
 - `@Target`对应声明本注解需要注解的对象
 - `@Retention`对应声明本注解可存在的阶段
 
-
+### 在Annotation中声明方法
+先上例子
+```
 
 
 ## 反射机制中的`Annotation`
