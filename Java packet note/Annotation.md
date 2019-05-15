@@ -7,7 +7,7 @@
 
 ![关系图](../.local/static/2019/4/3/1557914268720.1557914268825.png)
 
-详细代码：
+### 详细代码：
 - `Annotation`
 ```
 package java.lang.annotation;
@@ -55,4 +55,4 @@ public enum RetentionPolicy {
     RUNTIME            /* 编译器将Annotation存储于class文件中，并且可由JVM读入 */
 }
 ```
-
+## 声明一个自定义`Annotation`
