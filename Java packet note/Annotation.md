@@ -102,7 +102,10 @@ public class AnnotationTest {
     }
 
     public static iteratorAnnotation(Method method){
-        if(method.isAnnotationPresent(MyAnnotation.class))
+        if(method.isAnnotationPresent(MyAnnotation.class)==true){
+            // 判断此方法是否有被
+            MyAnnotation myAnnotation =
+        }
     }
     
     
