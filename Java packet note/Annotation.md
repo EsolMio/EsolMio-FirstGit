@@ -122,6 +122,7 @@ public class AnnotationTest {
 	- 使用关键字`default`指定对应方法默认返回的值（默认值类型和返回类型相同）
 2. 在对应的位置上设置注解，因注解的`@Target`设置为`ElementType.METHOD`，故只能注解在方法上；设置了`value`值，此值将会体现在`value()`方法的返回值中。
 3. 通过反射技术获得对应方法的注解
+	- 获得注解中设置的值的方法和调用普通方法的方式相同
 
 
 ## 反射机制中的`Annotation`
