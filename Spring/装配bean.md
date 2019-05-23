@@ -9,5 +9,12 @@
 	@Target(...)
 	@Retention(RetentionPolicy.Runtime)
 	@Qualifier
-	public @interface Cold{}
+	public @interface Cold{ }
+
+	@Target(...)
+	@Retention(RetentionPolicy.Runtime)
+	@Qualifier
+	public @interface Cream{ }
+
+	
 	```
