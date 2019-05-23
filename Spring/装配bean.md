@@ -6,15 +6,23 @@
 	- `@Qualifier`还可用于设置限定符，当使用此功能时需和`@Component`注解连用，这将替代由`@Bean`设定的bean id(也可以和`@Bean`连用)。
 	- 可用于注解自定义的注解，以满足在同一对象上同时使用多个`@Qualifier`（本质上本没有同时使用，因为Java并不允许多个同名注解出现）
 	```
+	// 定义Cold
 	@Target(...)
 	@Retention(RetentionPolicy.Runtime)
 	@Qualifier
 	public @interface Cold{ }
 
+	// 定义Cream
 	@Target(...)
 	@Retention(RetentionPolicy.Runtime)
 	@Qualifier
 	public @interface Cream{ }
 
-	
+	// 使用Cold和Cream
+	@Component
+	@Cold
+	@Cream
+	public class ...
+
+
 	```
