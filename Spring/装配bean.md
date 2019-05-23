@@ -7,5 +7,7 @@
 	- 可用于注解自定义的注解，以满足在同一对象上同时使用多个`@Qualifier`（本质上本没有同时使用，因为Java并不允许多个同名注解出现）
 	```
 	@Target(...)
-
+	@Retention(RetentionPolicy.Runtime)
+	@Qualifier
+	public @interface Cold{}
 	```
