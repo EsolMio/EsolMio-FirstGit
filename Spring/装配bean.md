@@ -22,7 +22,8 @@
 	@Component
 	@Cold
 	@Cream
-	public class ...
+	public class ColdCream implement Dessert ...
 
+	//指定使用Cold和Cream
 
 	```
