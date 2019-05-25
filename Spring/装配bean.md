@@ -4,7 +4,7 @@
 - 使用`@bean`申明bean（于配置类中）
 - 使用`@Qualifier`指定要装配的bean，当与`@AutoWrite`注解一同使用，以及在需要通过构造函数注入所依赖的bean的bean的构造器参数旁使用时为此功能（可用于filed，method，parameter，annotation_type，type，不能使用于constructor中，但可用于constructor的parameter中）（出现于存在多个compoment实现了同一个接口，同时在自动注入的属性中使用了接口类型）。
 	- `@Qualifier`还可用于设置限定符，当使用此功能时需和`@Component`注解连用，这将替代由`@Bean`设定的bean id(也可以和`@Bean`连用，功能和与`@Component`连用相同)。
-		- **Attention！！！**
+		- **Attention！！！**通过`@Qualifier`设置的限定符只能与`@Autowired`注解连用才有效果，若在其他
 	- 可用于注解自定义的注解，以满足在同一对象上同时使用多个`@Qualifier`（本质上本没有同时使用，因为Java并不允许多个同名注解出现）
 	```
 	// 定义Cold
