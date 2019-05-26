@@ -1,0 +1,2 @@
+# MySql tips
+`show `
