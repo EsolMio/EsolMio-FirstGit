@@ -6,4 +6,5 @@
 - 需要将变量`character_set_client`, `character_set_connection` ,`character_set_results`设置为`utf8`或`gbk`。（可使用`set names =utf8`命令）（字符显示）。
 - 需将变量`collation_connection`, `collation_database`, `collation_server`设置为`utf8_general_ci`（排序方式）
 **修改后记得重启MySql**
+**使用上述方法无法成功修改，重启后**
 
