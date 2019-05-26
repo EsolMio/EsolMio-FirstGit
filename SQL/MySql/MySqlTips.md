@@ -11,6 +11,6 @@
 
 可见[my.ini修改](https://www.cnblogs.com/houqi/p/5713176.html)
 其中涉及到：
-1. `show create table databasename.tablename`，展示对应表列的详细参数。
-2. 
+1. `show create table databasename.tablename`，展示对应表列的详细参数
+2. `alter table databasename.tablename `
 
