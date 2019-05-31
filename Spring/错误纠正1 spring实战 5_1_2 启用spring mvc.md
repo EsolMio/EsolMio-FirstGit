@@ -1,1 +1,1 @@
-在程序清单 5.2中，`WebMvcConfigu`
+在程序清单 5.2中，继承的`WebMvcConfigurerAdapter`已过时，需要通过实现`WebMvcConfigurer`
