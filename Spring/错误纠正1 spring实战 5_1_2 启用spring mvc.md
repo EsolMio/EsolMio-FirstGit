@@ -11,4 +11,4 @@ WebConfigurer接口提供的`default`方法：
 		return new UrlBasedViewResolverRegistration(resolver);
 	}
    ```
-2. `addResourceHandler(ResourceHandlerRegistry registry):void`，此方法用于添加一个资源处理器以处理
+2. `addResourceHandler(ResourceHandlerRegistry registry):void`，此方法用于添加一个资源处理器以处理来自web应用程序根目录下指定的文件（图像，）
