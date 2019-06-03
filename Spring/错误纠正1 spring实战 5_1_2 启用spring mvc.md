@@ -12,3 +12,4 @@ WebConfigurer接口提供的`default`方法：
 	}
    ```
 2. `addResourceHandler(ResourceHandlerRegistry registry):void`，此方法用于添加一个资源处理器以处理来自web应用程序根目录下指定的文件（图像，css，js）以及类路径（classpath，适用于第三方的jar）
+	1. 
