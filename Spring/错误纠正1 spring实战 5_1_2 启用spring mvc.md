@@ -9,4 +9,4 @@
 		return new UrlBasedViewResolverRegistration(resolver);
 	}
    ```
-2. 
+2. `addResou`
