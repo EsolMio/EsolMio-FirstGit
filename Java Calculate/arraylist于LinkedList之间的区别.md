@@ -1,0 +1,1 @@
+arrayList通过数组实现，linkedList通过链表实现
