@@ -40,7 +40,7 @@ Tips：构建数组时可用：
 	- 判断指定的注解类是否注解了本类
 
 10. `newInstance()`，通过本Class对象创建一个新的实例
-11. `getDeclaredClass():Class<?> []`，返回本类中定义的内部类，支持"public", "protected", "default"，但不包括(exclude)继承(inherited)下来的内部类。无法获得内部定义 
+11. `getDeclaredClass():Class<?> []`，返回本类中定义的内部类，支持"public", "protected", "default"，但不包括(exclude)继承(inherited)下来的内部类。无法获得类内部定义接口时对接口所使用的注解，因这些注解均是针对`Class`/注解的。 
 12. 其余基于"Declared"的方法具体用处均和`getDeclaredClass()`方法相似
 
 ### 1. 注意，关于方法中的"Declared"字眼，若有此字眼，则只返回本类中定义的，与继承无关。若无，则返回全部，其中包含父类中所定义的
