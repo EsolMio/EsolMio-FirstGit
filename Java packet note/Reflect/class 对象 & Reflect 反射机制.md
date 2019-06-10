@@ -43,7 +43,7 @@ Tips：构建数组时可用：
 11. `getDeclaredClass():Class<?> []`，返回本类中定义的内部类，支持"public", "protected", "default"，但不包括(exclude)继承(inherited)下来的内部类。 
 12. 其余基于"Declared"的方法具体用处均和`getDeclaredClass()`方法相似
 
-### 1. 注意，关于方法中的"Declared"字眼，若有方法无此字眼，则只放回本类中定义的，与继承无关。若有，则返回全部，其中包含父类中所定义的
+### 1. 注意，关于方法中的"Declared"字眼，若有此字眼，则只返回本类中定义的，与继承无关。若无，则返回全部，其中包含父类中所定义的
 ### 2. 无"Declared"的方法只能返回被`public`修饰的成员，而有"Declared"的可以返回`public`, `protected`, `default(package)`所修饰的成员
 ### 3. 需要注意的是部分reflect包中的类（令包含了`Class`），如`Field`, `Constructor`, `Method`, `Parameter`, `Package`, `Executable`均实现了`AnnotatedElement`接口，此接口提供了获得注解的方法。
 
