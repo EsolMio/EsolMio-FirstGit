@@ -43,6 +43,9 @@ Tips：构建数组时可用：
 11. `getDeclaredClass():Class<?> []`，返回本类中定义的内部类，支持"public", "protected", "default"，但不包括(exclude)继承(inherited)下来的内部类。 
 12. 其余基于"Declared"的方法具体用处均和`getDeclaredClass()`方法相似
 
+### 注意，关于方法中的"Declared"字眼，若有方法有此
+
+
 
 ## 关于基本类型的Class对象
 - 对于基本类型，如：int，double，char，包括void，都可以生成对应的Class对象，通过`.class`。
