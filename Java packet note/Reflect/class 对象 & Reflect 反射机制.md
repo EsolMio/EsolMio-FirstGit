@@ -39,7 +39,8 @@ Tips：构建数组时可用：
 9. `isAnnotationPresent(Class<? extends Annoation> annotationClass):boolean`
 	- 判断指定的注解类是否注解了本类
 
-5. `newInstance()`，通过本Class对象创建一个新的实例
+10. `newInstance()`，通过本Class对象创建一个新的实例
+11. `getDeclaredClass():Class<?> []` 
 
 
 ## 关于基本类型的Class对象
