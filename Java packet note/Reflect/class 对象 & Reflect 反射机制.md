@@ -44,7 +44,7 @@ Tips：构建数组时可用：
 12. 其余基于"Declared"的方法具体用处均和`getDeclaredClass()`方法相似
 
 ### 1. 注意，关于方法中的"Declared"字眼，若有方法无此字眼，则只放回本类中定义的，与继承无关。若有，则返回全部，其中包含父类中所定义的
-### 2. 无"Declared"的方法只能返回被`public `
+### 2. 无"Declared"的方法只能返回被`public`修饰的成员，而有"Declared"的可以返回"public", "protected", "default(package)"
 
 
 
