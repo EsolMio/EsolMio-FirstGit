@@ -45,7 +45,7 @@ Tips：构建数组时可用：
 
 ### 1. 注意，关于方法中的"Declared"字眼，若有方法无此字眼，则只放回本类中定义的，与继承无关。若有，则返回全部，其中包含父类中所定义的
 ### 2. 无"Declared"的方法只能返回被`public`修饰的成员，而有"Declared"的可以返回`public`, `protected`, `default(package)`所修饰的成员
-### 3. 需要注意的是部分reflect包中的类（令包含了`Class`）
+### 3. 需要注意的是部分reflect包中的类（令包含了`Class`），如`Field`, `Constructor`, `Method`, `Parameter`, `Package`, ``
 
 
 
