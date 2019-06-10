@@ -41,6 +41,7 @@ Tips：构建数组时可用：
 
 10. `newInstance()`，通过本Class对象创建一个新的实例
 11. `getDeclaredClass():Class<?> []`，返回本类中定义的内部类，支持"public", "protected", "default"，但不包括(exclude)继承(inherited)下来的内部类。 
+12. 其余基于"Declared"的方法具体用法均和`getDeclaredClass`
 
 
 ## 关于基本类型的Class对象
