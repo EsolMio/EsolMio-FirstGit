@@ -15,3 +15,5 @@
 2. `alter table databasename.tablename convert to character set utf8 collate utf8_general_ci`，将对应的表修改为utf8编码和utf8_general_ci排序。
 3. 
 
+## prepare 预处理
+可详见 
