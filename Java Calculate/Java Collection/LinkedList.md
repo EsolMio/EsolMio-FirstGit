@@ -1,5 +1,5 @@
 # LinkedList
-- **优势**：更快的插入删除（注意，时间非O(1),e）
+- **优势**：更快的插入删除（注意，时间非O(1)，而是O(n)，因为有查找的时间，在使用int查找时速度比用object更快，如remove，使用）
 
 ## 需要成员
 1. 自定义的私有嵌套节点类`Node`，内部有`Node`类型的前指针`Node prev`和后指针`Node next`以及构造方法`Node(Node prev, E element, Node next)`。
