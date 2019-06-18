@@ -1,4 +1,6 @@
 # LinkedList
+[arraylist&linkedlist](https://www.cnblogs.com/lxq0309/p/3655742.html)
+
 - **优势**：更快的插入删除，仅改变指针（注意，时间非O(1)，而是O(n)，因为有查找的时间，在使用int查找时速度比用object更快，如remove，使用类似二分查找法）。适合用于实现队列和栈
 - **劣势**：不适合查找
 
