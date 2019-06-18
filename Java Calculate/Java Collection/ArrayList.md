@@ -1,4 +1,5 @@
 # ArrayList
+[arraylist&linkedlist](https://www.cnblogs.com/lxq0309/p/3655742.html)
 - 实现了`List<E>`接口，存储的方式为array数组
 - `ArrayList`有自身的容量（此处指容纳的量），容量的大小由数组中存储的数据量决定，容量至少会同list的长度（即类内部数组的长度）相同。
 - 当向ArrayList添加元素时，其容量会自动增加
