@@ -77,6 +77,7 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     ListNode p = l1, q = l2, curr = dummyHead;
     int carry = 0;// 进位值
     while (p != null || q != null) {
+        //Tips3
         int x = (p != null) ? p.val : 0;
         int y = (q != null) ? q.val : 0;
         int sum = carry + x + y;
@@ -101,3 +102,4 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 ```
 - Tips1，使用“除”特性：1. 非整数结果仅保留整数部分；2. 将值缩小，如十位变个位
 - Tips2，使用“求余”特性，对于不同进制数，求余进制值（如十进制：10），所得数为个位数
+- Tips3，三目运算符在判断后赋值上非常有用
