@@ -80,8 +80,8 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int x = (p != null) ? p.val : 0;
         int y = (q != null) ? q.val : 0;
         int sum = carry + x + y;
-        carry = sum / 10;// Tips1，使用“除”特性：1. 非整数结果仅保留整数部分；2. 将值缩小，
-        curr.next = new ListNode(sum % 10);// Tips2，使用“求余”特性，
+        carry = sum / 10;// Tips1，使用“除”特性：1. 非整数结果仅保留整数部分；2. 将值缩小，十位变个位
+        curr.next = new ListNode(sum % 10);// Tips2，使用“求余”特性，对于不同进制数，求余进制值（如十进制：10）
         curr = curr.next;
         if (p != null) p = p.next;
         if (q != null) q = q.next;
