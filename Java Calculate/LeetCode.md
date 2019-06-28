@@ -106,11 +106,6 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 ### 复杂度分析
 
-时间复杂度：O(\max(m, n))O(max(m,n))，假设 mm 和 nn 分别表示 l1l1 和 l2l2 的长度，上面的算法最多重复 \max(m, n)max(m,n) 次。
+- 时间复杂度：$O(max(m, n))$，假设 mm 和 nn 分别表示 l1l1 和 l2l2 的长度，上面的算法最多重复 $max(m,n)$ 次。
 
-空间复杂度：O(\max(m, n))O(max(m,n))， 新列表的长度最多为 \max(m,n) + 1max(m,n)+1。
 
-作者：LeetCode
-链接：https://leetcode-cn.com/problems/two-sum/solution/liang-shu-xiang-jia-by-leetcode/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
