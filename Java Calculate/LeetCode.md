@@ -107,5 +107,6 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 ### 复杂度分析
 
 - 时间复杂度：$O(max(m, n))$，假设 mm 和 nn 分别表示 l1l1 和 l2l2 的长度，上面的算法最多重复 $max(m,n)$ 次。
+- 空间复杂度：$O(max(m,n))$， 新列表的长度最多为 $max(m,n)+1$ 。
 
 
