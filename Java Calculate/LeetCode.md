@@ -81,7 +81,7 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int y = (q != null) ? q.val : 0;
         int sum = carry + x + y;
         carry = sum / 10;// Tips1，使用“除”特性：非整数结果仅保留整数
-        curr.next = new ListNode(sum % 10);// Tips2
+        curr.next = new ListNode(sum % 10);// Tips2，使用
         curr = curr.next;
         if (p != null) p = p.next;
         if (q != null) q = q.next;
