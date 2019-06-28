@@ -69,4 +69,31 @@ Example：
 Answer:
 1. 明确，不要被示例迷惑，两数位数不一定相同
 2. 明确，计算过程中的具体数据，如进位，符号，位数相加后的总和等等，都要有具体的对象代表其。
-3. 
+
+
+```
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    ListNode dummyHead = new ListNode(0);
+    ListNode p = l1, q = l2, curr = dummyHead;
+    int carry = 0;
+    while (p != null || q != null) {
+        int x = (p != null) ? p.val : 0;
+        int y = (q != null) ? q.val : 0;
+        int sum = carry + x + y;
+        carry = sum / 10;
+        curr.next = new ListNode(sum % 10);
+        curr = curr.next;
+        if (p != null) p = p.next;
+        if (q != null) q = q.next;
+    }
+    if (carry > 0) {
+        curr.next = new ListNode(carry);
+    }
+    return dummyHead.next;
+}
+
+// 作者：LeetCode
+// 链接：https://leetcode-cn.com/problems/two-// sum/solution/liang-shu-xiang-jia-by-leetcode/
+// 来源：力扣（LeetCode）
+// 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
