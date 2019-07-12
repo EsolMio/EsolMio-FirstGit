@@ -7,7 +7,9 @@ Tips：构建数组时可用：
 3. `new Test[]{ new Test(1), new Test(2), ... }`//无等号下创建数组。
 
 `Class`拥有的几个常用方法：
-**Attention：**存在部分方法名字中带有`Declared`字样，这意味着这些
+
+**Attention：**
+存在部分方法名字中带有`Declared`字样，这意味着这些方法可以获得全部的制定成员( public, private, protected, default )。
 1. `Class.forName(String className)`，`static`方法 ，通过`className`加载对应的类，可用于运行期加载额外类。
 **注意**：
 	1. 类需要放在环境变量`PATH`设定的位置中。
