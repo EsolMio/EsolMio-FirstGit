@@ -6,5 +6,7 @@
 指针的初始化特殊，如
 `int *pointer = &a;`
 ```
-
+int *pointer;
+pointer=&a;
 ```
+- 在定义时初始化的方式本质上和普通类型相同，但
