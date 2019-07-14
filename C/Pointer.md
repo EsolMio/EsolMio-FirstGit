@@ -16,5 +16,6 @@ pointer=&a;
 ## ERROR
 ```
 int *pointer;
-*pointer=*
+*pointer=*a;
 ```
+不可，对于指针变量只有在变量有明确指向对象后才可使用`*pointer`，否则在
