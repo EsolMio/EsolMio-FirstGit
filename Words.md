@@ -1,3 +1,4 @@
 # Words
 - essence
+- notion
 - 
