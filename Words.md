@@ -1,4 +1,5 @@
 # Words
 - essence
 - notion
+- conditional 
 
