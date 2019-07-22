@@ -8,3 +8,4 @@
 - excessive
 - subsequent
 - delay
+- effectively 
