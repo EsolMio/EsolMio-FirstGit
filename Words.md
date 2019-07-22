@@ -4,3 +4,4 @@
 - conditional 
 - facility
 - Corresponding
+- sequentially
