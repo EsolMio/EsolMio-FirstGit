@@ -12,3 +12,5 @@
 - versatile
 - replacement
 - combination
+- heuristic
+- progression
