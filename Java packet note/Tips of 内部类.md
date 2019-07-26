@@ -46,6 +46,8 @@ class Test{
 			      private class TestIn implement Test{}
 			      public Test getTest{return new TestIn();}
 			  }
+
+			  
 			  ```
 
 # 内部类调用外部类的实例
