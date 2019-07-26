@@ -15,3 +15,4 @@
 - heuristic
 - progression
 - yield
+- utilise
