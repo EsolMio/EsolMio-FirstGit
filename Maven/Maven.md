@@ -402,7 +402,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 ## *Resources
 - Maven中的Resources位置可以放置指定的properties-Java属性文件，使用时需要在`pom.xml`文件中先设定`<resource>`标签并在`<directory>`标签中指定resources的位置。
 - 位于指定的Resources文件夹中的文件将会在打包为jar时放置在jar的根目录中。
-- 故若需要META-INF文件夹
+- 故若需要META-INF文件夹则需要事先指定的Resources文件夹中创建好。
 
 
 
