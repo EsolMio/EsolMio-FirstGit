@@ -399,6 +399,9 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 	2. `<phase>`标签声明了plugin的执行阶段。
 		- 在命令行输入指定的阶段名称后，会执行项目pom中指定的打包方式所指定的运行插件以及在指定阶段内的自定义插件
 
+## Resources
+Maven中的
+
 
 
 
