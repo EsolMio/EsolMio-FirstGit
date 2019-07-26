@@ -27,7 +27,8 @@ class Test{
 	- Tips：无法直接使用`this`来代表外部类的实例（只能表示“自己”）。
 3. 在其他类中创建/使用内部类实例时：
 	- 嵌套类：
-		- 创建时：``
+		- 创建时：`TestNested.TestStatic a=new TestNested.TestStatic();`
+		- 声明句柄获得引用：``
 
 # 内部类调用外部类的实例
 当内部类的方法定义了需使用外部类的实例，
