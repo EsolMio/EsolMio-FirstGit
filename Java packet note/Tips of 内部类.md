@@ -42,7 +42,10 @@ class Test{
 			  ```
 			  interface Test{}
 				
-			  class 
+			  class TestOut{
+			      private class TestIn implement Test{}
+			      public Test getTest{return }
+			  }
 			  ```
 
 # 内部类调用外部类的实例
