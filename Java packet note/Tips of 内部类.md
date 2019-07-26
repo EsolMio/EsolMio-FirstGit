@@ -32,8 +32,10 @@ class Test{
 	- 内部类：
 		- 创建时：
 		  ```
-		
-		  ``
+		  TestNested bB=new TestNested();
+		  TestNested.TestInstance b=bB.new TestInstance();
+		  ```
+	- 区别：嵌套类可直接使用构造器创建
 
 # 内部类调用外部类的实例
 当内部类的方法定义了需使用外部类的实例，
