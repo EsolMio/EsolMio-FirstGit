@@ -35,7 +35,9 @@ class Test{
 		  TestNested bB=new TestNested();
 		  TestNested.TestInstance b=bB.new TestInstance();
 		  ```
-	- 区别：嵌套类可直接使用构造器创建对象（但依旧需要封装类的class对象/需要声明封装类）
+	- 区别：
+		- 嵌套类：可直接使用构造器创建对象（但依旧需要封装类的class对象/需要声明封装类）；
+		- 内部类一定
 
 # 内部类调用外部类的实例
 当内部类的方法定义了需使用外部类的实例，
