@@ -28,7 +28,12 @@ class Test{
 3. 在其他类中创建/使用内部类实例时：
 	- 嵌套类：
 		- 创建时：`TestNested.TestStatic a=new TestNested.TestStatic();`
-		- 声明句柄获得引用：``
+		- 声明句柄获得引用：`TestNested.TestStatic b;`
+	- 内部类：
+		- 创建时：
+		  ```
+		
+		  ``
 
 # 内部类调用外部类的实例
 当内部类的方法定义了需使用外部类的实例，
