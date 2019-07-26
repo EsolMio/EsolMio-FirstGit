@@ -44,7 +44,7 @@ class Test{
 				
 			  class TestOut{
 			      private class TestIn implement Test{}
-			      public Test getTest{return }
+			      public Test getTest{return new TestIn();}
 			  }
 			  ```
 
