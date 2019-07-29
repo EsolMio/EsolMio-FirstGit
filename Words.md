@@ -22,3 +22,4 @@
 - exact
 - reference
 - interpreted
+- algorithm
