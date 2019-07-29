@@ -24,7 +24,7 @@ Hibernate内置了c3p0连接池，当然也可以使用其他的连接池
 	1. `closeConnection(Connection con)`，释放Hibernate使用的连接
 	2. `getConnection()`，获得连接供Hibernate使用
 	3. `supprotsAggressiveRelease()`
-	- Tips：在`getConnection()`中获得一个Connection对象前需要先对连接池配置再创建Connection（若使用Apache DBCP，可以在BasicDataSource中）
+	- Tips：在`getConnection()`中获得一个Connection对象前需要先对连接池配置再创建Connection（若使用Apache DBCP，可以在`BasicDataSource`中使用编程配置，或者使用``）
 
 
 
