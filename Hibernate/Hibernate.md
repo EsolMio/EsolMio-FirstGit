@@ -8,7 +8,7 @@
 - 关于配置文件xml，需要在`<property>`标签的`name`属性中声明:
 	- `binernate.connection.driver_class`：声明所使用的JDBC驱动
 	- `hibernate.connection.url`：声明连接地址, 
-	- `hibernate.connection.username`：声明登录数据库, 
+	- `hibernate.connection.username`：声明登录数据库用户名, 
 	- `hibernate.dialect`
 
 
