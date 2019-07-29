@@ -20,7 +20,10 @@
 
 Hibernate内置了c3p0连接池，当然也可以使用其他的连接池
 ### 配置连接其他连接池
-1. 实现`ConnectionProvider
+1. 实现`ConnectionProvider`接口，此接口提供了：
+	1. `closeConnection(Connection con)`
+	2. `getConnection()`
+	3. `supprotsAggre`
 
 
 
