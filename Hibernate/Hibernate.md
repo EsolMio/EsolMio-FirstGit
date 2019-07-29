@@ -11,4 +11,11 @@
 	- `hibernate.connection.username`：声明登录数据库用户名, 
 	- `hibernate.dialect`
 
+## 配置连接池
+
+### 使用连接池的原因：
+1. 创建新的连接代价很大
+2. 维护
+
+
 
