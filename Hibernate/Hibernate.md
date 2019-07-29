@@ -1,5 +1,6 @@
 # Hibernate
 ## 配置
 *pdf-page 60*
-注意在使用
+
+在创建Configuration对象时，使用的`configure()`方法会加载
 
