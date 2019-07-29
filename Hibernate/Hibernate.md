@@ -24,6 +24,8 @@ Hibernate内置了c3p0连接池，当然也可以使用其他的连接池
 	1. `closeConnection(Connection con)`，释放Hibernate使用的连接
 	2. `getConnection()`，获得连接供Hibernate使用
 	3. `supprotsAggressiveRelease()`
+	- Tips：在``
+
 
 
 
