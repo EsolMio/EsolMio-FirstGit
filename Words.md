@@ -27,4 +27,5 @@
 - prototype
 - alternative
 - condition
-- 
+- typically
+- previously
