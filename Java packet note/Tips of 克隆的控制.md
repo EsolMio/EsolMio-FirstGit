@@ -4,6 +4,7 @@ tips:
 2. Base class: `class Ordinary{}`
 3. 克隆的控制本质为在父类中重写clone()方法将子类对Object.clone()的调用截断，且在clone()中实现自定义的控制方法
 ## 1. 有条件克隆，不实现Cloneable接口
+
 解释：将clone()的权限范围从protected改为public，让其子类继承此方法，且任何类都可以调用此方法。返回值为super.clone();注意不实现Cloneable接口。只有继承且实现Cloneable接口的对象才可正常克隆
 
 Thinking：个人认为原本提供的实现克隆规则即可，不必大费周章使用此方法
