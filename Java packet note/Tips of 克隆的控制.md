@@ -65,7 +65,8 @@ class BackOn extends TurnOffClone {
 ***
 
 ## Reason:为何调用`super.clone()`?
-因为查看`Object`的源码可知`clone`有一修饰符为`native`，调用了第三方C语言文件，重写`clone()`方法后其修饰符`native`作用会消失，失去本身作用。
+1. JVM通过`Object.super()`方法和
+2. 查看`Object`的源码可知`clone`有一修饰符为`native`，调用了第三方C语言文件，重写`clone()`方法后其修饰符`native`作用会消失，失去本身作用。
 
 # `clone()`的控制
 **Tips**：倘若父类实现了`Cloneable`接口，则其子类也会顺理成章实现`Cloneable`。
