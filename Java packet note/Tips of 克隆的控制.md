@@ -2,8 +2,8 @@
 tips: 
 1. 对本类的克隆均是调用Object.clone()实现（需要先实现Cloneable接口），其返回值类型为Object。
 2. Base class: `class Ordinary{}`。
-3. 克隆的控制本质为在父类中重写clone()方法将子类对。Object.clone()的调用截断，且在clone()中实现自定义的控制方法
-4. 克隆本质上为使用了`Object.clone()`方法实现的
+3. 克隆的控制本质为在父类中重写clone()方法将子类对。Object.clone()的调用截断，且在clone()中实现自定义的控制方法。
+4. 克隆本质上为使用了`Object.clone()`方法实现的，也只有调用了此方法和实现了`Cloneable`接口才能正常克隆。
 
 ## 1. 有条件克隆，不实现Cloneable接口
 解释：将clone()的权限范围从protected改为public，让其子类继承此方法，且任何类都可以调用此方法。返回值为super.clone();注意不实现Cloneable接口。只有继承且实现Cloneable接口的对象才可正常克隆
