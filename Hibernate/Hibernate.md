@@ -39,7 +39,8 @@
 	            cascade="all"
 	            column="nextmessageid"
 	            foreign-key= "FKNEXT_MESSAGE"/>
-	       </class>
+	        </class>
+	
 	</hibernate-mapping>
 	```
 
