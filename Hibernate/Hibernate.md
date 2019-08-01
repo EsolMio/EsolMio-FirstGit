@@ -27,19 +27,19 @@
 	    name="hello. Message "
 	    table="messages">
 	        <id
-	        name="id"
-	        column="message_id">
+	            name="id"
+	            column="message_id">
 	            <generator class="increment"/>
 	        </id>
-	<property
-	name="text"
-	column="messagetext"/>
-	<many-to-one
-	name= "nextmessage"
-	cascade="all"
-	column="nextmessageid"
-	foreign-key= "FKNEXT_MESSAGE"/>
-	</class>
+	        <property
+	            name="text"
+	            column="messagetext"/>
+	        <many-to-one
+	            name= "nextmessage"
+	            cascade="all"
+	            column="nextmessageid"
+	            foreign-key= "FKNEXT_MESSAGE"/>
+	       </class>
 	</hibernate-mapping>
 	```
 
