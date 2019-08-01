@@ -44,7 +44,7 @@
 	</hibernate-mapping>
 	```
 	2. 也可以使用JPA中的注解方式声明：`@Entity`, `@Table`, `@Id`, `@Column`, `@ManyToOne`, `@JoinCloumn`
-3. 在xml配置文件中声明`<mapping class="使用注解的类完全限定名">`，或者在编程式配置中使用`Configuration`类的`addAnnotationClass()`方法获得
+3. 在xml配置文件中声明`<mapping class="使用注解的类完全限定名">`，或者在编程式配置中使用`Configuration`类的`addAnnotationClass()`方法传入使用注解的类的类对象(`.class`)。
 
 
 
