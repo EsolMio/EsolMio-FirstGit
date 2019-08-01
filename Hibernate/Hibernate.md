@@ -11,6 +11,10 @@
 	- `hibernate.connection.username`：声明登录数据库用户名, 
 	- `hibernate.dialect`
 
+## 使用
+1. 创建
+
+
 ## 配置连接池
 
 ### 使用连接池的原因：
