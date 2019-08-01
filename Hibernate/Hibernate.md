@@ -14,7 +14,35 @@
 ## 使用
 1. 创建持久化类（POJO，标准的属性`private`，提供setter，getter方法设置，获得对应的属性，提供无参构造器）。
 2. 映射持久化类到对应的数据库Schema中
-	1. 可以使用XMl文件声明的方式，命名为`类名.hbm.xml`，
+	1. 可以使用XMl文件声明的方式，命名为`类名.hbm.xml`：
+	```
+	<? Xmlversion=1. 0"? >
+	<! DOCTYPE hibernate-mapping PUBLIC
+	"-//H
+	bernate/hibernate Mapping DTD//EN"
+	"http://hibernate. Sourceforge. Net/hibernate-mapping-3. 0. Dtd">
+	<hibernate-mapping>
+
+	<class
+name="hello. Message "
+table="messages">
+<id
+name="id"
+column="message_id">
+<generator class="increment"/>
+</id>
+<property
+name="text"
+column="messagetext"/>
+<many-to-one
+name= "nextmessage"
+cascade="all"
+column="nextmessageid"
+foreign-key= "FKNEXT_MESSAGE"/>
+</class>
+</hibernate-mapping>
+	```
+
 
 
 ## 配置连接池
