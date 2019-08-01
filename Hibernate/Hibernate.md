@@ -12,7 +12,8 @@
 	- `hibernate.dialect`
 
 ## 使用
-1. 创建
+1. 创建持久化类（POJO，标准的属性`private`，提供）
+2. 
 
 
 ## 配置连接池
