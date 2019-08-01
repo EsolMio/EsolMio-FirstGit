@@ -63,6 +63,7 @@ Hibernate内置了c3p0连接池，当然也可以使用其他的连接池
 	- Tips：在`getConnection()`中获得一个Connection对象前需要先对连接池配置再创建Connection（若使用Apache DBCP，可以在`BasicDataSource`中使用编程配置；或者使用`BasicDataSourceFactory.createDataSource(Properties pro)`通过外部properties文件获得配置属性）。
 2. 在xml配置文件，`name`属性中声明`hibernate.connection.provider_class`并在内容体中声明自己的实现类。
    ![title](../.local/static/2019/7/4/批注 2019-08-01 093541.1564623360730.jpg)
+   - 并在xml配置文件中添加上`<>`
 
 
 
