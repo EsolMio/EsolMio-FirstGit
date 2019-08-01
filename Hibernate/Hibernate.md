@@ -23,24 +23,24 @@
 	"http://hibernate. Sourceforge. Net/hibernate-mapping-3. 0. Dtd">
 	<hibernate-mapping>
 
-	<class
-name="hello. Message "
-table="messages">
-<id
-name="id"
-column="message_id">
-<generator class="increment"/>
-</id>
-<property
-name="text"
-column="messagetext"/>
-<many-to-one
-name= "nextmessage"
-cascade="all"
-column="nextmessageid"
-foreign-key= "FKNEXT_MESSAGE"/>
-</class>
-</hibernate-mapping>
+	    <class
+	    name="hello. Message "
+	    table="messages">
+	        <id
+	        name="id"
+	        column="message_id">
+	            <generator class="increment"/>
+	        </id>
+	<property
+	name="text"
+	column="messagetext"/>
+	<many-to-one
+	name= "nextmessage"
+	cascade="all"
+	column="nextmessageid"
+	foreign-key= "FKNEXT_MESSAGE"/>
+	</class>
+	</hibernate-mapping>
 	```
 
 
