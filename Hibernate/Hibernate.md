@@ -43,7 +43,7 @@
 	
 	</hibernate-mapping>
 	```
-	2. 也可以使用JPA中的注解方式声明：`@Entity`, `@`
+	2. 也可以使用JPA中的注解方式声明：`@Entity`, `@Table`, `@Id`, `@Column`, `@ManyToOne`, `@JoinCloumn`
 
 
 
