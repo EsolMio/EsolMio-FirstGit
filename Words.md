@@ -32,4 +32,4 @@
 - indicates
 - exclusively
 - polymorphic
-- 
+- algorithms
