@@ -33,3 +33,4 @@
 - exclusively
 - polymorphic
 - algorithms
+- concurrency
