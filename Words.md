@@ -30,3 +30,5 @@
 - typically
 - previously
 - indicates
+- exclusively
+- 
