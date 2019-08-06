@@ -5,4 +5,6 @@
 
 ## 非检查型错误 UnChecked Exception
 - 派生自`RuntimeException`的Exception均为非检查型错误，无强制要求对此错误进行捕捉与处理。
-- 如常见的`NullPointException`, `ClassCastException`
+- 如常见的`NullPointException`, `ClassCastException`等等。
+- 此类错误发生时将由JVM托管处理此类错误。
+- 
