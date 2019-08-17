@@ -9,5 +9,6 @@
 - 枚举内部的成员均会在使用枚举类时映射到`java.lang.Enum#Enum(String name, int ordinal)`构造器中，如上述例2：`new Enum<ExampleEnum>("MON", 1); new Enum<ExampleEnum>("THU", 2); new Enum<ExampleEnum>("WED", 3);`内部成员的名称实际均为`String`值。
 
 ## 对枚举类枚举
-- 可以使用foreach`for(Enumxx e:Enumxx.values())`
+- 可以使用foreach`for(Enumxx e:Enumxx.values())`，从此可看出内部每个成员的类型实际上均为声明时的类型（Enumxx）
+- 可以直接使用
 
