@@ -10,5 +10,6 @@
 
 ## 对枚举类枚举
 - 可以使用foreach`for(Enumxx e:Enumxx.values())`，从此可看出内部每个成员的类型实际上均为声明时的类型（Enumxx）
-- 可以直接使用
+- 可以直接使用`Enumxx.成员名`直接调用其值，如`ExampleEnum.MON`
+- 
 
