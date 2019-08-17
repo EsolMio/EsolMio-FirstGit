@@ -6,5 +6,8 @@
 	- 注意，内部成员的值需指定为大写
 
 - 在创建枚举类时，类将继承`java.lang.Enum`抽象类，枚举类型符合通用范式`Class Enum<E extends Enum<E>>`。
-- 枚举内部的成员均会在使用枚举类时映射到`java.lang.Enum#Enum(String name, int ordinal)`构造器中，如上述例2：`new Enum<ExampleEnum>("MON", 1); new Enum<ExampleEnum>("THU", 2); new Enum<ExampleEnum>("WED", 3);`内部成员的
+- 枚举内部的成员均会在使用枚举类时映射到`java.lang.Enum#Enum(String name, int ordinal)`构造器中，如上述例2：`new Enum<ExampleEnum>("MON", 1); new Enum<ExampleEnum>("THU", 2); new Enum<ExampleEnum>("WED", 3);`内部成员的名称实际均为`String`值。
+
+## 对枚举类枚举
+- 可以使用foreach`for(Enumxx e:)`
 
