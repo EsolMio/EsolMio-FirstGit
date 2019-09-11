@@ -17,3 +17,9 @@
 
 ## prepare 预处理
 可详见 [prepare预处理](https://www.cnblogs.com/geaozhang/p/9891338.html)
+
+## 单纯的 inner join
+在使用`inner join`时不使用`on`条件语句时将会发生下述情况
+![pic](../../pic/inner_join_no_on.jpg)
+
+此时涉及到笛卡尔积的一个特性，对于**任意**两列一行的值（尤其是id）将会必定出现两行分别为(x,y), (y,x)。若此时用于同一个表使用笛卡尔积时，将有利于检索重复行。
