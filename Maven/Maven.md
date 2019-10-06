@@ -409,5 +409,15 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 Example URL : [Filter](https://maven.apache.org/plugins/maven-resources-plugin/examples/filter.html)
 
 - 在使用`<resources>`时，启用`<filter>`标签同时设置为`true`时，将会开启过滤，此时`/resources`文件夹中的文件**文本**中若带有`${...}`(...为指定的属性名)，则在使用maven命令`mvn resources:resources`时将会将其替换为`<properties>`中对应属性名的属性值。
-- 
+- 也可以在maven命令中使用`-D...`指定属性名`...`的属性值：`maven resources:resources -D...="xxx"`。
+  
+  Example：Tips-resources的目录路径可以自定义。
+  ```
+  file text in "src/main/resources/hello.txt": Hello ${name}
+
+  maven command: maven resources:resources -Dname="world"
+
+  output in "target/classes/hello.txt" content: Hello World 
+
+  ```
 
