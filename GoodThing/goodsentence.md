@@ -6,3 +6,4 @@
 - **Indicates whether** proxies should be generated for detected components
 - Names of the caches **in which** method invocation results are stored.
 - TypeVariable is the common superinterface for type variables **of kinds**.
+- then the creation of t requires the resolution of the ith enclosing class of T, for i = 0 to n, **inclusive**.
