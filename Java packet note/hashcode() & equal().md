@@ -1,13 +1,26 @@
 # hashcode() & equals()
 - 两方法均来自于`Object`
-- 若想实现通过类型相同对象不相同的key在散列表中获得相同的value（即试图将两个不同的对象在`equals()`中返回`true`），则需要在修改继承下来的`equals()`方法，同时修改`hashcode()`，否则将会得到`null`。
-	- Reason：因为在大部分“键-值”的集合类对象中，通过key获得value需要同时用到`equals()`和`hashcode()`
-	- 同时使用`equals()`和`hashcode()`的原因：`hashcode()`有很大可能会产生相同的值，因为hash值本身为int类型，范围为 $2^{32}$ ，超出范围则hash值相同。
-	- 通过`hashcode()`验证两个对象是否不同（不验证相同），当hash值不同时则对象绝对不同。
-	- 再通过`equals()`
+- 在没有覆盖`equals()`和`hashCode()`时，`equals()`将通过`==`（内存地址）判断两值是否相等。`hashCode()`将通过特定的散列函数计算出散列值，因为可存储数值的有限性（如`Integer.Max_VALUE/Integer.MIN_VALUE`），将可能发生碰撞。
+- 存在`hashcode()`的意义为缓解大量检索相同值时反复调用`equals()`带来的高耗能。通过事先调用`hashcode()`获得的值判断相等性。
+
+## `hashcode()`碰撞问题
+因为存储范围有限，不同对象的hash可能碰撞，故存在以下定义：
+1. 若两个句柄指向的对象相同，则其hash值相同，相同算法下，自变量值相同则结果相同。
+2. 若hash值相同，两个句柄指向的对象**不一定相同**。
+3. 若在`Hashtable`中出现碰撞，则通过`LinkedList`存储碰撞值（值本质上不相同）。
+
+Tips：在`HashTable`，查找相同hash对象在`LinedList`中的位置将通过`equals()`遍历。
 
 Tips: `hashcode()`**默认为映射对象内存地址**。
 
+## `equals()`的要求
+无论是继承`Object#equals()`亦或者Override，均需符合下述三点：
+1. 对称：if x.equals(y) -> true, then y.equals(x )-> true
+2. 自反：x.equals(x) -> true
+3. 传递：if x.equals(y) -> true, y.equals(z) -> true, then x.equals(z) -> true
+4. 一致：whatever, if nothing change of method `equals()`, multiple invocations of x.equals(y) consistently return true or false, unless `equals` has changed.
+
+倘若无法满足以上全部点，将发成不可预料（exceptionable）情况
 
 如，修改`equals`
 ```
