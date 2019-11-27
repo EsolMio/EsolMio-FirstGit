@@ -1,7 +1,9 @@
 # hashcode() & equals()
 - 两方法均来自于`Object`
 - 在没有覆盖`equals()`和`hashCode()`时，`equals()`将通过`==`（内存地址）判断两值是否相等。`hashCode()`将通过特定的散列函数计算出散列值，因为可存储数值的有限性（如`Integer.Max_VALUE/Integer.MIN_VALUE`），将可能发生碰撞。
-- 存在`hashcode()`的意义为缓解大量检索相同值时反复调用`equals()`带来的高耗能。通过事先调用`hashcode()`获得的值判断相等性。
+
+## 存在`hashcode()`的意义：
+缓解大量检索相同值时反复调用`equals()`带来的高耗能。通过事先调用`hashcode()`获得的值判断相等性。
 
 ## `hashcode()`碰撞问题
 因为存储范围有限，不同对象的hash可能碰撞，故存在以下定义：
