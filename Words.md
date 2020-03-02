@@ -34,4 +34,5 @@
 - polymorphic
 - algorithms
 - concurrency
-- 123
+- delegate
+- retrieve
