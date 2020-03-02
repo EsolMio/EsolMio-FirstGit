@@ -68,9 +68,20 @@ URL : [RFC 6750](https://tools.ietf.org/html/rfc6750)
 ## 客户端授权码模式
 ### Client Authentication - 客户端验证; Client Identifier - 客户端身份
 - 客户端验证可在获得授权码，访问码，刷新授权码、访问码时使用
-- 客户端的验证需要client在初次访问Authorization Server(AS)时将对代表本client的Client Identifier(CI, 客户端身份)传递至AS，AS将会记录CI并对所有的Resource Owner暴露。
+- 在进行客户端验证时，需要client在初次访问Authorization Server(AS)时将代表本client的Client Identifier(CI, 客户端身份)传递至AS，AS将会记录CI并对所有的Resource Owner暴露。
 - CI表示参数: *client_id*
 - 若client需要通过 Http Basic authentication scheme ( [RFC2617](https://tools.ietf.org/html/rfc2617) ) 同AS验证，则需要配上参数: *client_secret*
+- 两参数建议在request-body中使用，而不是直接暴漏在URI中，且授权服务器与客户端的连接需建立在TLS上。
+  ```
+  Example: refresh Access Token
+
+  POST /token HTTP/1.1
+  Host: server.example.com
+  Content-Type: application/x-www-form-urlencoded
+
+  grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA
+  &client_id=s6BhdRkqt3&client_secret=7Fjfp0ZBr1KtDRbnfVdmIw
+  ```
 ### [Authorization Code Grant](https://tools.ietf.org/html/rfc6749#section-4.1)
 ```
      +----------+
@@ -103,10 +114,10 @@ URL : [RFC 6750](https://tools.ietf.org/html/rfc6750)
    two parts as they pass through the user-agent.
 ```
 - Tips: 详细看URL。提示：(A)中Redirection URI，此处的重定向地址指向为客户端Client，用于在(B)用户确定授权后，在(C)处将User-Agent（用户代理-指Resource Owner）重定向回Client。(D)处的Redirection URI与(A)中相同时，授权服务器才将token下发Client
-### Authorization request-授权请求时的要求：
+### Authorization request claim - 授权请求时的要求：
 - RESTful: GET
 - format: application/x-www-form-urlencoded
-- parameters: 1. response-type(required, Value MUST set to "code") ; 2. client_id(required, client indentifier ) ; 3. redirect_uri(optional) ; 4. scope(optional) ; 5. state(recommened)
+- parameters: 1. response-type(required, Value **MUST** set to `code`) ; 2. client_id(required, client indentifier ) ; 3. redirect_uri(optional) ; 4. scope(optional) ; 5. state(recommened - 非透明值，用于客户端保持请求和接收回应时的转态，授权服务器会在获得用户授权并将用户(由user-agent代表)重定向至redirect_uri时附带此参数值，用于防范CSRF攻击)
   > Example: GET /authorize?response_type=code&client_id=s6BhdRkqt3&state=xyz
         &redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb HTTP/1.1
     Host: server.example.com
@@ -115,8 +126,53 @@ URL : [RFC 6750](https://tools.ietf.org/html/rfc6750)
 - parameters: 1. code(REQUIRED, 授权码，有效时间必须短暂以减小授权码被泄露的风险(小到什么时候才合理)，若one code被使用大于一次必须拒绝相应的请求并撤销 **全部的** token) ; 2. state(REQUORED, ) 
 ### Authorization Error Response
 ...
-### Access Token Request - 访问权限token请求
-- 
+### Access Token Request claim - 访问权限token请求
+- RESTful: GET
+- format:
+- parameters: 
+  1. grant_type(REQUIRED.  Value **MUST** be set to `authorization_code`.)
+  2. code(REQUIRED, the Authorization Code received from Authorizaiton Server)
+  3. redirect_uri(REQUIRED, the value which same as Authorizaiton Request redirect_uri parameter)
+
+## Implicit Grant - 隐式准许
+流程图：
+```
+     +----------+
+     | Resource |
+     |  Owner   |
+     |          |
+     +----------+
+          ^
+          |
+         (B)
+     +----|-----+          Client Identifier     +---------------+
+     |         -+----(A)-- & Redirection URI --->|               |
+     |  User-   |                                | Authorization |
+     |  Agent  -|----(B)-- User authenticates -->|     Server    |
+     |          |                                |               |
+     |          |<---(C)--- Redirection URI ----<|               |
+     |          |          with Access Token     +---------------+
+     |          |            in Fragment
+     |          |                                +---------------+
+     |          |----(D)--- Redirection URI ---->|   Web-Hosted  |
+     |          |          without Fragment      |     Client    |
+     |          |                                |    Resource   |
+     |     (F)  |<---(E)------- Script ---------<|               |
+     |          |                                +---------------+
+     +-|--------+
+       |    |
+      (A)  (G) Access Token
+       |    |
+       ^    v
+     +---------+
+     |         |
+     |  Client |
+     |         |
+     +---------+
+
+ Note: The lines illustrating steps (A) and (B) are broken into two parts as they pass through the user-agent.
+
+```
 
 ## EndPoint 端点
 [OAuth 2.0](https://tools.ietf.org/html/rfc6749#page-18)
@@ -157,3 +213,59 @@ URL : [RFC 6750](https://tools.ietf.org/html/rfc6750)
 +--------+                                   +--------+
 
 ```
+
+## Spring Security `ClientRegistrationRepository`
+- 在Spring `ClientRegistrationRepository`中定义了customer provider properties需要设定的值：
+- 以下例子定义了如何Override Spring Boot Auto-configuration，在不Override的情况下Auto-configuration将会通过`application.yml`定义的`spring.security.oauth2.client.registration.[registrationId]...`进行配置。
+  ```java
+  @Configuration
+  public class OAuth2LoginConfig {
+
+   @Bean
+    public ClientRegistrationRepository clientRegistrationRepository() {
+        return new InMemoryClientRegistrationRepository(this.googleClientRegistration());
+    }
+
+    private ClientRegistration googleClientRegistration() {
+        return ClientRegistration.withRegistrationId("google")
+            .clientId("google-client-id")
+            .clientSecret("google-client-secret")
+            .clientAuthenticationMethod(ClientAuthenticationMethod.BASIC)
+            .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+            .redirectUriTemplate("{baseUrl}/login/oauth2/code/{registrationId}")
+            .scope("openid", "profile", "email", "address", "phone")
+            .authorizationUri("https://accounts.google.com/o/oauth2/v2/auth")
+            .tokenUri("https://www.googleapis.com/oauth2/v4/token")
+            .userInfoUri("https://www.googleapis.com/oauth2/v3/userinfo")
+            .userNameAttributeName(IdTokenClaimNames.SUB)
+            .jwkSetUri("https://www.googleapis.com/oauth2/v3/certs")
+            .clientName("Google")
+            .build();
+    }
+  }
+  ```
+  same as
+  ```yml
+  spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          okta:
+            client-id: okta-client-id
+            client-secret: okta-client-secret
+        provider:
+          okta: 1
+            # 根据OAuth2协议要求，必须提供 three protocol endpoint
+            # 分别为: Authorizaiton Endpoint(use by client), Token Endpoint(use by client), Redirect Endpoint(use by client)
+            authorization-uri: https://your-subdomain.oktapreview.com/oauth2/v1/authorize
+            token-uri: https://your-subdomain.oktapreview.com/oauth2/v1/token
+
+            # OpenID Connetion 要求，提供UserInfo Endpoint
+            # "To obtain the requested claims about the end-user, the client makes a request to the UserInfo Endpoint by using an access token obtained through OpenID Connect Authentication"
+            user-info-uri: https://your-subdomain.oktapreview.com/oauth2/v1/userinfo
+            user-name-attribute: sub
+            jwk-set-uri: https://your-subdomain.oktapreview.com/oauth2/v1/keys
+  ```
+
+  

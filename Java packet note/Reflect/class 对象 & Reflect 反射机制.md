@@ -53,7 +53,12 @@ Tips：构建数组时可用：
 ### 2. 无"Declared"的方法只能返回被`public`修饰的成员，而有"Declared"的可以返回`public`, `protected`, `default(package)`, `private`所修饰的成员
 ### 3. 需要注意的是部分reflect包中的类（令包含了`Class`），如`Field`, `Constructor`, `Method`, `Parameter`, `Package`, `Executable`均实现了`AnnotatedElement`接口，此接口提供了获得注解的方法。
 
-
+## Generic 泛型
+- `Type` interface-接口, `TypeVariable` interface，`Class`已实现此接口
+- `TypeVariable`, 可用于代表type（如：class, interface, annotation）
+- `Class#getTypeParameters():TypeVariable<Class<T>>[]`: 获得此`Class`上通过 generic declaration （泛型定义方法）定义的泛型参数
+- `Class#getGenericInterfaces():Type[]`, 获得此`Class`实现的interface，保留了interface中的泛型参数变量
+- `Class#getGenericSuperClass():Type`, 获得此`Class`继承的父类，保留父类定义的泛型参数。
 
 ## 关于基本类型的Class对象
 - 对于基本类型，如：int，double，char，包括void，都可以生成对应的Class对象，通过`.class`。

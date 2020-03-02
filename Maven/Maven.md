@@ -160,6 +160,7 @@ pom.xml包含了整个项目POM（project object model），**POM(`pom.xml`)是�
 - *排除依赖项* (Excluded dependencies)（主动）：对于依赖树`A->B->C`，可在申明B的`<dependency>`中使用`<exclusion>`tag声明C以排除A对C的依赖（间接依赖）
 
 - *可选择依赖* (Optional dependencies)（被动）：用于取消传递/间接依赖，对于依赖关系`Y->Z`，可在Y中申明Z的`<dependency>`中使用tag`<optional>true</optional>`。此时若有X依赖于Y，则X无法传递依赖/间接依赖于Z，但仍可以使用特别指明依赖项Z，即直接使用`<dependency>`声明z。
+  - 举个例子：如果Y depend Z，且对Z的声明上加上`<dependency>...<optional>true</optional></dependency>`，此时Y的classpath中存有Z；此时X depend Y，此时X的classpath中则无Z，需要在`<dependency>`中额外声明才可获得。
 
 - *依赖项范围*（dependency scope）url:[Dependency Scope](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope)：（使用`<scope>`标签声明范围，于`<dependency>`标签中）（作用域对应的传递性作用于指定的依赖项，即`<scope>`所在的`<dependency>`）Tips：作用域本义为：使得依赖项在作用域对应的阶段(phase)使用
 	- *compile* 编译-compile (phase)：**默认范围，在没有指定范围时使用（声明）**。使用此范围的依赖项可传递，并且可在项目中的全部类路径(classpaths)中使用
