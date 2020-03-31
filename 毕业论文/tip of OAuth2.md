@@ -1,4 +1,6 @@
 # Tips of OAuth2
+## 凡是对token endpoint进行请求的均需要验证客户端。
+
 
 Link : [User Authentication with OAuth 2.0](https://oauth.net/articles/authentication/)
 
@@ -75,12 +77,12 @@ URL : [RFC 6750](https://tools.ietf.org/html/rfc6750)
   ```
   Example: refresh Access Token
 
-  POST /token HTTP/1.1
-  Host: server.example.com
-  Content-Type: application/x-www-form-urlencoded
+   POST /token HTTP/1.1
+     Host: server.example.com
+     Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
+     Content-Type: application/x-www-form-urlencoded
 
-  grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA
-  &client_id=s6BhdRkqt3&client_secret=7Fjfp0ZBr1KtDRbnfVdmIw
+     grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA&scope=xxxx
   ```
 ### [Authorization Code Grant](https://tools.ietf.org/html/rfc6749#section-4.1)
 ```
@@ -113,11 +115,15 @@ URL : [RFC 6750](https://tools.ietf.org/html/rfc6750)
    Note: The lines illustrating steps (A), (B), and (C) are broken into
    two parts as they pass through the user-agent.
 ```
+- 流程：
+  - A：客户端在需要获得用户批准授权时，需将用户重定向到authorization endpoint, 重定向中将会包括传入endpoint的所有必须参数。
+  - B：若用户没有在授权服务器中登录，则要求登录并判断是否授权
+  - C：获得授权后授权服务器将用户重定向至client，注意，此时授权服务器中的respoonse内容将会通过重定向的方式传送给user，其中带有参数"token", "state"等等。**重定向意味着响应的信息将由client通过请求的方式发送给client**
 - Tips: 详细看URL。提示：(A)中Redirection URI，此处的重定向地址指向为客户端Client，用于在(B)用户确定授权后，在(C)处将User-Agent（用户代理-指Resource Owner）重定向回Client。(D)处的Redirection URI与(A)中相同时，授权服务器才将token下发Client
 ### Authorization request claim - 授权请求时的要求：
 - RESTful: GET
-- format: application/x-www-form-urlencoded
-- parameters: 1. response-type(required, Value **MUST** set to `code`) ; 2. client_id(required, client indentifier ) ; 3. redirect_uri(optional) ; 4. scope(optional) ; 5. state(recommened - 非透明值，用于客户端保持请求和接收回应时的转态，授权服务器会在获得用户授权并将用户(由user-agent代表)重定向至redirect_uri时附带此参数值，用于防范CSRF攻击)
+- format: application/x-www-form-urlencoded (如果参数均置于URL中则无需声明conten-type: application/x-www-form-urlencoded)
+- parameters: 1. response-type(**required**, Value **MUST** set to `code`) ; 2. client_id(**required**, client indentifier.  A client MAY use the "client_id" request parameter to identify itself when sending requests to the token endpoint ) ; 3. redirect_uri(optional) ; 4. scope(optional) ; 5. state(recommened - 非透明值，用于客户端保持请求和接收回应时的转态，授权服务器会在获得用户授权并将用户(由user-agent代表)重定向至redirect_uri时附带此参数值，用于防范CSRF攻击)
   > Example: GET /authorize?response_type=code&client_id=s6BhdRkqt3&state=xyz
         &redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb HTTP/1.1
     Host: server.example.com
@@ -128,11 +134,21 @@ URL : [RFC 6750](https://tools.ietf.org/html/rfc6750)
 ...
 ### Access Token Request claim - 访问权限token请求
 - RESTful: GET
-- format:
+- format:application/x-www-form-urlencoded
 - parameters: 
   1. grant_type(REQUIRED.  Value **MUST** be set to `authorization_code`.)
   2. code(REQUIRED, the Authorization Code received from Authorizaiton Server)
   3. redirect_uri(REQUIRED, the value which same as Authorizaiton Request redirect_uri parameter)
+- Example:
+  ```
+  POST /token HTTP/1.1
+     Host: server.example.com
+     Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
+     Content-Type: application/x-www-form-urlencoded
+
+     grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
+     &redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb
+  ```
 
 ## Implicit Grant - 隐式准许
 流程图：

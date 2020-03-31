@@ -17,8 +17,8 @@ static final int hash(Object key){
 // putVal()中，hash值用于查找对应于table中的位置
 final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
                    boolean evict) {
-        Node<K,V>[] tab; Node<K,V> p; int n, i;
         // tab获得table(HashMap.Node<K,V>[])句柄
+        Node<K,V>[] tab; Node<K,V> p; int n, i;
         // 倘若初始长度为0则resize()数组
         if ((tab = table) == null || (n = tab.length) == 0)
             n = (tab = resize()).length; // 默认初始长度为"1<<4=16"
@@ -107,7 +107,10 @@ final Node<K,V> getNode(int hash, Object key) {
 ```
 
 ### Tips:
-1. hash值与`Node<T>[]`之间的映射关系：通过映射函数"(n-1) 7 hash"确定`Node<T>[]`上对应索引。
+0. `HashMap`使用`key`的哈希值作为存储索引，且将hash, key, value均存储在`HashMap.Node<K, V>[] table`中
+1. hash值与`Node<T>[]`之间的映射关系：通过映射函数`(n-1) & hash`确定`Node<T>[]`上对应索引。
+   - ~~在`resize()`对主存储元素`table`进行扩容时，新位置索引确定的算法为`Node.hash & (newCap - 1)`，虽然顺序和`putVal()`中的不同，但结果相同，均为`hash % table.length`~~
+   - 哈希数值得索引得算法为`hash&(table.length-1)`, 而resize()中则为通过`hash&oldtable.length`判断是否为oldtable的已2
    - 但需要明确：相同的索引并不一定`hash(Node.key)`的值相同，因为映射函数为"且"运算，如：在jdk 7的`HashMap`中使用`transfer()`对数组扩容后转移元素，会出现以下情况：
    ```
     Before           After
@@ -166,7 +169,7 @@ final Node<K,V> getNode(int hash, Object key) {
                    [3]   Thread 1 "next"      Thread 1 "e"
      ------------------------------------------------------------
      Tread 1
-     excute function continute:
+     continute excute function:
      
                   Node[]              
                    [0]   Thread 1 "next"      Thread 1 "e"
@@ -177,3 +180,63 @@ final Node<K,V> getNode(int hash, Object key) {
      in this part linkedlist change into a loop,
      this is the reason why in "transfer()" used by mulity thread jdk-7`s HashMap will fall into dead-circle 
      ```
+
+## show code II
+```java
+final Node<K,V> resize(){
+    // ...
+    table = newTab;
+    // 对旧数组中的元素进行移位至新的数组中
+    if (oldTab != null) {
+        for (int j = 0; j < oldCap; ++j) {
+            Node<K,V> e;
+            if ((e = oldTab[j]) != null) {
+                oldTab[j] = null;
+                // 若该索引上没有碰撞，则直接在newCap基础上重算哈希索引
+                if (e.next == null)
+                    newTab[e.hash & (newCap - 1)] = e;
+                else if (e instanceof TreeNode)
+                    ((TreeNode<K,V>)e).split(this, newTab, j, oldCap);
+                // 如果该索引上的值为链表上的头节点
+                else { // preserve order
+                    // loxxx表示对应Node.hash为oldCap的2的幂（2^i）的倍数
+                    Node<K,V> loHead = null, loTail = null;
+                    // hixxx表示对应的Hash.node并非oldCap的2的幂的倍数
+                    Node<K,V> hiHead = null, hiTail = null;
+                    Node<K,V> next;
+                    do {
+                        next = e.next;
+                        // 求table哈希索引的算法为"hash & (table.length - 1)",即求"hash % table.length"
+                        // 此处"e.hash & oldCap"算出的结果若为0则为oldCap的2的幂的倍数，如oldCap=16，e.hash=32
+                        if ((e.hash & oldCap) == 0) {
+                            if (loTail == null)
+                                loHead = e;
+                            else
+                                loTail.next = e;
+                            loTail = e;
+                        }
+                        else {
+                            if (hiTail == null)
+                                hiHead = e;
+                            else
+                                hiTail.next = e;
+                            hiTail = e;
+                        }
+                    } while ((e = next) != null);
+                    // 将(e.hash & oldCap) == 0放于newCap相同的索引中
+                    if (loTail != null) {
+                        loTail.next = null;
+                        newTab[j] = loHead;
+                    }
+                    // 将(e.hash & oldCap) != 0放于newCap j+oldCap的中
+                    if (hiTail != null) {
+                        hiTail.next = null;
+                        newTab[j + oldCap] = hiHead;
+                    }
+                }
+            }
+        }
+    }
+    return newTab;
+}
+```
