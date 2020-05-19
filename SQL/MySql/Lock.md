@@ -11,18 +11,22 @@ MySql 有以下几种锁：
 3. Next Key Lock 记录锁和间隔锁的结合
 
 ## Shared Lock 分享锁 S
+- 又称读锁，适用于并发只读不可修改情况，直到所有S锁解除
 - 故名思意，申请锁后仍然同意其他多个事件(Session)申请该**行**的分享锁。
 - Shared Lock 分享锁会block阻止其他事件对该行/表的Exclusive Lock 独一锁的申请。
 
 ## Exclusive Locks 独一锁/排他锁 X
+- 又称写锁，适用于单个事务对数据修改，禁止其他事务的读和写。
 - 对于单个行只能由一个事件申请一个Exclusive Lock。
 - Exclusive Lock会block阻止其他事件对该行的Exclusive Lock和Shared Lock的申请。
 
 ## Table Intention Locks 表意向锁 IS & IX & II
+- 意向锁：在事务试图获取资源时遇到X锁，则往资源所在表上添加I锁，如需要S锁则添加IS，需要X则添加IX。
 - 其中包含Table Intention Shared Locks ( IS )，Table Intention Exclusive Locks ( IX )，Insert Intention Lock ( II )。
 - 在执行Select...Lock in share mode和申请其他分享锁时，会先和Table表申请Table Intention Shared Locks。
 - 在执行Select...for update, insert, update, delete时会先和Table表申请Table Intention Exclusive Locks。
-- IX和IS均允许被多个事件获得，但在申请实际锁（如S，X）时则可能发生相互block（如多个事件申请单个行的X），此时先到先得。
+- 在申请X和S前需获得对应的IX或IS。
+- IX和IS均允许被多个事件获得，但在申请实际锁（如X）时则可能发生相互block（如多个事件申请单个行的X），此时先到先得（非公平锁）。
 - IX和IS唯一发生阻塞是在一个事件获得了Table Lock时（Alter Table, Drop Table, Lock Tables），其余正要申请IX和IS，后者被阻塞。
 
 - II较为特殊，一般IX和IS只有在table被lock时导致阻塞才能在 `select * from information_schema.INNODB_LOCKS;` 中看到锁。但在往已有锁的行中使用insert时会见到II，即II更多为行级锁，IX和IS更多为表级锁。
